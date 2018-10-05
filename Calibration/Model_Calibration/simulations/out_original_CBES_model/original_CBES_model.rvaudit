@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\Projects\SDI\Model_Calibration\simulations\in.rvi
+ input file:C:\Users\Han\Documents\Projects\SDI\Model_Calibration\simulations\out_original_CBES_model\original_CBES_model.eso
+ output file:C:\Users\Han\Documents\Projects\SDI\Model_Calibration\simulations\out_original_CBES_model\original_CBES_model.csv
+ getting all vars from:C:\Users\Han\Documents\Projects\SDI\Model_Calibration\simulations\out_original_CBES_model\original_CBES_model.eso
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.28sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\Projects\SDI\Model_Calibration\simulations\in.mvi
+ input file:C:\Users\Han\Documents\Projects\SDI\Model_Calibration\simulations\out_original_CBES_model\original_CBES_model.mtr
+ output file:C:\Users\Han\Documents\Projects\SDI\Model_Calibration\simulations\out_original_CBES_model\original_CBES_model-meter.csv
+ getting all vars from:C:\Users\Han\Documents\Projects\SDI\Model_Calibration\simulations\out_original_CBES_model\original_CBES_model.mtr
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.31sec
+ ReadVarsESO program completed successfully.
