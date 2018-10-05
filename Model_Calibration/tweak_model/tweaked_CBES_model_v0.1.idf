@@ -8785,8 +8785,8 @@ Schedule:File,
 Material,
     Insulation 1m,            !- Name
     Smooth,                   !- Roughness
-    1.0,                      !- Thickness
-    0.023018771,              !- Conductivity
+    5.0,                      !- Thickness
+    0.0115093855,             !- Conductivity
     16.01846337,              !- Density
     1130.436,                 !- Specific Heat
     0.9,                      !- Thermal Absorptance
@@ -8807,8 +8807,8 @@ Material,
 Material,
     SO25A_1/2IN Gypsum,       !- Name
     Smooth,                   !- Roughness
-    0.0127,                   !- Thickness
-    0.16,                     !- Conductivity
+    0.0635,                   !- Thickness
+    0.08,                     !- Conductivity
     784.9,                    !- Density
     830.0,                    !- Specific Heat
     0.9,                      !- Thermal Absorptance
@@ -8862,8 +8862,8 @@ Material,
 Material,
     SO25A_1IN Stucco,         !- Name
     Smooth,                   !- Roughness
-    0.0253,                   !- Thickness
-    0.6918,                   !- Conductivity
+    0.1265,                   !- Thickness
+    0.3459,                   !- Conductivity
     1858.0,                   !- Density
     837.0,                    !- Specific Heat
     0.9,                      !- Thermal Absorptance
@@ -8873,8 +8873,8 @@ Material,
 Material,
     SO25A_8IN CONCRETE HW,    !- Name
     Rough,                    !- Roughness
-    0.2032,                   !- Thickness
-    1.311,                    !- Conductivity
+    1.016,                    !- Thickness
+    0.6555,                   !- Conductivity
     2240.0,                   !- Density
     836.8,                    !- Specific Heat
     0.9,                      !- Thermal Absorptance
@@ -8895,8 +8895,8 @@ Material,
 Material,
     SO25A_Mass NonRes Wall Insulation,    !- Name
     MediumRough,              !- Roughness
-    0.065686483,              !- Thickness
-    0.049,                    !- Conductivity
+    0.32843241500000003,      !- Thickness
+    0.0245,                   !- Conductivity
     265.0,                    !- Density
     836.8,                    !- Specific Heat
     0.9,                      !- Thermal Absorptance
