@@ -1,4 +1,5 @@
 require 'openstudio'
+require 'openstudio-standards'
 require './measure.rb'
 
 

@@ -2,3 +2,5 @@ simulations/
 *.sql
 *.pdf
 *.url
+
+batch_run/

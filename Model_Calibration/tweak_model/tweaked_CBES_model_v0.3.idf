@@ -8957,8 +8957,8 @@ Material:NoMass,
 
 WindowMaterial:SimpleGlazingSystem,
     office Window material_simple glazing,    !- Name
-    3.35002,                  !- UFactor
-    0.39;                     !- Solar Heat Gain Coefficient
+    6,                        !- UFactor
+    0.8;                      !- Solar Heat Gain Coefficient
 
 Construction,
     ext wall Adiabatic Construction,    !- Name
@@ -10674,7 +10674,7 @@ Lights,
     office int_lighting year,    !- Schedule Name
     Watts/Area,               !- Design Level Calculation Method
     ,                         !- Lighting Level
-    16.9,                     !- Watts per Zone Floor Area
+    18,                       !- Watts per Zone Floor Area
     ,                         !- Watts per Person
     0.4,                      !- Return Air Fraction
     0.4,                      !- Fraction Radiant

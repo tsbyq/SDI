@@ -8957,8 +8957,8 @@ Material:NoMass,
 
 WindowMaterial:SimpleGlazingSystem,
     office Window material_simple glazing,    !- Name
-    3.35002,                  !- UFactor
-    0.39;                     !- Solar Heat Gain Coefficient
+    6,                        !- UFactor
+    0.8;                      !- Solar Heat Gain Coefficient
 
 Construction,
     ext wall Adiabatic Construction,    !- Name
