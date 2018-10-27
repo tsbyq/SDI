@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\in.rvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-tweaked\5ZoneVAV-DCV-tweaked.eso
+ output file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-tweaked\5ZoneVAV-DCV-tweaked.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-tweaked\5ZoneVAV-DCV-tweaked.eso
+  number variables requested for output=           7
+ ReadVars Run Time=00hr 00min  0.45sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\in.mvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-tweaked\5ZoneVAV-DCV-tweaked.mtr
+ output file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-tweaked\5ZoneVAV-DCV-tweaked-meter.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-tweaked\5ZoneVAV-DCV-tweaked.mtr
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.31sec
+ ReadVarsESO program completed successfully.

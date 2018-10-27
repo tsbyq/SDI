@@ -1,0 +1,27 @@
+Program Version,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.10.23 16:53,
+   ** Warning ** ProcessScheduleInput: Schedule:Day:Interval="OFFICESMALL BLDG_OCC_SCH DEFAULT", Schedule Type Limits Name="FRACTIONAL" not found -- will not be validated
+   ** Warning ** ProcessScheduleInput: Schedule:Day:Interval="OFFICESMALL BLDG_OCC_SCH SUMMER DESIGN DAY", Schedule Type Limits Name="FRACTIONAL" not found -- will not be validated
+   ** Warning ** ProcessScheduleInput: Schedule:Day:Interval="OFFICESMALL BLDG_OCC_SCH WINTER DESIGN DAY", Schedule Type Limits Name="FRACTIONAL" not found -- will not be validated
+   ** Warning ** ProcessScheduleInput: Schedule:Day:Interval="OFFICESMALL BLDG_OCC_SCH WKDY DAY", Schedule Type Limits Name="FRACTIONAL" not found -- will not be validated
+   ** Warning ** ProcessScheduleInput: Schedule:Year="OFFICESMALL BLDG_OCC_SCH", Schedule Type Limits Name="FRACTIONAL" not found -- will not be validated
+   ** Warning ** ProcessScheduleInput: For Schedule:File="OBFMU_PEOPLESCH", Schedule Type Limits Name="PEOPLE FRACTION" not found -- will not be validated
+   ** Warning ** GetSurfaceData: World Coordinate System selected.  Any non-zero Building/Zone North Axes or non-zero Zone Origins are ignored.
+   **   ~~~   ** These may be used in daylighting reference point coordinate calculations but not in normal geometry inputs.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** Processing Monthly Tabular Reports: Variable names not valid for this simulation
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual variables.
+   ************* Simulation Error Summary *************
+   ************* There are 4 unused schedules in input.
+   ************* There are 1460 unused week schedules in input.
+   ************* There are 1460 unused day schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 8 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 20.61sec

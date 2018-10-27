@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.1\1~Manual_Calibration\in.rvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.1\1~Manual_Calibration\out_Baseline\Baseline.eso
+ output file:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.1\1~Manual_Calibration\out_Baseline\Baseline.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.1\1~Manual_Calibration\out_Baseline\Baseline.eso
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.03sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.1\1~Manual_Calibration\in.mvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.1\1~Manual_Calibration\out_Baseline\Baseline.mtr
+ output file:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.1\1~Manual_Calibration\out_Baseline\Baseline-meter.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.1\1~Manual_Calibration\out_Baseline\Baseline.mtr
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.03sec
+ ReadVarsESO program completed successfully.

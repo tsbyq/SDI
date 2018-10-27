@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Test_runs\in.rvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_HeatPumpSimpleDCV - Copy\HeatPumpSimpleDCV - Copy.eso
+ output file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_HeatPumpSimpleDCV - Copy\HeatPumpSimpleDCV - Copy.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_HeatPumpSimpleDCV - Copy\HeatPumpSimpleDCV - Copy.eso
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.27sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Test_runs\in.mvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_HeatPumpSimpleDCV - Copy\HeatPumpSimpleDCV - Copy.mtr
+ output file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_HeatPumpSimpleDCV - Copy\HeatPumpSimpleDCV - Copy-meter.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_HeatPumpSimpleDCV - Copy\HeatPumpSimpleDCV - Copy.mtr
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.28sec
+ ReadVarsESO program completed successfully.

@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.0\in.rvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.0\out_target_SKY\target_SKY.eso
+ output file:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.0\out_target_SKY\target_SKY.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.0\out_target_SKY\target_SKY.eso
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.34sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.0\in.mvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.0\out_target_SKY\target_SKY.mtr
+ output file:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.0\out_target_SKY\target_SKY-meter.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Model_Calibration_2.0\out_target_SKY\target_SKY.mtr
+  number variables requested for output=           3
+ ReadVars Run Time=00hr 00min  0.42sec
+ ReadVarsESO program completed successfully.

@@ -1,0 +1,77 @@
+ZoneInfiltration:DesignFlowRate,
+  Office Infiltration,                !- Name
+  office space type,                      !- Zone or ZoneList Name
+  Office Infiltation Sch,     !- Schedule Name
+  Flow/Zone,                              !- Design Flow Rate Calculation Method
+  0.129785425,                            !- Design Flow Rate {m3/s}
+  ,                                       !- Flow per Zone Floor Area {m3/s-m2}
+  ,                                       !- Flow per Exterior Surface Area {m3/s-m2}
+  ,                                       !- Air Changes per Hour {1/hr}
+  1,                                      !- Constant Term Coefficient
+  0,                                      !- Temperature Term Coefficient
+  0,                                      !- Velocity Term Coefficient
+  0;                                      !- Velocity Squared Term Coefficient
+
+Schedule:Week:Daily,
+  Office Infiltation Sch Week Rule - Jan1-Dec31, !- Name
+  Office Infiltation Sch Default, !- Sunday Schedule:Day Name
+  Office Infiltation Sch Wkdy Day, !- Monday Schedule:Day Name
+  Office Infiltation Sch Wkdy Day, !- Tuesday Schedule:Day Name
+  Office Infiltation Sch Wkdy Day, !- Wednesday Schedule:Day Name
+  Office Infiltation Sch Wkdy Day, !- Thursday Schedule:Day Name
+  Office Infiltation Sch Wkdy Day, !- Friday Schedule:Day Name
+  Office Infiltation Sch Default, !- Saturday Schedule:Day Name
+  Office Infiltation Sch Default, !- Holiday Schedule:Day Name
+  Office Infiltation Sch Summer Design Day, !- SummerDesignDay Schedule:Day Name
+  Office Infiltation Sch Winter Design Day, !- WinterDesignDay Schedule:Day Name
+  Office Infiltation Sch Default, !- CustomDay1 Schedule:Day Name
+  Office Infiltation Sch Default; !- CustomDay2 Schedule:Day Name
+
+Schedule:Year,
+  Office Infiltation Sch,     !- Name
+  Fractional,                             !- Schedule Type Limits Name
+  Office Infiltation Sch Week Rule - Jan1-Dec31, !- Schedule:Week Name 1
+  1,                                      !- Start Month 1
+  1,                                      !- Start Day 1
+  12,                                     !- End Month 1
+  31;                                     !- End Day 1
+
+Schedule:Day:Interval,
+  Office Infiltation Sch Default, !- Name
+  Fractional,                             !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  24:00,                                  !- Time 1 {hh:mm}
+  0;                                      !- Value Until Time 1
+
+Schedule:Day:Interval,
+  Office Infiltation Sch Summer Design Day, !- Name
+  Fractional,                             !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  07:00,                                  !- Time 1 {hh:mm}
+  1,                                      !- Value Until Time 1
+  19:00,                                  !- Time 2 {hh:mm}
+  0.25,                                   !- Value Until Time 2
+  24:00,                                  !- Time 3 {hh:mm}
+  1;                                      !- Value Until Time 3
+
+Schedule:Day:Interval,
+  Office Infiltation Sch Winter Design Day, !- Name
+  Fractional,                             !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  07:00,                                  !- Time 1 {hh:mm}
+  1,                                      !- Value Until Time 1
+  19:00,                                  !- Time 2 {hh:mm}
+  0.25,                                   !- Value Until Time 2
+  24:00,                                  !- Time 3 {hh:mm}
+  1;                                      !- Value Until Time 3
+
+Schedule:Day:Interval,
+  Office Infiltation Sch Wkdy Day, !- Name
+  Fractional,                             !- Schedule Type Limits Name
+  No,                                     !- Interpolate to Timestep
+  07:00,                                  !- Time 1 {hh:mm}
+  1,                                      !- Value Until Time 1
+  19:00,                                  !- Time 2 {hh:mm}
+  0.25,                                   !- Value Until Time 2
+  24:00,                                  !- Time 3 {hh:mm}
+  1;                                      !- Value Until Time 3

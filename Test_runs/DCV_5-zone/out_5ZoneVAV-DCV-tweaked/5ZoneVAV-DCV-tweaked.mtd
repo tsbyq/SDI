@@ -1,0 +1,1038 @@
+
+ Meters for 27,ZN_1_FLR_1_SEC_1_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_1 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_1 [J]
+  OnMeter=General Lights:InteriorLights:Electricity [J]
+
+ Meters for 100,ZN_1_FLR_1_SEC_2_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_2 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_2 [J]
+  OnMeter=General Lights:InteriorLights:Electricity [J]
+
+ Meters for 125,ZN_1_FLR_1_SEC_3_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_3 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_3 [J]
+  OnMeter=General Lights:InteriorLights:Electricity [J]
+
+ Meters for 150,ZN_1_FLR_1_SEC_4_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_4 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_4 [J]
+  OnMeter=General Lights:InteriorLights:Electricity [J]
+
+ Meters for 175,ZN_1_FLR_1_SEC_5_LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_5 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_5 [J]
+  OnMeter=General Lights:InteriorLights:Electricity [J]
+
+ Meters for 200,ZN_1_FLR_1_SEC_1_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_1 [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_1 [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 237,ZN_1_FLR_1_SEC_2_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_2 [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_2 [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 250,ZN_1_FLR_1_SEC_3_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_3 [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_3 [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 263,ZN_1_FLR_1_SEC_4_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_4 [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_4 [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 276,ZN_1_FLR_1_SEC_5_MISCPLUG_EQUIP:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:ZN_1_FLR_1_SEC_5 [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_5 [J]
+  OnMeter=MiscPlug:InteriorEquipment:Electricity [J]
+
+ Meters for 289,SHWSYS1 WATER HEATER:Water Heater Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:Plant [J]
+  OnMeter=WaterSystems:PlantLoopHeatingDemand [J]
+  OnMeter=Water Heater:WaterSystems:PlantLoopHeatingDemand [J]
+
+ Meters for 338,SHWSYS1 WATER HEATER:Water Heater Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:Plant [J]
+  OnMeter=WaterSystems:Gas [J]
+  OnMeter=Water Heater:WaterSystems:Gas [J]
+
+ Meters for 387,SHWSYS1 WATER HEATER:Water Heater Off Cycle Parasitic Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:Plant [J]
+  OnMeter=WaterSystems:Gas [J]
+  OnMeter=Water Heater:WaterSystems:Gas [J]
+
+ Meters for 388,SHWSYS1 WATER HEATER:Water Heater On Cycle Parasitic Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:Plant [J]
+  OnMeter=WaterSystems:Gas [J]
+  OnMeter=Water Heater:WaterSystems:Gas [J]
+
+ Meters for 389,SHWSYS1 WATER HEATER:Water Heater Water Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:Plant [m3]
+  OnMeter=WaterSystems:Water [m3]
+  OnMeter=Water Heater:WaterSystems:Water [m3]
+
+ Meters for 438,SHWSYS1 WATER HEATER:Water Heater Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:Plant [m3]
+  OnMeter=WaterSystems:MainsWater [m3]
+  OnMeter=Water Heater:WaterSystems:MainsWater [m3]
+
+ Meters for 503,ZN_1_FLR_1_SEC_1:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_1 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_1 [J]
+
+ Meters for 564,ZN_1_FLR_1_SEC_1:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_1 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_1 [J]
+
+ Meters for 589,ZN_1_FLR_1_SEC_2:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_2 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_2 [J]
+
+ Meters for 614,ZN_1_FLR_1_SEC_2:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_2 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_2 [J]
+
+ Meters for 627,ZN_1_FLR_1_SEC_3:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_3 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_3 [J]
+
+ Meters for 652,ZN_1_FLR_1_SEC_3:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_3 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_3 [J]
+
+ Meters for 665,ZN_1_FLR_1_SEC_4:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_4 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_4 [J]
+
+ Meters for 690,ZN_1_FLR_1_SEC_4:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_4 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_4 [J]
+
+ Meters for 703,ZN_1_FLR_1_SEC_5:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_5 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_5 [J]
+
+ Meters for 728,ZN_1_FLR_1_SEC_5:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_5 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_5 [J]
+
+ Meters for 741,ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Total Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:Plant [m3]
+  OnMeter=WaterSystems:Water [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:Water [m3]
+
+ Meters for 754,ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:Plant [m3]
+  OnMeter=WaterSystems:MainsWater [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:MainsWater [m3]
+
+ Meters for 767,ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=WaterSystems:EnergyTransfer [J]
+  OnMeter=SHW_DEFAULT:WaterSystems:EnergyTransfer [J]
+
+ Meters for 804,ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Total Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:Plant [m3]
+  OnMeter=WaterSystems:Water [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:Water [m3]
+
+ Meters for 805,ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:Plant [m3]
+  OnMeter=WaterSystems:MainsWater [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:MainsWater [m3]
+
+ Meters for 806,ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=WaterSystems:EnergyTransfer [J]
+  OnMeter=SHW_DEFAULT:WaterSystems:EnergyTransfer [J]
+
+ Meters for 807,ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Total Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:Plant [m3]
+  OnMeter=WaterSystems:Water [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:Water [m3]
+
+ Meters for 808,ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:Plant [m3]
+  OnMeter=WaterSystems:MainsWater [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:MainsWater [m3]
+
+ Meters for 809,ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=WaterSystems:EnergyTransfer [J]
+  OnMeter=SHW_DEFAULT:WaterSystems:EnergyTransfer [J]
+
+ Meters for 810,ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Total Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:Plant [m3]
+  OnMeter=WaterSystems:Water [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:Water [m3]
+
+ Meters for 811,ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:Plant [m3]
+  OnMeter=WaterSystems:MainsWater [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:MainsWater [m3]
+
+ Meters for 812,ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=WaterSystems:EnergyTransfer [J]
+  OnMeter=SHW_DEFAULT:WaterSystems:EnergyTransfer [J]
+
+ Meters for 813,ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Total Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:Plant [m3]
+  OnMeter=WaterSystems:Water [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:Water [m3]
+
+ Meters for 814,ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:Plant [m3]
+  OnMeter=WaterSystems:MainsWater [m3]
+  OnMeter=SHW_DEFAULT:WaterSystems:MainsWater [m3]
+
+ Meters for 815,ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=WaterSystems:EnergyTransfer [J]
+  OnMeter=SHW_DEFAULT:WaterSystems:EnergyTransfer [J]
+
+ Meters for 816,ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Connections Plant Hot Water Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:Plant [J]
+  OnMeter=WaterSystems:PlantLoopHeatingDemand [J]
+
+ Meters for 817,ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Connections Plant Hot Water Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:Plant [J]
+  OnMeter=WaterSystems:PlantLoopHeatingDemand [J]
+
+ Meters for 818,ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Connections Plant Hot Water Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:Plant [J]
+  OnMeter=WaterSystems:PlantLoopHeatingDemand [J]
+
+ Meters for 819,ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Connections Plant Hot Water Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:Plant [J]
+  OnMeter=WaterSystems:PlantLoopHeatingDemand [J]
+
+ Meters for 820,ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Connections Plant Hot Water Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:Plant [J]
+  OnMeter=WaterSystems:PlantLoopHeatingDemand [J]
+
+ Meters for 821,Whole Building:Facility Total Purchased Electric Energy [J]
+  OnMeter=ElectricityPurchased:Facility [J]
+  OnMeter=ElectricityPurchased:Plant [J]
+  OnMeter=Cogeneration:ElectricityPurchased [J]
+
+ Meters for 858,Whole Building:Facility Total Surplus Electric Energy [J]
+  OnMeter=ElectricitySurplusSold:Facility [J]
+  OnMeter=ElectricitySurplusSold:Plant [J]
+  OnMeter=Cogeneration:ElectricitySurplusSold [J]
+
+ Meters for 895,Whole Building:Facility Net Purchased Electric Energy [J]
+  OnMeter=ElectricityNet:Facility [J]
+  OnMeter=ElectricityNet:Plant [J]
+  OnMeter=Cogeneration:ElectricityNet [J]
+
+ Meters for 967,ZN_1_FLR_1_SEC_1 VAV BOX REHEAT COIL:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 992,ZN_1_FLR_1_SEC_1 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:HVAC [J]
+  OnMeter=HeatingCoils:PlantLoopHeatingDemand [J]
+
+ Meters for 1017,ZN_1_FLR_1_SEC_2 VAV BOX REHEAT COIL:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 1018,ZN_1_FLR_1_SEC_2 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:HVAC [J]
+  OnMeter=HeatingCoils:PlantLoopHeatingDemand [J]
+
+ Meters for 1019,ZN_1_FLR_1_SEC_3 VAV BOX REHEAT COIL:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 1020,ZN_1_FLR_1_SEC_3 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:HVAC [J]
+  OnMeter=HeatingCoils:PlantLoopHeatingDemand [J]
+
+ Meters for 1021,ZN_1_FLR_1_SEC_4 VAV BOX REHEAT COIL:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 1022,ZN_1_FLR_1_SEC_4 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:HVAC [J]
+  OnMeter=HeatingCoils:PlantLoopHeatingDemand [J]
+
+ Meters for 1023,ZN_1_FLR_1_SEC_5 VAV BOX REHEAT COIL:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 1024,ZN_1_FLR_1_SEC_5 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:HVAC [J]
+  OnMeter=HeatingCoils:PlantLoopHeatingDemand [J]
+
+ Meters for 1025,VAV WITH REHEAT_HEATC:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 1026,VAV WITH REHEAT_HEATC:Heating Coil Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:HVAC [J]
+  OnMeter=HeatingCoils:PlantLoopHeatingDemand [J]
+
+ Meters for 1027,VAV WITH REHEAT_COOLC:Cooling Coil Total Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=CoolingCoils:EnergyTransfer [J]
+
+ Meters for 1040,VAV WITH REHEAT_COOLC:Cooling Coil Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopCoolingDemand:Facility [J]
+  OnMeter=PlantLoopCoolingDemand:HVAC [J]
+  OnMeter=CoolingCoils:PlantLoopCoolingDemand [J]
+
+ Meters for 1077,ZONE 1 PIU FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 1114,VAV WITH REHEAT FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 1115,EXTERIOR FACADE LIGHTING:Exterior Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=ExteriorLights:Electricity [J]
+  OnMeter=Exterior Facade Lighting:ExteriorLights:Electricity [J]
+
+ Meters for 1140,HEATSYS1 BOILER:Boiler Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=Boilers:EnergyTransfer [J]
+
+ Meters for 1153,HEATSYS1 BOILER:Boiler Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:Plant [J]
+  OnMeter=Heating:Gas [J]
+  OnMeter=Boiler:Heating:Gas [J]
+
+ Meters for 1178,HEATSYS1 BOILER:Boiler Ancillary Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Heating:Electricity [J]
+  OnMeter=Boiler Parasitic:Heating:Electricity [J]
+
+ Meters for 1216,COOLSYSPRIMARY CHILLER:Chiller Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Cooling:Electricity [J]
+  OnMeter=General:Cooling:Electricity [J]
+
+ Meters for 1242,COOLSYSPRIMARY CHILLER:Chiller Evaporator Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=Chillers:EnergyTransfer [J]
+
+ Meters for 1258,COOLSYSPRIMARY CHILLER:Chiller Condenser Heat Transfer Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=HeatRejection:EnergyTransfer [J]
+
+ Meters for 1272,COOLSYSSECONDARY CHILLER:Chiller Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Cooling:Electricity [J]
+  OnMeter=General:Cooling:Electricity [J]
+
+ Meters for 1274,COOLSYSSECONDARY CHILLER:Chiller Evaporator Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=Chillers:EnergyTransfer [J]
+
+ Meters for 1278,COOLSYSSECONDARY CHILLER:Chiller Condenser Heat Transfer Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=HeatRejection:EnergyTransfer [J]
+
+ Meters for 1279,TOWERWATERSYS COOLTOWER:Cooling Tower Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=HeatRejection:Electricity [J]
+  OnMeter=General:HeatRejection:Electricity [J]
+
+ Meters for 1304,TOWERWATERSYS COOLTOWER:Cooling Tower Make Up Water Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:Plant [m3]
+  OnMeter=HeatRejection:Water [m3]
+
+ Meters for 1317,TOWERWATERSYS COOLTOWER:Cooling Tower Make Up Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:Plant [m3]
+  OnMeter=HeatRejection:MainsWater [m3]
+
+ Meters for 1330,SHWSYS1 PUMP:Pump Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Pumps:Electricity [J]
+
+ Meters for 1344,HEATSYS1 PUMP:Pump Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Pumps:Electricity [J]
+
+ Meters for 1346,COOLSYSPRIMARY PUMP:Pump Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Pumps:Electricity [J]
+
+ Meters for 1348,COOLSYSSECONDARY PUMP:Pump Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Pumps:Electricity [J]
+
+ Meters for 1350,TOWERWATERSYS PUMP:Pump Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Pumps:Electricity [J]
+
+ Meters for 1352,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 1377,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 1378,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ For Meter=Electricity:Facility [J], ResourceType=Electricity, contents are:
+  ZN_1_FLR_1_SEC_1_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_2_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_3_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_4_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_5_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_1_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_2_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_3_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_4_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_5_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZONE 1 PIU FAN:Fan Electric Energy
+  VAV WITH REHEAT FAN:Fan Electric Energy
+  EXTERIOR FACADE LIGHTING:Exterior Lights Electric Energy
+  HEATSYS1 BOILER:Boiler Ancillary Electric Energy
+  COOLSYSPRIMARY CHILLER:Chiller Electric Energy
+  COOLSYSSECONDARY CHILLER:Chiller Electric Energy
+  TOWERWATERSYS COOLTOWER:Cooling Tower Fan Electric Energy
+  SHWSYS1 PUMP:Pump Electric Energy
+  HEATSYS1 PUMP:Pump Electric Energy
+  COOLSYSPRIMARY PUMP:Pump Electric Energy
+  COOLSYSSECONDARY PUMP:Pump Electric Energy
+  TOWERWATERSYS PUMP:Pump Electric Energy
+
+ For Meter=Electricity:Building [J], ResourceType=Electricity, Group=Building, contents are:
+  ZN_1_FLR_1_SEC_1_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_2_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_3_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_4_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_5_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_1_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_2_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_3_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_4_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_5_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=Electricity:Zone:ZN_1_FLR_1_SEC_1 [J], ResourceType=Electricity, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_1_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_1_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  ZN_1_FLR_1_SEC_1_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_2_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_3_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_4_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_5_LIGHTS:Lights Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_1 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_1_LIGHTS:Lights Electric Energy
+
+ For Meter=General Lights:InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  ZN_1_FLR_1_SEC_1_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_2_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_3_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_4_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_5_LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:ZN_1_FLR_1_SEC_2 [J], ResourceType=Electricity, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_2_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_2_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_2 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_2_LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:ZN_1_FLR_1_SEC_3 [J], ResourceType=Electricity, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_3_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_3_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_3 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_3_LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:ZN_1_FLR_1_SEC_4 [J], ResourceType=Electricity, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_4_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_4_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_4 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_4_LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:ZN_1_FLR_1_SEC_5 [J], ResourceType=Electricity, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_5_LIGHTS:Lights Electric Energy
+  ZN_1_FLR_1_SEC_5_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:ZN_1_FLR_1_SEC_5 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_5_LIGHTS:Lights Electric Energy
+
+ For Meter=InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  ZN_1_FLR_1_SEC_1_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_2_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_3_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_4_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_5_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_1 [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_1_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=MiscPlug:InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  ZN_1_FLR_1_SEC_1_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_2_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_3_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_4_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+  ZN_1_FLR_1_SEC_5_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_2 [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_2_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_3 [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_3_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_4 [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_4_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:ZN_1_FLR_1_SEC_5 [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_5_MISCPLUG_EQUIP:Electric Equipment Electric Energy
+
+ For Meter=PlantLoopHeatingDemand:Facility [J], ResourceType=PlantLoopHeatingDemand, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_1 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_2 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_3 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_4 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_5 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  VAV WITH REHEAT_HEATC:Heating Coil Source Side Heat Transfer Energy
+
+ For Meter=PlantLoopHeatingDemand:Plant [J], ResourceType=PlantLoopHeatingDemand, Group=Plant, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+
+ For Meter=WaterSystems:PlantLoopHeatingDemand [J], ResourceType=PlantLoopHeatingDemand, EndUse=WaterSystems, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Connections Plant Hot Water Energy
+
+ For Meter=Water Heater:WaterSystems:PlantLoopHeatingDemand [J], ResourceType=PlantLoopHeatingDemand, EndUse=WaterSystems, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Source Side Heat Transfer Energy
+
+ For Meter=Gas:Facility [J], ResourceType=Gas, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Gas Energy
+  SHWSYS1 WATER HEATER:Water Heater Off Cycle Parasitic Gas Energy
+  SHWSYS1 WATER HEATER:Water Heater On Cycle Parasitic Gas Energy
+  HEATSYS1 BOILER:Boiler Gas Energy
+
+ For Meter=Gas:Plant [J], ResourceType=Gas, Group=Plant, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Gas Energy
+  SHWSYS1 WATER HEATER:Water Heater Off Cycle Parasitic Gas Energy
+  SHWSYS1 WATER HEATER:Water Heater On Cycle Parasitic Gas Energy
+  HEATSYS1 BOILER:Boiler Gas Energy
+
+ For Meter=WaterSystems:Gas [J], ResourceType=Gas, EndUse=WaterSystems, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Gas Energy
+  SHWSYS1 WATER HEATER:Water Heater Off Cycle Parasitic Gas Energy
+  SHWSYS1 WATER HEATER:Water Heater On Cycle Parasitic Gas Energy
+
+ For Meter=Water Heater:WaterSystems:Gas [J], ResourceType=Gas, EndUse=WaterSystems, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Gas Energy
+  SHWSYS1 WATER HEATER:Water Heater Off Cycle Parasitic Gas Energy
+  SHWSYS1 WATER HEATER:Water Heater On Cycle Parasitic Gas Energy
+
+ For Meter=Water:Facility [m3], ResourceType=Water, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Water Volume
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Total Volume
+  TOWERWATERSYS COOLTOWER:Cooling Tower Make Up Water Volume
+
+ For Meter=Water:Plant [m3], ResourceType=Water, Group=Plant, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Water Volume
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Total Volume
+  TOWERWATERSYS COOLTOWER:Cooling Tower Make Up Water Volume
+
+ For Meter=WaterSystems:Water [m3], ResourceType=Water, EndUse=WaterSystems, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Water Volume
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Total Volume
+
+ For Meter=Water Heater:WaterSystems:Water [m3], ResourceType=Water, EndUse=WaterSystems, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Water Volume
+
+ For Meter=MainsWater:Facility [m3], ResourceType=MainsWater, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Mains Water Volume
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  TOWERWATERSYS COOLTOWER:Cooling Tower Make Up Mains Water Volume
+
+ For Meter=MainsWater:Plant [m3], ResourceType=MainsWater, Group=Plant, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Mains Water Volume
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  TOWERWATERSYS COOLTOWER:Cooling Tower Make Up Mains Water Volume
+
+ For Meter=WaterSystems:MainsWater [m3], ResourceType=MainsWater, EndUse=WaterSystems, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Mains Water Volume
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Mains Water Volume
+
+ For Meter=Water Heater:WaterSystems:MainsWater [m3], ResourceType=MainsWater, EndUse=WaterSystems, contents are:
+  SHWSYS1 WATER HEATER:Water Heater Mains Water Volume
+
+ For Meter=EnergyTransfer:Facility [J], ResourceType=EnergyTransfer, contents are:
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_1 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_2 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_3 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_4 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_5 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  VAV WITH REHEAT_HEATC:Heating Coil Heating Energy
+  VAV WITH REHEAT_COOLC:Cooling Coil Total Cooling Energy
+  HEATSYS1 BOILER:Boiler Heating Energy
+  COOLSYSPRIMARY CHILLER:Chiller Evaporator Cooling Energy
+  COOLSYSPRIMARY CHILLER:Chiller Condenser Heat Transfer Energy
+  COOLSYSSECONDARY CHILLER:Chiller Evaporator Cooling Energy
+  COOLSYSSECONDARY CHILLER:Chiller Condenser Heat Transfer Energy
+
+ For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_1 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Heating Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_1 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Cooling Energy
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Cooling Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_1 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_1:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_2 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_2 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_2 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_2:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_3 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_3 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_3 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_3:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_4 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_4 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_4 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_4:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:ZN_1_FLR_1_SEC_5 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Heating Energy
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_5 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:ZN_1_FLR_1_SEC_5 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  ZN_1_FLR_1_SEC_5:Zone Air System Sensible Cooling Energy
+
+ For Meter=SHW_DEFAULT:WaterSystems:Water [m3], ResourceType=Water, EndUse=WaterSystems, contents are:
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Total Volume
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Total Volume
+
+ For Meter=SHW_DEFAULT:WaterSystems:MainsWater [m3], ResourceType=MainsWater, EndUse=WaterSystems, contents are:
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Mains Water Volume
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Mains Water Volume
+
+ For Meter=EnergyTransfer:Plant [J], ResourceType=EnergyTransfer, Group=Plant, contents are:
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Heating Energy
+  HEATSYS1 BOILER:Boiler Heating Energy
+  COOLSYSPRIMARY CHILLER:Chiller Evaporator Cooling Energy
+  COOLSYSPRIMARY CHILLER:Chiller Condenser Heat Transfer Energy
+  COOLSYSSECONDARY CHILLER:Chiller Evaporator Cooling Energy
+  COOLSYSSECONDARY CHILLER:Chiller Condenser Heat Transfer Energy
+
+ For Meter=WaterSystems:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=WaterSystems, contents are:
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Heating Energy
+
+ For Meter=SHW_DEFAULT:WaterSystems:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=WaterSystems, contents are:
+  ZN_1_FLR_1_SEC_1SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_2SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_3SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_4SHW_DEFAULT:Water Use Equipment Heating Energy
+  ZN_1_FLR_1_SEC_5SHW_DEFAULT:Water Use Equipment Heating Energy
+
+ For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricityPurchased:Plant [J], ResourceType=ElectricityPurchased, Group=Plant, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricitySurplusSold:Facility [J], ResourceType=ElectricitySurplusSold, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricitySurplusSold:Plant [J], ResourceType=ElectricitySurplusSold, Group=Plant, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricityNet:Facility [J], ResourceType=ElectricityNet, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=ElectricityNet:Plant [J], ResourceType=ElectricityNet, Group=Plant, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=EnergyTransfer:HVAC [J], ResourceType=EnergyTransfer, Group=HVAC, contents are:
+  ZN_1_FLR_1_SEC_1 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_2 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_3 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_4 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_5 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  VAV WITH REHEAT_HEATC:Heating Coil Heating Energy
+  VAV WITH REHEAT_COOLC:Cooling Coil Total Cooling Energy
+
+ For Meter=HeatingCoils:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=HeatingCoils, contents are:
+  ZN_1_FLR_1_SEC_1 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_2 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_3 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_4 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  ZN_1_FLR_1_SEC_5 VAV BOX REHEAT COIL:Heating Coil Heating Energy
+  VAV WITH REHEAT_HEATC:Heating Coil Heating Energy
+
+ For Meter=PlantLoopHeatingDemand:HVAC [J], ResourceType=PlantLoopHeatingDemand, Group=HVAC, contents are:
+  ZN_1_FLR_1_SEC_1 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_2 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_3 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_4 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_5 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  VAV WITH REHEAT_HEATC:Heating Coil Source Side Heat Transfer Energy
+
+ For Meter=HeatingCoils:PlantLoopHeatingDemand [J], ResourceType=PlantLoopHeatingDemand, EndUse=HeatingCoils, contents are:
+  ZN_1_FLR_1_SEC_1 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_2 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_3 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_4 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  ZN_1_FLR_1_SEC_5 VAV BOX REHEAT COIL:Heating Coil Source Side Heat Transfer Energy
+  VAV WITH REHEAT_HEATC:Heating Coil Source Side Heat Transfer Energy
+
+ For Meter=CoolingCoils:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=CoolingCoils, contents are:
+  VAV WITH REHEAT_COOLC:Cooling Coil Total Cooling Energy
+
+ For Meter=PlantLoopCoolingDemand:Facility [J], ResourceType=PlantLoopCoolingDemand, contents are:
+  VAV WITH REHEAT_COOLC:Cooling Coil Source Side Heat Transfer Energy
+
+ For Meter=PlantLoopCoolingDemand:HVAC [J], ResourceType=PlantLoopCoolingDemand, Group=HVAC, contents are:
+  VAV WITH REHEAT_COOLC:Cooling Coil Source Side Heat Transfer Energy
+
+ For Meter=CoolingCoils:PlantLoopCoolingDemand [J], ResourceType=PlantLoopCoolingDemand, EndUse=CoolingCoils, contents are:
+  VAV WITH REHEAT_COOLC:Cooling Coil Source Side Heat Transfer Energy
+
+ For Meter=Electricity:HVAC [J], ResourceType=Electricity, Group=HVAC, contents are:
+  ZONE 1 PIU FAN:Fan Electric Energy
+  VAV WITH REHEAT FAN:Fan Electric Energy
+
+ For Meter=Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  ZONE 1 PIU FAN:Fan Electric Energy
+  VAV WITH REHEAT FAN:Fan Electric Energy
+
+ For Meter=General:Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  ZONE 1 PIU FAN:Fan Electric Energy
+  VAV WITH REHEAT FAN:Fan Electric Energy
+
+ For Meter=ExteriorLights:Electricity [J], ResourceType=Electricity, EndUse=ExteriorLights, contents are:
+  EXTERIOR FACADE LIGHTING:Exterior Lights Electric Energy
+
+ For Meter=Exterior Facade Lighting:ExteriorLights:Electricity [J], ResourceType=Electricity, EndUse=ExteriorLights, contents are:
+  EXTERIOR FACADE LIGHTING:Exterior Lights Electric Energy
+
+ For Meter=Boilers:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Boilers, contents are:
+  HEATSYS1 BOILER:Boiler Heating Energy
+
+ For Meter=Heating:Gas [J], ResourceType=Gas, EndUse=Heating, contents are:
+  HEATSYS1 BOILER:Boiler Gas Energy
+
+ For Meter=Boiler:Heating:Gas [J], ResourceType=Gas, EndUse=Heating, contents are:
+  HEATSYS1 BOILER:Boiler Gas Energy
+
+ For Meter=Electricity:Plant [J], ResourceType=Electricity, Group=Plant, contents are:
+  HEATSYS1 BOILER:Boiler Ancillary Electric Energy
+  COOLSYSPRIMARY CHILLER:Chiller Electric Energy
+  COOLSYSSECONDARY CHILLER:Chiller Electric Energy
+  TOWERWATERSYS COOLTOWER:Cooling Tower Fan Electric Energy
+  SHWSYS1 PUMP:Pump Electric Energy
+  HEATSYS1 PUMP:Pump Electric Energy
+  COOLSYSPRIMARY PUMP:Pump Electric Energy
+  COOLSYSSECONDARY PUMP:Pump Electric Energy
+  TOWERWATERSYS PUMP:Pump Electric Energy
+
+ For Meter=Heating:Electricity [J], ResourceType=Electricity, EndUse=Heating, contents are:
+  HEATSYS1 BOILER:Boiler Ancillary Electric Energy
+
+ For Meter=Boiler Parasitic:Heating:Electricity [J], ResourceType=Electricity, EndUse=Heating, contents are:
+  HEATSYS1 BOILER:Boiler Ancillary Electric Energy
+
+ For Meter=Cooling:Electricity [J], ResourceType=Electricity, EndUse=Cooling, contents are:
+  COOLSYSPRIMARY CHILLER:Chiller Electric Energy
+  COOLSYSSECONDARY CHILLER:Chiller Electric Energy
+
+ For Meter=General:Cooling:Electricity [J], ResourceType=Electricity, EndUse=Cooling, contents are:
+  COOLSYSPRIMARY CHILLER:Chiller Electric Energy
+  COOLSYSSECONDARY CHILLER:Chiller Electric Energy
+
+ For Meter=Chillers:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Chillers, contents are:
+  COOLSYSPRIMARY CHILLER:Chiller Evaporator Cooling Energy
+  COOLSYSSECONDARY CHILLER:Chiller Evaporator Cooling Energy
+
+ For Meter=HeatRejection:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=HeatRejection, contents are:
+  COOLSYSPRIMARY CHILLER:Chiller Condenser Heat Transfer Energy
+  COOLSYSSECONDARY CHILLER:Chiller Condenser Heat Transfer Energy
+
+ For Meter=HeatRejection:Electricity [J], ResourceType=Electricity, EndUse=HeatRejection, contents are:
+  TOWERWATERSYS COOLTOWER:Cooling Tower Fan Electric Energy
+
+ For Meter=General:HeatRejection:Electricity [J], ResourceType=Electricity, EndUse=HeatRejection, contents are:
+  TOWERWATERSYS COOLTOWER:Cooling Tower Fan Electric Energy
+
+ For Meter=HeatRejection:Water [m3], ResourceType=Water, EndUse=HeatRejection, contents are:
+  TOWERWATERSYS COOLTOWER:Cooling Tower Make Up Water Volume
+
+ For Meter=HeatRejection:MainsWater [m3], ResourceType=MainsWater, EndUse=HeatRejection, contents are:
+  TOWERWATERSYS COOLTOWER:Cooling Tower Make Up Mains Water Volume
+
+ For Meter=Pumps:Electricity [J], ResourceType=Electricity, EndUse=Pumps, contents are:
+  SHWSYS1 PUMP:Pump Electric Energy
+  HEATSYS1 PUMP:Pump Electric Energy
+  COOLSYSPRIMARY PUMP:Pump Electric Energy
+  COOLSYSSECONDARY PUMP:Pump Electric Energy
+  TOWERWATERSYS PUMP:Pump Electric Energy
+
+ For Meter=Carbon Equivalent:Facility [kg], ResourceType=Carbon Equivalent, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
+
+ For Meter=CarbonEquivalentEmissions:Carbon Equivalent [kg], ResourceType=Carbon Equivalent, EndUse=CarbonEquivalentEmissions, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass

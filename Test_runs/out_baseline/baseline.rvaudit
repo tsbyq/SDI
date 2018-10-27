@@ -1,0 +1,13 @@
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Test_runs\in.rvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_baseline\baseline.eso
+ output file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_baseline\baseline.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_baseline\baseline.eso
+  number variables requested for output=          16
+ ReadVars Run Time=00hr 00min  5.30sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Test_runs\in.mvi
+ Requested ESO file=C:\Users\Han\Documents\GitHub\SDI\Test_runs\out_baseline\baseline.mtr
+ does not exist.  ReadVarsESO program terminated.
+ ReadVarsESO program terminated.

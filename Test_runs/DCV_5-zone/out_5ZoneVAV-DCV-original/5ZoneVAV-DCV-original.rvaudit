@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\in.rvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-original\5ZoneVAV-DCV-original.eso
+ output file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-original\5ZoneVAV-DCV-original.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-original\5ZoneVAV-DCV-original.eso
+  number variables requested for output=           7
+ ReadVars Run Time=00hr 00min  0.47sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\in.mvi
+ input file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-original\5ZoneVAV-DCV-original.mtr
+ output file:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-original\5ZoneVAV-DCV-original-meter.csv
+ getting all vars from:C:\Users\Han\Documents\GitHub\SDI\Test_runs\DCV_5-zone\out_5ZoneVAV-DCV-original\5ZoneVAV-DCV-original.mtr
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.27sec
+ ReadVarsESO program completed successfully.

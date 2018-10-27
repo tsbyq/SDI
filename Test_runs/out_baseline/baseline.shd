@@ -1,0 +1,451 @@
+Shadowing Combinations
+..Solar Distribution=FullExterior
+..In the following, only the first 10 reference surfaces will be shown.
+..But all surfaces are used in the calculations.
+==================================
+Surface=BUSHES-SOUTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-BUSHES-SOUTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=21
+..Surface=Mir-BUSHES-NORTH
+..Surface=Mir-BUSHES-WEST
+..Surface=Mir-BUSHES-EAST
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=ZN001:WALL001:SHADE003 Left
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=ZN001:WALL001:SHADE003 Right
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BUSHES-NORTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-BUSHES-NORTH is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=21
+..Surface=Mir-BUSHES-SOUTH
+..Surface=Mir-BUSHES-WEST
+..Surface=Mir-BUSHES-EAST
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=ZN001:WALL001:SHADE003 Left
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=ZN001:WALL001:SHADE003 Right
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BUSHES-WEST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-BUSHES-WEST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=23
+..Surface=Mir-BUSHES-SOUTH
+..Surface=Mir-BUSHES-NORTH
+..Surface=Mir-BUSHES-EAST
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=ZN001:WALL001:SHADE003 Left
+..Surface=ZN001:WALL001:SHADE003 Right
+..Surface=ZN002:WALL002:SHADE002 Left
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=BUSHES-EAST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-BUSHES-EAST is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=23
+..Surface=Mir-BUSHES-SOUTH
+..Surface=Mir-BUSHES-NORTH
+..Surface=Mir-BUSHES-WEST
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=Mir-ZN001:WALL001:SHADE003 Right
+..Surface=ZN002:WALL002:SHADE002 Left
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:WALL001:WIN001:SHADE001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=2
+..Surface=ZN001:WALL001
+..Surface=ZN002:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-ZN001:WALL001:WIN001:SHADE001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=ZN001:WALL001
+..Surface=ZN002:WALL001
+..Surface=ZN003:WALL001
+..Surface=ZN004:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:WALL001:DOOR001:SHADE001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=6
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=Mir-ZN001:WALL001:SHADE003 Right
+..Surface=ZN002:WALL002:SHADE002 Left
+..Surface=ZN002:WALL002:SHADE002 Right
+..Surface=ZN001:WALL001
+..Surface=ZN002:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-ZN001:WALL001:DOOR001:SHADE001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=11
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=Mir-ZN001:WALL001:SHADE003 Right
+..Surface=ZN002:WALL002:SHADE002 Left
+..Surface=ZN002:WALL002:SHADE002 Right
+..Surface=ZN001:WALL001
+..Surface=ZN002:WALL001
+..Surface=ZN003:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:WALL001:WIN001:SHADE001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=2
+..Surface=ZN001:WALL001
+..Surface=ZN002:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-ZN002:WALL001:WIN001:SHADE001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=ZN001:WALL001
+..Surface=ZN002:WALL001
+..Surface=ZN003:WALL001
+..Surface=ZN004:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:WALL002:WIN001:SHADE001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=1
+..Surface=ZN002:WALL002
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-ZN002:WALL002:WIN001:SHADE001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=2
+..Surface=ZN002:WALL002
+..Surface=ZN004:WALL002
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:WALL001:SHADE003 Left is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001
+..Surface=ZN003:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-ZN001:WALL001:SHADE003 Left is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=11
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=ZN001:WALL001:SHADE003 Right
+..Surface=ZN002:WALL002:SHADE002 Left
+..Surface=ZN002:WALL002:SHADE002 Right
+..Surface=ZN001:WALL001
+..Surface=ZN002:WALL001
+..Surface=ZN003:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:WALL001:SHADE003 Right is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=ZN001:WALL001
+..Surface=ZN003:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-ZN001:WALL001:SHADE003 Right is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=10
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=ZN002:WALL002:SHADE002 Left
+..Surface=ZN002:WALL002:SHADE002 Right
+..Surface=ZN001:WALL001
+..Surface=ZN002:WALL001
+..Surface=ZN003:WALL001
+..Surface=ZN004:WALL001
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:WALL002:SHADE002 Left is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=7
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=Mir-ZN001:WALL001:SHADE003 Right
+..Surface=ZN002:WALL002
+..Surface=ZN004:WALL002
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-ZN002:WALL002:SHADE002 Left is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=4
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=ZN002:WALL002:SHADE002 Right
+..Surface=ZN002:WALL002
+..Surface=ZN004:WALL002
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:WALL002:SHADE002 Right is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=9
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=Mir-ZN001:WALL001:SHADE003 Right
+..Surface=Mir-ZN002:WALL002:SHADE002 Left
+..Surface=ZN002:WALL002
+..Surface=ZN004:WALL002
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=Mir-ZN002:WALL002:SHADE002 Right is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=2
+..Surface=ZN002:WALL002
+..Surface=ZN004:WALL002
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:WALL001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=10
+..Surface=Mir-BUSHES-SOUTH
+..Surface=Mir-BUSHES-WEST
+..Surface=Mir-BUSHES-EAST
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:SHADE003 Left
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=ZN001:WALL001:SHADE003 Right
+..Surface=Mir-ZN001:WALL001:SHADE003 Right
+Number of back surfaces=0
+Number of receiving sub surfaces=2
+....Surface=ZN001:WALL001:WIN001
+....Surface=ZN001:WALL001:DOOR001
+==================================
+Surface=ZN001:WALL001:WIN001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:WALL001:DOOR001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:WALL002 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=Mir-BUSHES-NORTH
+..Surface=Mir-BUSHES-WEST
+..Surface=Mir-BUSHES-EAST
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:WALL003 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=Mir-BUSHES-SOUTH
+..Surface=Mir-BUSHES-NORTH
+..Surface=Mir-BUSHES-WEST
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:WALL004 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:FLR001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN001:ROOF001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:WALL001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=8
+..Surface=Mir-BUSHES-SOUTH
+..Surface=Mir-BUSHES-WEST
+..Surface=Mir-BUSHES-EAST
+..Surface=ZN001:WALL001:WIN001:SHADE001
+..Surface=ZN001:WALL001:DOOR001:SHADE001
+..Surface=ZN002:WALL001:WIN001:SHADE001
+..Surface=Mir-ZN001:WALL001:SHADE003 Left
+..Surface=Mir-ZN001:WALL001:SHADE003 Right
+Number of back surfaces=0
+Number of receiving sub surfaces=2
+....Surface=ZN002:WALL001:WIN001
+....Surface=ZN002:WALL001:WIN002
+==================================
+Surface=ZN002:WALL001:WIN001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:WALL001:WIN002 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:WALL002 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=8
+..Surface=Mir-BUSHES-SOUTH
+..Surface=Mir-BUSHES-NORTH
+..Surface=Mir-BUSHES-EAST
+..Surface=ZN002:WALL002:WIN001:SHADE001
+..Surface=ZN002:WALL002:SHADE002 Left
+..Surface=Mir-ZN002:WALL002:SHADE002 Left
+..Surface=ZN002:WALL002:SHADE002 Right
+..Surface=Mir-ZN002:WALL002:SHADE002 Right
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=ZN002:WALL002:WIN001
+==================================
+Surface=ZN002:WALL002:WIN001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:WALL003 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=Mir-BUSHES-NORTH
+..Surface=Mir-BUSHES-WEST
+..Surface=Mir-BUSHES-EAST
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:WALL004 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:FLR001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN002:ROOF001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN003:WALL001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=ZN003:WALL001:WIN001
+==================================
+Surface=ZN003:WALL001:WIN001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN003:WALL002 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN003:WALL003 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN003:WALL004 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN003:WALL004:WIN001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN003:FLR001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN003:ROOF001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN004:WALL001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=1
+....Surface=ZN004:WALL001:WIN001
+==================================
+Surface=ZN004:WALL001:WIN001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN004:WALL002 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN004:WALL003 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN004:WALL004 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN004:WALL004:WIN001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN004:FLR001 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ZN004:ROOF001 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0

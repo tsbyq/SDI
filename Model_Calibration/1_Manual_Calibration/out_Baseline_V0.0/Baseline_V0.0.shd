@@ -1,0 +1,562 @@
+Shadowing Combinations
+..Solar Distribution=FullInteriorAndExterior
+..In the following, only the first 10 reference surfaces will be shown.
+..But all surfaces are used in the calculations.
+==================================
+Surface=S1 OFFICE BACK BACK_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=5
+...Surface=S1 OFFICE BACK FRONT_WALL
+...Surface=S1 OFFICE BACK LEFT_WALL
+...Surface=S1 OFFICE BACK RIGHT_WALL
+...Surface=S1 OFFICE BACK FLOOR
+...Surface=S1 OFFICE BACK ROOF
+Number of receiving sub surfaces=1
+....Surface=S1 OFFICE BACK BACK_WALL WIN_1
+==================================
+Surface=S1 OFFICE BACK BACK_WALL WIN_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE BACK FRONT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE BACK LEFT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE BACK RIGHT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE BACK FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE BACK ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE BACK INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE CORE BACK_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE CORE FRONT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE CORE LEFT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE CORE RIGHT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE CORE FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE CORE ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE CORE INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE FRONT BACK_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE FRONT FRONT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=5
+...Surface=S1 OFFICE FRONT BACK_WALL
+...Surface=S1 OFFICE FRONT LEFT_WALL
+...Surface=S1 OFFICE FRONT RIGHT_WALL
+...Surface=S1 OFFICE FRONT FLOOR
+...Surface=S1 OFFICE FRONT ROOF
+Number of receiving sub surfaces=1
+....Surface=S1 OFFICE FRONT FRONT_WALL WIN_1
+==================================
+Surface=S1 OFFICE FRONT FRONT_WALL WIN_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE FRONT LEFT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE FRONT RIGHT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE FRONT FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE FRONT ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE FRONT INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE LEFT BACK_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE LEFT FRONT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE LEFT LEFT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=5
+...Surface=S1 OFFICE LEFT BACK_WALL
+...Surface=S1 OFFICE LEFT FRONT_WALL
+...Surface=S1 OFFICE LEFT RIGHT_WALL
+...Surface=S1 OFFICE LEFT FLOOR
+...Surface=S1 OFFICE LEFT ROOF
+Number of receiving sub surfaces=1
+....Surface=S1 OFFICE LEFT LEFT_WALL WIN_1
+==================================
+Surface=S1 OFFICE LEFT LEFT_WALL WIN_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE LEFT RIGHT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE LEFT FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE LEFT ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE LEFT INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE RIGHT BACK_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE RIGHT FRONT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE RIGHT LEFT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE RIGHT RIGHT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=5
+...Surface=S1 OFFICE RIGHT BACK_WALL
+...Surface=S1 OFFICE RIGHT FRONT_WALL
+...Surface=S1 OFFICE RIGHT LEFT_WALL
+...Surface=S1 OFFICE RIGHT FLOOR
+...Surface=S1 OFFICE RIGHT ROOF
+Number of receiving sub surfaces=1
+....Surface=S1 OFFICE RIGHT RIGHT_WALL WIN_1
+==================================
+Surface=S1 OFFICE RIGHT RIGHT_WALL WIN_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE RIGHT FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE RIGHT ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 OFFICE RIGHT INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM BACK_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM FRONT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM LEFT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM RIGHT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM BACK_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM CORE_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM FRONT_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM LEFT_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM RIGHT_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM BACK_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM CORE_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM LEFT_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM RIGHT_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S1 PLENUM SOUTH_CEILING is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE BACK BACK_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=5
+...Surface=S2 OFFICE BACK FRONT_WALL
+...Surface=S2 OFFICE BACK LEFT_WALL
+...Surface=S2 OFFICE BACK RIGHT_WALL
+...Surface=S2 OFFICE BACK FLOOR
+...Surface=S2 OFFICE BACK ROOF
+Number of receiving sub surfaces=1
+....Surface=S2 OFFICE BACK BACK_WALL WIN_1
+==================================
+Surface=S2 OFFICE BACK BACK_WALL WIN_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE BACK FRONT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE BACK LEFT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE BACK RIGHT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE BACK FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE BACK ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE BACK INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE CORE BACK_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE CORE FRONT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE CORE LEFT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE CORE RIGHT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE CORE FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE CORE ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE CORE INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE FRONT BACK_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE FRONT FRONT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=5
+...Surface=S2 OFFICE FRONT BACK_WALL
+...Surface=S2 OFFICE FRONT LEFT_WALL
+...Surface=S2 OFFICE FRONT RIGHT_WALL
+...Surface=S2 OFFICE FRONT FLOOR
+...Surface=S2 OFFICE FRONT ROOF
+Number of receiving sub surfaces=1
+....Surface=S2 OFFICE FRONT FRONT_WALL WIN_1
+==================================
+Surface=S2 OFFICE FRONT FRONT_WALL WIN_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE FRONT LEFT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE FRONT RIGHT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE FRONT FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE FRONT ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE FRONT INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE LEFT BACK_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE LEFT FRONT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE LEFT LEFT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=5
+...Surface=S2 OFFICE LEFT BACK_WALL
+...Surface=S2 OFFICE LEFT FRONT_WALL
+...Surface=S2 OFFICE LEFT RIGHT_WALL
+...Surface=S2 OFFICE LEFT FLOOR
+...Surface=S2 OFFICE LEFT ROOF
+Number of receiving sub surfaces=1
+....Surface=S2 OFFICE LEFT LEFT_WALL WIN_1
+==================================
+Surface=S2 OFFICE LEFT LEFT_WALL WIN_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE LEFT RIGHT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE LEFT FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE LEFT ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE LEFT INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE RIGHT BACK_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE RIGHT FRONT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE RIGHT LEFT_WALL is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE RIGHT RIGHT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=5
+...Surface=S2 OFFICE RIGHT BACK_WALL
+...Surface=S2 OFFICE RIGHT FRONT_WALL
+...Surface=S2 OFFICE RIGHT LEFT_WALL
+...Surface=S2 OFFICE RIGHT FLOOR
+...Surface=S2 OFFICE RIGHT ROOF
+Number of receiving sub surfaces=1
+....Surface=S2 OFFICE RIGHT RIGHT_WALL WIN_1
+==================================
+Surface=S2 OFFICE RIGHT RIGHT_WALL WIN_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE RIGHT FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE RIGHT ROOF is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 OFFICE RIGHT INTERNAL MASS 1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM BACK_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM FRONT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM LEFT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM RIGHT_WALL is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM BACK_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM CORE_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM FRONT_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM LEFT_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM RIGHT_FLOOR is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=S2 PLENUM WHOLE_CEILING is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
