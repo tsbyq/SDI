@@ -12030,17 +12030,22 @@ Schedule:File,ZN 2_core_MeasuredTemperature,Any Number,HybridModel_Measurements.
 Schedule:File,ZN 3_front_MeasuredTemperature,Any Number,HybridModel_Measurements.csv,8,1,8760,Comma,,10;
 Schedule:File,ZN 4_left_MeasuredTemperature,Any Number,HybridModel_Measurements.csv,9,1,8760,Comma,,10;
 Schedule:File,ZN 5_right_MeasuredTemperature,Any Number,HybridModel_Measurements.csv,10,1,8760,Comma,,10;
-Schedule:File,ZN 1_back_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,11,1,8760,Comma,,10;
-Schedule:File,ZN 2_core_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,12,1,8760,Comma,,10;
-Schedule:File,ZN 3_front_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,13,1,8760,Comma,,10;
-Schedule:File,ZN 4_left_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,14,1,8760,Comma,,10;
-Schedule:File,ZN 5_right_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,15,1,8760,Comma,,10;
-Schedule:File,ZN 1_back_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,16,1,8760,Comma,,10;
-Schedule:File,ZN 2_core_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,17,1,8760,Comma,,10;
-Schedule:File,ZN 3_front_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,18,1,8760,Comma,,10;
-Schedule:File,ZN 4_left_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,19,1,8760,Comma,,10;
-Schedule:File,ZN 5_right_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,20,1,8760,Comma,,10;
+! Schedule:File,ZN 1_back_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,11,1,8760,Comma,,10;
+! Schedule:File,ZN 2_core_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,12,1,8760,Comma,,10;
+! Schedule:File,ZN 3_front_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,13,1,8760,Comma,,10;
+! Schedule:File,ZN 4_left_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,14,1,8760,Comma,,10;
+! Schedule:File,ZN 5_right_MeasuredHumidityRatio,Any Number,HybridModel_Measurements.csv,15,1,8760,Comma,,10;
+! Schedule:File,ZN 1_back_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,16,1,8760,Comma,,10;
+! Schedule:File,ZN 2_core_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,17,1,8760,Comma,,10;
+! Schedule:File,ZN 3_front_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,18,1,8760,Comma,,10;
+! Schedule:File,ZN 4_left_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,19,1,8760,Comma,,10;
+! Schedule:File,ZN 5_right_MeasuredCO2Concentration,Any Number,HybridModel_Measurements.csv,20,1,8760,Comma,,10;
 
+
+ZoneAirContaminantBalance,
+    Yes,                     !- Carbon Dioxide Concentration
+    ZONE Out_DummyCO2Concentration,  !- Outdoor Carbon Dioxide Schedule Name
+    No;                      !- Generic Contaminant Concentration
 
 
 HybridModel:Zone,
@@ -12052,10 +12057,10 @@ HybridModel:Zone,
     ZN 1_back_MeasuredTemperature,  !- Zone Measured Air Temperature Schedule Name
     ,                        !- Zone Measured Air Humidity Ratio Schedule Name
     ,                        !- Zone Measured Air CO2 Concentration Schedule Name
-    office activity year,                        !- Zone Input People Activity Schedule Name
-    People Sensible Heat Fraction Sch,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
-    People Radiation Heat Fraction Sch,                        !- Zone Input People Radiant Heat Fraction Schedule Name
-    People CO2 Generation Rate Sch,                        !- Zone Input People CO2 Generation Rate Schedule Name
+    ,                        !- Zone Input People Activity Schedule Name
+    ,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
+    ,                        !- Zone Input People Radiant Heat Fraction Schedule Name
+    ,                        !- Zone Input People CO2 Generation Rate Schedule Name
     ,                        !- Zone Input Supply Air Temperature Schedule Name
     ,                        !- Zone Input Supply Air Mass Flow Rate Schedule Name
     ,                        !- Zone Input Supply Air Humidity Ratio Schedule Name
@@ -12074,10 +12079,10 @@ HybridModel:Zone,
     ZN 2_core_MeasuredTemperature,  !- Zone Measured Air Temperature Schedule Name
     ,                        !- Zone Measured Air Humidity Ratio Schedule Name
     ,                        !- Zone Measured Air CO2 Concentration Schedule Name
-    office activity year,                        !- Zone Input People Activity Schedule Name
-    People Sensible Heat Fraction Sch,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
-    People Radiation Heat Fraction Sch,                        !- Zone Input People Radiant Heat Fraction Schedule Name
-    People CO2 Generation Rate Sch,                        !- Zone Input People CO2 Generation Rate Schedule Name
+    ,                        !- Zone Input People Activity Schedule Name
+    ,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
+    ,                        !- Zone Input People Radiant Heat Fraction Schedule Name
+    ,                        !- Zone Input People CO2 Generation Rate Schedule Name
     ,                        !- Zone Input Supply Air Temperature Schedule Name
     ,                        !- Zone Input Supply Air Mass Flow Rate Schedule Name
     ,                        !- Zone Input Supply Air Humidity Ratio Schedule Name
@@ -12096,10 +12101,10 @@ HybridModel:Zone,
     ZN 3_front_MeasuredTemperature,  !- Zone Measured Air Temperature Schedule Name
     ,                        !- Zone Measured Air Humidity Ratio Schedule Name
     ,                        !- Zone Measured Air CO2 Concentration Schedule Name
-    office activity year,                        !- Zone Input People Activity Schedule Name
-    People Sensible Heat Fraction Sch,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
-    People Radiation Heat Fraction Sch,                        !- Zone Input People Radiant Heat Fraction Schedule Name
-    People CO2 Generation Rate Sch,                        !- Zone Input People CO2 Generation Rate Schedule Name
+    ,                        !- Zone Input People Activity Schedule Name
+    ,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
+    ,                        !- Zone Input People Radiant Heat Fraction Schedule Name
+    ,                        !- Zone Input People CO2 Generation Rate Schedule Name
     ,                        !- Zone Input Supply Air Temperature Schedule Name
     ,                        !- Zone Input Supply Air Mass Flow Rate Schedule Name
     ,                        !- Zone Input Supply Air Humidity Ratio Schedule Name
@@ -12118,10 +12123,10 @@ HybridModel:Zone,
     ZN 4_left_MeasuredTemperature,  !- Zone Measured Air Temperature Schedule Name
     ,                        !- Zone Measured Air Humidity Ratio Schedule Name
     ,                        !- Zone Measured Air CO2 Concentration Schedule Name
-    office activity year,                        !- Zone Input People Activity Schedule Name
-    People Sensible Heat Fraction Sch,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
-    People Radiation Heat Fraction Sch,                        !- Zone Input People Radiant Heat Fraction Schedule Name
-    People CO2 Generation Rate Sch,                        !- Zone Input People CO2 Generation Rate Schedule Name
+    ,                        !- Zone Input People Activity Schedule Name
+    ,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
+    ,                        !- Zone Input People Radiant Heat Fraction Schedule Name
+    ,                        !- Zone Input People CO2 Generation Rate Schedule Name
     ,                        !- Zone Input Supply Air Temperature Schedule Name
     ,                        !- Zone Input Supply Air Mass Flow Rate Schedule Name
     ,                        !- Zone Input Supply Air Humidity Ratio Schedule Name
@@ -12140,10 +12145,10 @@ HybridModel:Zone,
     ZN 5_right_MeasuredTemperature,  !- Zone Measured Air Temperature Schedule Name
     ,                        !- Zone Measured Air Humidity Ratio Schedule Name
     ,                        !- Zone Measured Air CO2 Concentration Schedule Name
-    office activity year,                        !- Zone Input People Activity Schedule Name
-    People Sensible Heat Fraction Sch,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
-    People Radiation Heat Fraction Sch,                        !- Zone Input People Radiant Heat Fraction Schedule Name
-    People CO2 Generation Rate Sch,                        !- Zone Input People CO2 Generation Rate Schedule Name
+    ,                        !- Zone Input People Activity Schedule Name
+    ,                        !- Zone Input People Sensivle Heat Fraction Schedule Name
+    ,                        !- Zone Input People Radiant Heat Fraction Schedule Name
+    ,                        !- Zone Input People CO2 Generation Rate Schedule Name
     ,                        !- Zone Input Supply Air Temperature Schedule Name
     ,                        !- Zone Input Supply Air Mass Flow Rate Schedule Name
     ,                        !- Zone Input Supply Air Humidity Ratio Schedule Name
@@ -12152,32 +12157,6 @@ HybridModel:Zone,
     1,                       !- Begin Day of Month
     12,                      !- End Month
     31;                      !- End Day of Month
-
-
-
-Schedule:Compact,
-    People Sensible Heat Fraction Sch,             !- Name
-    Fraction,                !- Schedule Type Limits Name
-    Through: 12/31,          !- Field 1
-    For: AllDays,            !- Field 2
-    Until: 24:00,            !- Field 3
-    0.6;                     !- Field 4
-
-Schedule:Compact,
-    People Radiation Heat Fraction Sch,             !- Name
-    Fraction,                !- Schedule Type Limits Name
-    Through: 12/31,          !- Field 1
-    For: AllDays,            !- Field 2
-    Until: 24:00,            !- Field 3
-    0.3;                     !- Field 4
-
-Schedule:Compact,
-    People CO2 Generation Rate Sch,             !- Name
-    Fraction,                !- Schedule Type Limits Name
-    Through: 12/31,          !- Field 1
-    For: AllDays,            !- Field 2
-    Until: 24:00,            !- Field 3
-    0.0000000382;            !- Field 4
 
 
 !-   ===========  ALL OBJECTS IN CLASS: OUTPUT:VARIABLEDICTIONARY ===========
@@ -12213,8 +12192,8 @@ Output:SQLite,
     SimpleAndTabular;        !- Option Type
 
 
-Output:Meter,Electricity:Facility,Hourly; !- [J]
-Output:Meter,Gas:Facility,Hourly; !- [J]
+Output:Meter,Electricity:Facility,Timestep; !- [J]
+Output:Meter,Gas:Facility,Timestep; !- [J]
 
 ! Output:Variable,*,Zone Infiltration Air Change Rate,hourly; !- HVAC Average [ach]
 ! Output:Variable,*,Zone People Occupant Count,hourly; !- Zone Average []

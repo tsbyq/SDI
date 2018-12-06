@@ -8336,36 +8336,6 @@ Schedule:Compact,
     Until: 24:00,             !- Field 27
     3;                        !- Field 28
 
-Schedule:Compact,
-    ZONE HEATING SETPOINTS,    !- Name
-    TEMPERATURE,              !- Schedule Type Limits Name
-    Through: 12/31,           !- Field 1
-    For: Weekdays WinterDesignDay,    !- Field 2
-    Until: 7:00,              !- Field 3
-    -100.00,                  !- Field 4
-    Until: 17:00,             !- Field 5
-    -100.00,                  !- Field 6
-    Until: 24:00,             !- Field 7
-    -100.00,                  !- Field 8
-    For: AllOtherDays,        !- Field 9
-    Until: 24:00,             !- Field 10
-    -100.00;                  !- Field 11
-
-Schedule:Compact,
-    ZONE COOLING SETPOINTS,    !- Name
-    TEMPERATURE,              !- Schedule Type Limits Name
-    Through: 12/31,           !- Field 1
-    For: Weekdays SummerDesignDay,    !- Field 2
-    Until: 7:00,              !- Field 3
-    100.00,                   !- Field 4
-    Until: 17:00,             !- Field 5
-    100.00,                   !- Field 6
-    Until: 24:00,             !- Field 7
-    100.00,                   !- Field 8
-    For: AllOtherDays,        !- Field 9
-    Until: 24:00,             !- Field 10
-    100.00;                   !- Field 11
-
 Schedule:Constant,
     Always On Discrete,       !- Name
     Schedule Type Limits 1,    !- Schedule Type Limits Name
@@ -8405,17 +8375,6 @@ Schedule:Constant,
     water heating coil deck temp,    !- Name
     temp_setpoint,            !- Schedule Type Limits Name
     12.7778;                  !- Hourly Value
-
-Schedule:File,
-    ZONE Out_DummyCO2Concentration,    !- Name
-    Any Number,               !- Schedule Type Limits Name
-    HybridModel_Measurements.csv,    !- File Name
-    4,                        !- Column Number
-    1,                        !- Rows to Skip at Top
-    8760.0,                   !- Number of Hours of Data
-    Comma,                    !- Column Separator
-    ,                         !- Interpolate to Timestep
-    10;                       !- Minutes per Item
 
 Material,
     Insulation 1m,            !- Name
@@ -11751,11 +11710,11 @@ OutputControl:ReportingTolerances,
 
 Output:Meter,
     Electricity:Facility,     !- Key Name
-    Monthly;                  !- Reporting Frequency
+    Hourly;                  !- Reporting Frequency
 
 Output:Meter,
     Gas:Facility,             !- Key Name
-    Monthly;                  !- Reporting Frequency
+    Hourly;                  !- Reporting Frequency
 
 Output:SQLite,
     SimpleAndTabular;         !- Option Type

@@ -249,7 +249,8 @@ We propose to revise the current HybridModel:Zone. The revised object defines in
 \begin{verbatim}
 HybridModel:Zone,
        \memo Zones with measured air temperature data and a range of dates.
-       \memo If the range of temperature measurement dates includes a leap day, the weather data should include a leap day.
+       \memo If the range of temperature measurement dates includes a leap day, 
+       the weather data should include a leap day.
   A1 , \field Name
        \required-field
        \type alpha
@@ -258,22 +259,23 @@ HybridModel:Zone,
        \type object-list
        \object-list ZoneNames
   A3 , \field Calculate Zone Internal Thermal Mass
-       \note Use measured data (temperature, humidity ratio, or CO2 concentration) to calculate zone temperature capacity multiplier.
-       \note At leat one measured parameter should be provided to calculate the thermal mass.
+       \note Use measured temperature to calculate zone temperature capacity multiplier.
        \type choice
        \key No
        \key Yes
        \default No
   A4 , \field Calculate Zone Air Infiltration Rate
-       \note Use measured temperature data (temperature, humidity ratio, or CO2 concentration) to calculate zone air infiltration air flow rate.
-       \note At leat one measured parameter should be provided to calculate the thermal mass.
+       \note Use measured zone air parameters (temperature, humidity ratio, 
+       or CO2 concentration) to calculate zone air infiltration air flow rate.
+       \note At least one measured parameter should be provided.
        \type choice
        \key No
        \key Yes
        \default No
   A5 , \field Calculate Zone People Count
-       \note Use measured humidity ratio data (temperature, humidity ratio, or CO2 concentration) to calculate zone people count.
-       \note At leat one measured parameter should be provided to calculate the thermal mass.
+       \note Use measured humidity ratio data (temperature, humidity ratio, 
+       or CO2 concentration) to calculate zone people count.
+       \note At least one measured parameter should be provided..
        \type choice
        \key No
        \key Yes
@@ -281,47 +283,47 @@ HybridModel:Zone,
   A6 , \field Zone Measured Air Temperature Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the measured zone air temperature.
   A7 , \field Zone Measured Air Humidity Ratio Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the measured zone air humidity ratio.
   A8 , \field Zone Measured Air CO2 Concentration Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the measured zone air CO2 concentration.
   A9 , \field Zone Input People Activity Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
-  A10 , \field Zone Input People Sensivle Heat Fraction Schedule Name
+       \note Schedule name of the zone people activity level
+  A10 , \field Zone Input People Sensible Heat Fraction Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the people's sensible heat fraction.
   A11 , \field Zone Input People Radiant Heat Fraction Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the people's radiant heat fraction.
   A12 , \field Zone Input People CO2 Generation Rate Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the people's CO2 generation rate.
   A13 , \field Zone Input Supply Air Temperature Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the system supply air temperature of the zone.
   A14 , \field Zone Input Supply Air Mass Flow Rate Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the system supply air mass flow rate of the zone.
   A15 , \field Zone Input Supply Air Humidity Ratio Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the system supply air humidity ratio of the zone.
   A16 , \field Zone Input Supply Air CO2 Concentration Schedule Name
        \type object-list
        \object-list ScheduleNames
-       \note from Schedule:File
+       \note Schedule name of the system supply air CO2 concentration of the zone.
   N1 , \field Begin Month
        \required-field
        \minimum 1

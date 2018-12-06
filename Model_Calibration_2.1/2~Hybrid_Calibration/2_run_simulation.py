@@ -33,10 +33,13 @@ def main(run = False):
     dir_name = os.path.dirname(os.path.realpath(__file__))
     files = os.listdir(dir_name)
 
-    run_files = ['Baseline.idf', 'Calibrating.idf']
-    run_files = ['Tweaked.idf']
-    run_files = ['Baseline_HM.idf']
-    run_files = ['Calibrating.idf']
+    run_files = ['Baseline.idf', 'Calibrating.idf', 'Tweaked.idf']
+    # run_files = ['Tweaked.idf']
+    # run_files = ['Calibrating.idf']
+    # run_files = ['Baseline_HM.idf']
+    run_files = ['Calibrating_HM_Occ_ACH.idf']
+    # run_files = ['Calibrating_HM_ACH.idf']
+    # run_files = ['Calibrating_HM_ACH.idf']
 
     i = 0
     for file in files:

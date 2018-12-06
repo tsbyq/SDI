@@ -1,4 +1,4 @@
-Program Version:,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.10.26 12:38
+Program Version:,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.11.02 16:42
 Tabular Output Report in Format: ,Comma
 
 Building:,Building 1
@@ -176,7 +176,7 @@ FOR:,Entire Facility
 General
 
 ,,Value
-,Program Version and Build,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.10.26 12:38
+,Program Version and Build,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.11.02 16:42
 ,RunPeriod,RUN PERIOD 1
 ,Weather File,Pittsburgh International Ap PA USA TMY3 WMO#=725200
 ,Latitude [deg],40.50

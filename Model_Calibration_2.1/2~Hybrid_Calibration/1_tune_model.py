@@ -1,6 +1,7 @@
 import os
 import sys
 from eppy.modeleditor import IDF
+import shutil
 
 
 def run_single(idf_name_in, epw_name):
@@ -36,11 +37,21 @@ def modify_object_property(material, property_name, times = 1, new_val = None):
     #     print("Warning: Material doesn't exist or the material doesn't have the specified property!")
     return material
 
+def add_sch_files(idf_file):
+    with open(idf_file, 'a') as file:
+        file.write('\n\n')
+        file.write('! Schedule Files.\n')
+        file.write('Schedule:File,ZN 1_back_NumOCC,Any Number,InverseSolution_Occ_Sch.csv,2,1,8760,Comma,,10;\n')
+        file.write('Schedule:File,ZN 2_core_NumOCC,Any Number,InverseSolution_Occ_Sch.csv,3,1,8760,Comma,,10;\n')
+        file.write('Schedule:File,ZN 3_front_NumOCC,Any Number,InverseSolution_Occ_Sch.csv,4,1,8760,Comma,,10;\n')
+        file.write('Schedule:File,ZN 4_left_NumOCC,Any Number,InverseSolution_Occ_Sch.csv,5,1,8760,Comma,,10;\n')
+        file.write('Schedule:File,ZN 5_right_NumOCC,Any Number,InverseSolution_Occ_Sch.csv,6,1,8760,Comma,,10;\n')
+
 
 def main():
-    idf_name_in = 'Baseline_HM.idf'
+    idf_name_in = 'Baseline.idf'
     idf_name_out_1 = 'Calibrating.idf'
-    idf_name_out_2 = 'Calibrating_v0.2.idf'
+    idf_name_out_2 = 'Calibrating_HM_Occ.idf'
     idf_name_out_3 = 'Calibrating_v0.3.idf'
 
     epw_name = 'in.epw'
@@ -184,6 +195,9 @@ def main():
 
     idf.saveas(idf_name_out_1)
 
+    # Update the people schedule with the inverse solution
+    # shutil.copyfile(idf_name_out_1, idf_name_out_2) 
+    # add_sch_files(idf_name_out_2)
 
 
 main()

@@ -10532,15 +10532,15 @@ ZoneControl:Thermostat,
 
 !-   ===========  ALL OBJECTS IN CLASS: THERMOSTATSETPOINT:DUALSETPOINT ===========
 
-ThermostatSetpoint:DualSetpoint,
-    office thermostat,       !- Name
-    office heating year,     !- Heating Setpoint Temperature Schedule Name
-    office cooling year;     !- Cooling Setpoint Temperature Schedule Name
-
 ! ThermostatSetpoint:DualSetpoint,
 !     office thermostat,       !- Name
-!     ZONE HEATING SETPOINTS,     !- Heating Setpoint Temperature Schedule Name
-!     ZONE COOLING SETPOINTS;     !- Cooling Setpoint Temperature Schedule Name
+!     office heating year,     !- Heating Setpoint Temperature Schedule Name
+!     office cooling year;     !- Cooling Setpoint Temperature Schedule Name
+
+ThermostatSetpoint:DualSetpoint,
+    office thermostat,       !- Name
+    ZONE HEATING SETPOINTS,     !- Heating Setpoint Temperature Schedule Name
+    ZONE COOLING SETPOINTS;     !- Cooling Setpoint Temperature Schedule Name
 
 
 Schedule:Compact,

@@ -1,10 +1,34 @@
-Program Version,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.10.26 10:16,
+Program Version,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.11.01 16:24,
    ************* Beginning Zone Sizing Calculations
    ** Warning ** ProcessScheduleInput: Schedule:Compact="ZONE HEATING SETPOINTS", Schedule Type Limits Name="TEMPERATURE" not found -- will not be validated
    ** Warning ** ProcessScheduleInput: Schedule:Compact="ZONE COOLING SETPOINTS", Schedule Type Limits Name="TEMPERATURE" not found -- will not be validated
    ** Warning ** ProcessScheduleInput: For Schedule:File="ZONE OUT_DUMMYCO2CONCENTRATION", Schedule Type Limits Name="ANY NUMBER" not found -- will not be validated
    ** Warning ** CheckUsedConstructions: There are 3 nominally unused constructions in input.
    **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** Calculated Humidity Ratio invalid (PsyWFnTdpPb)
+   **   ~~~   **  Routine=UpdateZoneSizing, During Sizing, Environment=PITTSBURGH INTERNATIONAL AP ANN HUM_N 99.6% CONDNS DP=>MCDB, at Simulation time=01/21 24:00 - 24:10
+   **   ~~~   **  Dew-Point= 100.00 Pressure= 97190.41
+   **   ~~~   ** Calculated Humidity Ratio= -14.9186 ... Humidity Ratio set to .00001
+   ** Warning ** Calculated design cooling load for zone=S1 OFFICE BACK is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** Calculated design heating load for zone=S1 OFFICE BACK is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** Calculated design cooling load for zone=S1 OFFICE CORE is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** Calculated design heating load for zone=S1 OFFICE CORE is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** Calculated design cooling load for zone=S1 OFFICE FRONT is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** Calculated design heating load for zone=S1 OFFICE FRONT is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** Calculated design cooling load for zone=S1 OFFICE LEFT is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** Calculated design heating load for zone=S1 OFFICE LEFT is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** Calculated design cooling load for zone=S1 OFFICE RIGHT is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
+   ** Warning ** Calculated design heating load for zone=S1 OFFICE RIGHT is zero.
+   **   ~~~   ** Check Sizing:Zone and ZoneControl:Thermostat inputs.
    ************* Beginning System Sizing Calculations
    ** Warning ** Since Zone Minimum Air Flow Input Method = CONSTANT, input for Fixed Minimum Air Flow Rate will be ignored.
    **   ~~~   ** Occurs in AirTerminal:SingleDuct:VAV:Reheat = OFFICE TERMINAL 4
@@ -17,6 +41,13 @@ Program Version,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.10.26 10:16,
    ** Warning ** Since Zone Minimum Air Flow Input Method = CONSTANT, input for Fixed Minimum Air Flow Rate will be ignored.
    **   ~~~   ** Occurs in AirTerminal:SingleDuct:VAV:Reheat = OFFICE TERMINAL 3
    ************* Beginning Plant Sizing Calculations
+   ** Warning ** Temperature out of range [-100. to 200.] (PsyPsatFnTemp)
+   **   ~~~   **  Routine=PsyRhFnTdbWPb, Environment=PITTSBURGH INTERNATIONAL AP ANN HUM_N 99.6% CONDNS DP=>MCDB, at Simulation time=01/21 24:00 - 24:10
+   **   ~~~   **  Input Temperature=-100.00
+   ** Warning ** Calculated Relative Humidity out of range (PsyRhFnTdbWPb) 
+   **   ~~~   **  Routine=Unknown, Environment=PITTSBURGH INTERNATIONAL AP ANN HUM_N 99.6% CONDNS DP=>MCDB, at Simulation time=01/21 24:00 - 24:10
+   **   ~~~   **  Dry-Bulb= -100.00 Humidity Ratio= 8.000E-003 Calculated Relative Humidity [%]= 72600190.26
+   **   ~~~   ** Relative Humidity being reset to 100.0%
    ** Warning ** Check input. Pump nominal power or motor efficiency is set to 0, for pump=SWH PUMP
    ************* Testing Individual Branch Integrity
    ************* All Branches passed integrity testing
@@ -44,9 +75,31 @@ Program Version,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.10.26 10:16,
    **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.
    ************* Simulation Error Summary *************
    ************* There are 7 unused schedules in input.
-   ************* There are 5 unused week schedules in input.
-   ************* There are 61 unused day schedules in input.
+   ************* There are 7 unused week schedules in input.
+   ************* There are 77 unused day schedules in input.
    ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** Entered Humidity Ratio invalid (PsyWFnTdpPb)
+   *************  **   ~~~   **   This error occurred 10 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 10 times.
+   *************  **   ~~~   **   Max=-14.918631 []  Min=-14.918631 []
+   *************
+   *************  ** Warning ** Temperature out of range [-100. to 200.] (PsyPsatFnTemp)
+   *************  **   ~~~   **   This error occurred 2 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=-100. C  Min=-100. C
+   *************
+   *************  ** Warning ** Calculated Relative Humidity out of range (PsyRhFnTdbWPb)
+   *************  **   ~~~   **   This error occurred 5 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 0 times.
+   *************  **   ~~~   **   Max=72600190.268837 %  Min=72600190.268837 %
+   *************
    *************
    ************* ===== Final Error Summary =====
    ************* The following error categories occurred.  Consider correcting or noting.
@@ -56,5 +109,5 @@ Program Version,EnergyPlus, Version 9.0.0-2ef880da82, YMD=2018.10.26 10:16,
    ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
    *************
    ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
-   ************* EnergyPlus Sizing Error Summary. During Sizing: 9 Warning; 0 Severe Errors.
-   ************* EnergyPlus Completed Successfully-- 16 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 32.28sec
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 19 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 43 Warning; 0 Severe Errors; Elapsed Time=00hr 00min 23.27sec

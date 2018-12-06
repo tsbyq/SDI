@@ -85,7 +85,7 @@ def main():
     n_boiler_eff = 0.7
     n_waterHeater_eff = 0.7
     t_infiltration = 1.5
-    t_OA_per_person = 1.2
+    t_OA_per_person = 1
 
 
     ############################## Tweak the model #################################

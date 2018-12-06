@@ -12022,8 +12022,8 @@ Output:SQLite,
     SimpleAndTabular;        !- Option Type
 
 
-Output:Meter,Electricity:Facility,Hourly; !- [J]
-Output:Meter,Gas:Facility,Hourly; !- [J]
+Output:Meter,Electricity:Facility,Monthly; !- [J]
+Output:Meter,Gas:Facility,Monthly; !- [J]
 
 ! Output:Variable,*,Zone Infiltration Air Change Rate,hourly; !- HVAC Average [ach]
 ! Output:Variable,*,Zone People Occupant Count,hourly; !- Zone Average []

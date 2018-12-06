@@ -87,10 +87,13 @@ def plot_monthly_consumption(file_0, file_1, file_2):
 
 def main():
 
-    file_b = 'C:/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/out_Baseline_HM/Baseline_HM.csv'
-    file_t = 'C:/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/out_Tweaked/Tweaked.csv'
+    file_b = 'C:/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/Monthly_output/Baseline.csv'
+    file_t = 'C:/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/Monthly_output/Tweaked.csv'
     
-    file_c = 'C:/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/out_Calibrating/Calibrating.csv'
+    file_c = 'C:/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/Monthly_output/Calibrating.csv'
+    file_c = 'C:/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/out_Calibrating_HM_Occ/Calibrating_HM_Occ.csv'
+    file_c = 'C:/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/out_Calibrating_HM_ACH/Calibrating_HM_ACH.csv'
+    file_c = 'C:/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/out_Calibrating_HM_Occ_ACH/Calibrating_HM_Occ_ACH.csv'
 
     plot_monthly_consumption(file_b, file_c, file_t)
 
