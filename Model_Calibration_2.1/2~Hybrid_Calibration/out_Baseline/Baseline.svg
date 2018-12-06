@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<svg width="250mm" height="200mm" viewBox="0 0   2900    1500"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events">
+<g font-family="Verdana" font-size="8" >
+  <rect x="  2300" y="   140" width="   200" height="    20" style = "fill:chartreuse; stroke: Black;"/>     1
+  <text x="  2302" y="   153">S1 OFFICE BACK</text>
+  <rect x="   700" y="   260" width="   200" height="    20" style = "fill:orange; stroke: Black;"/>     6
+  <text x="   702" y="   273">SHW HEATER</text>
+  <rect x="   200" y="   460" width="   200" height="    20" style = "fill:snow; stroke: Black;"/>     7
+  <text x="   202" y="   473">OutdoorAir:NodeList</text>
+  <rect x="   700" y="   300" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    15
+  <text x="   702" y="   313">SWH PIPE SUPPLY BYPASS</text>
+  <rect x="  1200" y="   300" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    16
+  <text x="  1202" y="   313">SWH PIPE SUPPLY OUTLET</text>
+  <rect x="  1450" y="   300" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    17
+  <text x="  1452" y="   313">SWH PIPE DEMAND INLET</text>
+  <rect x="  1950" y="   340" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    18
+  <text x="  1952" y="   353">SWH PIPE DEMAND BYPASS</text>
+  <rect x="  1950" y="   380" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    19
+  <text x="  1952" y="   393">SWH LOOP DEMAND BYPASS PIPE</text>
+  <rect x="  2450" y="   380" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    20
+  <text x="  2452" y="   393">SWH PIPE DEMAND OUTLET</text>
+  <rect x="  1700" y="   300" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    21
+  <text x="  1702" y="   313">SWH LOOP DEMAND SPLITTER</text>
+  <rect x="  2200" y="   380" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    22
+  <text x="  2202" y="   393">SWH LOOP DEMAND MIXER</text>
+  <rect x="   450" y="   260" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    23
+  <text x="   452" y="   273">SWH LOOP SUPPLY SPLITTER</text>
+  <rect x="   950" y="   300" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    24
+  <text x="   952" y="   313">SWH LOOP SUPPLY MIXER</text>
+  <rect x="  1950" y="   300" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    25
+  <text x="  1952" y="   313">WATER USE CONNECTIONS 1</text>
+  <rect x="  1400" y="    20" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    26
+  <text x="  1402" y="    33">AIR LOOP HVAC ZONE SPLITTER 1</text>
+  <rect x="  1700" y="   140" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    27
+  <text x="  1702" y="   153">OFFICE TERMINAL 4</text>
+  <rect x="  1700" y="   180" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    28
+  <text x="  1702" y="   193">OFFICE TERMINAL 5</text>
+  <rect x="  1700" y="    60" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    29
+  <text x="  1702" y="    73">OFFICE TERMINAL 2</text>
+  <rect x="  1700" y="    20" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    30
+  <text x="  1702" y="    33">OFFICE TERMINAL 1</text>
+  <rect x="  1700" y="   100" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    31
+  <text x="  1702" y="   113">OFFICE TERMINAL 3</text>
+  <rect x="  2000" y="   140" width="   200" height="    20" style = "fill:salmon; stroke: Black;"/>    32
+  <text x="  2002" y="   153">OFFICE ELEC REHEAT COIL 4</text>
+  <rect x="  2000" y="   180" width="   200" height="    20" style = "fill:salmon; stroke: Black;"/>    33
+  <text x="  2002" y="   193">OFFICE ELEC REHEAT COIL 5</text>
+  <rect x="  2000" y="    60" width="   200" height="    20" style = "fill:salmon; stroke: Black;"/>    34
+  <text x="  2002" y="    73">OFFICE ELEC REHEAT COIL 2</text>
+  <rect x="  2000" y="    20" width="   200" height="    20" style = "fill:salmon; stroke: Black;"/>    35
+  <text x="  2002" y="    33">OFFICE ELEC REHEAT COIL 1</text>
+  <rect x="  2000" y="   100" width="   200" height="    20" style = "fill:salmon; stroke: Black;"/>    36
+  <text x="  2002" y="   113">OFFICE ELEC REHEAT COIL 3</text>
+  <rect x="   800" y="    20" width="   200" height="    20" style = "fill:salmon; stroke: Black;"/>    37
+  <text x="   802" y="    33">OFFICE HEATING COIL</text>
+  <rect x="  2600" y="   180" width="   200" height="    20" style = "fill:wheat; stroke: Black;"/>    38
+  <text x="  2602" y="   193">AIR LOOP HVAC ZONE MIXER 1</text>
+  <rect x="   200" y="    20" width="   200" height="    20" style = "fill:lawngreen; stroke: Black;"/>    39
+  <text  x="   202" y="    28">OUTDOORAIR:MIXER
+  <tspan x="   202" y="    36">{0674DD09-A18D-434B-AC7B-5188DF8DF40B}</tspan></text>
+  <rect x="  1100" y="    20" width="   200" height="    20" style = "fill:silver; stroke: Black;"/>    40
+  <text x="  1102" y="    33">OFFICE FAN</text>
+  <rect x="   500" y="    20" width="   200" height="    20" style = "fill:skyblue; stroke: Black;"/>    42
+  <text x="   502" y="    33">OFFICE COOLING COIL</text>
+  <rect x="   200" y="   260" width="   200" height="    20" style = "fill:springgreen; stroke: Black;"/>    43
+  <text x="   202" y="   273">SWH PUMP</text>
+  <rect x="  2300" y="   180" width="   200" height="    20" style = "fill:chartreuse; stroke: Black;"/>    44
+  <text x="  2302" y="   193">S1 OFFICE CORE</text>
+  <rect x="  2300" y="    60" width="   200" height="    20" style = "fill:chartreuse; stroke: Black;"/>    45
+  <text x="  2302" y="    73">S1 OFFICE FRONT</text>
+  <rect x="  2300" y="    20" width="   200" height="    20" style = "fill:chartreuse; stroke: Black;"/>    46
+  <text x="  2302" y="    33">S1 OFFICE LEFT</text>
+  <rect x="  2300" y="   100" width="   200" height="    20" style = "fill:chartreuse; stroke: Black;"/>    47
+  <text x="  2302" y="   113">S1 OFFICE RIGHT</text>
+  <line x1="   900" y1="   270" x2="   950" y2="   310" style = "stroke: Black;"/>
+  <line x1="   900" y1="   310" x2="   950" y2="   310" style = "stroke: Black;"/>
+  <line x1="  1400" y1="   310" x2="  1450" y2="   310" style = "stroke: Black;"/>
+  <line x1="  1650" y1="   310" x2="  1700" y2="   310" style = "stroke: Black;"/>
+  <line x1="  2150" y1="   350" x2="  2200" y2="   390" style = "stroke: Black;"/>
+  <line x1="  2150" y1="   390" x2="  2200" y2="   390" style = "stroke: Black;"/>
+  <line x1="  1900" y1="   310" x2="  1950" y2="   310" style = "stroke: Black;"/>
+  <line x1="  1900" y1="   310" x2="  1950" y2="   350" style = "stroke: Black;"/>
+  <line x1="  1900" y1="   310" x2="  1950" y2="   390" style = "stroke: Black;"/>
+  <line x1="  2400" y1="   390" x2="  2450" y2="   390" style = "stroke: Black;"/>
+  <line x1="   650" y1="   270" x2="   700" y2="   270" style = "stroke: Black;"/>
+  <line x1="   650" y1="   270" x2="   700" y2="   310" style = "stroke: Black;"/>
+  <line x1="  1150" y1="   310" x2="  1200" y2="   310" style = "stroke: Black;"/>
+  <line x1="  2150" y1="   310" x2="  2200" y2="   390" style = "stroke: Black;"/>
+  <line x1="  1600" y1="    30" x2="  1700" y2="    30" style = "stroke: Black;"/>
+  <line x1="  1600" y1="    30" x2="  1700" y2="    70" style = "stroke: Black;"/>
+  <line x1="  1600" y1="    30" x2="  1700" y2="   110" style = "stroke: Black;"/>
+  <line x1="  1600" y1="    30" x2="  1700" y2="   150" style = "stroke: Black;"/>
+  <line x1="  1600" y1="    30" x2="  1700" y2="   190" style = "stroke: Black;"/>
+  <line x1="  1900" y1="   150" x2="  2000" y2="   150" style = "stroke: Black;"/>
+  <line x1="  1900" y1="   190" x2="  2000" y2="   190" style = "stroke: Black;"/>
+  <line x1="  1900" y1="    70" x2="  2000" y2="    70" style = "stroke: Black;"/>
+  <line x1="  1900" y1="    30" x2="  2000" y2="    30" style = "stroke: Black;"/>
+  <line x1="  1900" y1="   110" x2="  2000" y2="   110" style = "stroke: Black;"/>
+  <line x1="  2200" y1="   150" x2="  2300" y2="   150" style = "stroke: Black;"/>
+  <line x1="  2200" y1="   190" x2="  2300" y2="   190" style = "stroke: Black;"/>
+  <line x1="  2200" y1="    70" x2="  2300" y2="    70" style = "stroke: Black;"/>
+  <line x1="  2200" y1="    30" x2="  2300" y2="    30" style = "stroke: Black;"/>
+  <line x1="  2200" y1="   110" x2="  2300" y2="   110" style = "stroke: Black;"/>
+  <line x1="  1000" y1="    30" x2="  1100" y2="    30" style = "stroke: Black;"/>
+  <line x1="   400" y1="    30" x2="   500" y2="    30" style = "stroke: Black;"/>
+  <line x1="  1300" y1="    30" x2="  1400" y2="    30" style = "stroke: Black;"/>
+  <line x1="   700" y1="    30" x2="   800" y2="    30" style = "stroke: Black;"/>
+  <line x1="   400" y1="   270" x2="   450" y2="   270" style = "stroke: Black;"/>
+  <line x1="  2500" y1="   150" x2="  2600" y2="   190" style = "stroke: Black;"/>
+  <line x1="  2500" y1="   190" x2="  2600" y2="   190" style = "stroke: Black;"/>
+  <line x1="  2500" y1="    70" x2="  2600" y2="   190" style = "stroke: Black;"/>
+  <line x1="  2500" y1="    30" x2="  2600" y2="   190" style = "stroke: Black;"/>
+  <line x1="  2500" y1="   110" x2="  2600" y2="   190" style = "stroke: Black;"/>
+  <line x1="   200" y1="    30" x2="   175" y2="    30" style = "stroke: Black;"/>
+  <line x1="   175" y1="    30" x2="   175" y2="     0" style = "stroke: Black;"/>
+  <line x1="   175" y1="     0" x2="  2825" y2="     0" style = "stroke: Black;"/>
+  <line x1="  2825" y1="     0" x2="  2825" y2="   190" style = "stroke: Black;"/>
+  <line x1="  2825" y1="   190" x2="  2800" y2="   190" style = "stroke: Black;"/>
+  <line x1="   200" y1="   270" x2="   175" y2="   270" style = "stroke: Black;"/>
+  <line x1="   175" y1="   270" x2="   175" y2="   240" style = "stroke: Black;"/>
+  <line x1="   175" y1="   240" x2="  2675" y2="   240" style = "stroke: Black;"/>
+  <line x1="  2675" y1="   240" x2="  2675" y2="   390" style = "stroke: Black;"/>
+  <line x1="  2675" y1="   390" x2="  2650" y2="   390" style = "stroke: Black;"/>
+  <text x="   200" y="   520">Unused Non-Parent Objects:</text>
+  <text x="   220" y="   540">OutdoorAir:Node</text>
+  <text x="   220" y="   560">OFFICE DECK TEMP SETPOINT MANAGER</text>
+  <text x="   220" y="   580">SETPOINT MANAGER SCHEDULED 1</text>
+  <text x="   220" y="   600">OFFICE OA SYSTEM SM_MA</text>
+  <text x="   220" y="   620">OFFICE COOLING COIL SM_MA</text>
+  <text x="   220" y="   640">OFFICE HEATING COIL SM_MA</text>
+  <text x="   220" y="   660">SWH LOOP HIGH-T OFF</text>
+  <text x="   220" y="   680">OFFICE OA CONTROLLER</text>
+  <text x="   200" y="   720">
+The following are not supported: objects related to controls, AirTerminal:SingleDuct:Uncontrolled, or ZoneHVAC:IdealLoadsAirSystem</text>
+</g>
+</svg>

@@ -1,0 +1,1920 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cla",
+				"classmethod\tclass"
+			],
+			[
+				"Month",
+				"Monthly"
+			],
+			[
+				"col",
+				"col_order\tstatement"
+			],
+			[
+				"idf",
+				"idfobjects\tstatement"
+			],
+			[
+				"Mon",
+				"Monthly"
+			],
+			[
+				"ho",
+				"Hourly"
+			],
+			[
+				"repo",
+				"report_test\tstatement"
+			],
+			[
+				"Hour",
+				"Hourly"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"zip",
+				"zip_ref\tstatement"
+			],
+			[
+				"argument",
+				"argument_map"
+			],
+			[
+				"in",
+				"infiltration\tstatement"
+			],
+			[
+				"df",
+				"df_t"
+			],
+			[
+				"get",
+				"get_CV_RMSE\tfunction"
+			],
+			[
+				"v_",
+				"v_truth\tparam"
+			],
+			[
+				"cl",
+				"climate_zones\tstatement"
+			],
+			[
+				"climate",
+				"climate_zone"
+			],
+			[
+				"vintage",
+				"vintages"
+			],
+			[
+				"gre",
+				"w3-light-grey"
+			],
+			[
+				"cu",
+				"currency_str"
+			],
+			[
+				"run",
+				"run_single\tfunction"
+			],
+			[
+				"mi",
+				"mixed_air_T\tfunction"
+			],
+			[
+				"new",
+				"new_val\tparam"
+			],
+			[
+				"ma",
+				"material\tparam"
+			],
+			[
+				"dir",
+				"dir_name\tstatement"
+			],
+			[
+				"month",
+				"Monthly"
+			],
+			[
+				"times",
+				"Timestep"
+			],
+			[
+				"mont",
+				"Monthly"
+			],
+			[
+				"empty",
+				"empty?\tfunc"
+			],
+			[
+				"disp",
+				"display\tfunc"
+			],
+			[
+				"to_s",
+				"to_string\tfunc"
+			],
+			[
+				"schedule",
+				"schedule_file"
+			],
+			[
+				"methods",
+				"instance_methods\tfunc"
+			],
+			[
+				"me",
+				"message\tfunc"
+			],
+			[
+				"De",
+				"Detailed"
+			],
+			[
+				"mul",
+				"multiply\tinstance"
+			],
+			[
+				"sample",
+				"sample_STD\tstatement"
+			],
+			[
+				"sam",
+				"sample_median\tstatement"
+			],
+			[
+				"data",
+				"data_out\tstatement"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"Time",
+				"Timestep"
+			],
+			[
+				"peo",
+				"PeopelCountCalc"
+			],
+			[
+				"Infil",
+				"InfiltrationCalc"
+			],
+			[
+				"In",
+				"InfiltrationCalc"
+			],
+			[
+				"Hy",
+				"HybridModel"
+			],
+			[
+				"I",
+				"InverseModel\tclass"
+			],
+			[
+				"InverseModel",
+				"InverseModel_test\tmodule"
+			],
+			[
+				"st",
+				"Start_Date"
+			],
+			[
+				"u",
+				"df_utility_e"
+			],
+			[
+				"win",
+				"wind_speed\tstatement"
+			],
+			[
+				"Satrt",
+				"startDates"
+			],
+			[
+				"df_",
+				"df_rawDD\tstatement"
+			],
+			[
+				"calculate",
+				"calculate_raw_DD\tfunction"
+			],
+			[
+				"star",
+				"startDates"
+			],
+			[
+				"Te",
+				"Tc_e"
+			],
+			[
+				"best",
+				"best_p"
+			],
+			[
+				"H",
+				"HDD_e\tstatement"
+			],
+			[
+				"bubble_",
+				"bubble_sort\tfunction"
+			],
+			[
+				"min",
+				"min_index\tstatement"
+			],
+			[
+				"selec",
+				"selection_a\tstatement"
+			],
+			[
+				"sele",
+				"selection_b\tstatement"
+			],
+			[
+				"radix_",
+				"radix_b\tstatement"
+			],
+			[
+				"ca",
+				"calculate_e\tfunction"
+			],
+			[
+				"Place",
+				"Place-holder"
+			],
+			[
+				"button",
+				"button"
+			],
+			[
+				"dp",
+				"dplyr\tInstalled Package"
+			],
+			[
+				"read",
+				"read_excel"
+			],
+			[
+				"include",
+				"include?\tfunc"
+			],
+			[
+				"metho",
+				"methods\tfunc"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fig",
+				"fig_to_html\tfunction"
+			],
+			[
+				"to",
+				"to_html"
+			],
+			[
+				"ex",
+				"except"
+			],
+			[
+				"meth",
+				"methods\tfunc"
+			],
+			[
+				"numer",
+				"numeric\tfunc"
+			],
+			[
+				"conver",
+				"converters\tfunc"
+			],
+			[
+				"getdai",
+				"getElectricityDailyEUI\tfunction"
+			],
+			[
+				"bld",
+				"bldg_name\tstatement"
+			],
+			[
+				"nle",
+				"nsmallest\tfunction"
+			],
+			[
+				"setde",
+				"set_default_value\tfunc"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/E/Simulations/simulate.py",
+			"settings":
+			{
+				"buffer_size": 1234,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Simulations/post_process.py",
+			"settings":
+			{
+				"buffer_size": 2115,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Simulations/process_model.py",
+			"settings":
+			{
+				"buffer_size": 1460,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2~Hybrid_Calibration/1_tune_model.py",
+			"settings":
+			{
+				"buffer_size": 8526,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2~Hybrid_Calibration/2_run_simulation.py",
+			"settings":
+			{
+				"buffer_size": 1596,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2~Hybrid_Calibration/3_plot.py",
+			"settings":
+			{
+				"buffer_size": 4357,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2~Hybrid_Calibration/Hourly_output/calibration_metrics.py",
+			"settings":
+			{
+				"buffer_size": 694,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2~Hybrid_Calibration/Calibrating_HM_Occ.idf",
+			"settings":
+			{
+				"buffer_size": 584293,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2~Hybrid_Calibration/Calibrating_HM_ACH.idf",
+			"settings":
+			{
+				"buffer_size": 555751,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2~Hybrid_Calibration/Calibrating_HM_Occ_ACH.idf",
+			"settings":
+			{
+				"buffer_size": 587524,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2~Hybrid_Calibration/Tweaked.idf",
+			"settings":
+			{
+				"buffer_size": 583169,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2~Hybrid_Calibration/Baseline.idf",
+			"settings":
+			{
+				"buffer_size": 579747,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/R-Box/support/R Package.sublime-build",
+					""
+				],
+				[
+					"Packages/R-Box/support/R Package.sublime-build",
+					"Clean and Build"
+				],
+				[
+					"Packages/R-Box/support/R Package.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/R-Box/support/R Package.sublime-build",
+					"Check"
+				],
+				[
+					"Packages/R-Box/support/R Package.sublime-build",
+					"Document"
+				],
+				[
+					"Packages/R-Box/support/R Package.sublime-build",
+					"Compile C++ Attributes"
+				],
+				[
+					"Packages/R-Box/support/R Package.sublime-build",
+					"Build Source"
+				],
+				[
+					"Packages/R-Box/support/R Package.sublime-build",
+					"Build Binary"
+				]
+			],
+			[
+				"Packages/R-Box/support/R Package.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/VBScript/VBScript.sublime-build",
+					""
+				],
+				[
+					"Packages/VBScript/VBScript.sublime-build",
+					"Run with WScript"
+				],
+				[
+					"Packages/VBScript/VBScript.sublime-build",
+					"Debug with CScript"
+				]
+			],
+			[
+				"Packages/VBScript/VBScript.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tr",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"em",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"le",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"com",
+				"Compare with..."
+			],
+			[
+				"co",
+				"Compare with..."
+			],
+			[
+				"leat",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"htmlpre",
+				"HTMLPrettify"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"trail",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"emp",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"fort",
+				"Set Syntax: Fortran Namelist"
+			],
+			[
+				"trai",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"empty",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"leadt",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"up",
+				"Convert Case: Upper Case"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"htmlp",
+				"HTMLPrettify"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"htmlbeau",
+				"HTMLBeautify"
+			],
+			[
+				"htmlb",
+				"HTMLBeautify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"lea",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"compa",
+				"Compare with..."
+			],
+			[
+				"comp",
+				"Compare with..."
+			],
+			[
+				"compare",
+				"Compare with..."
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"lead",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"tra",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"c",
+				"Compare with..."
+			],
+			[
+				"syntax r",
+				"Set Syntax: Rcpp"
+			],
+			[
+				"leading",
+				"Trimmer: Trim leading whitespace."
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"fortran",
+				"Set Syntax: Fortran Namelist"
+			],
+			[
+				"fortan",
+				"Set Syntax: Fortran (Modern)"
+			],
+			[
+				"css",
+				"Format CSS: Expanded"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"leas",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"leasd",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"leadign",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"syntax cpp",
+				"Set Syntax: Rcpp"
+			],
+			[
+				"emtp",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"lw",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"emtpty",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"syntax p",
+				"Set Syntax: Python"
+			],
+			[
+				"mark",
+				"Markdown Slideshow"
+			],
+			[
+				"markdown",
+				"Markdown HTML Preview"
+			],
+			[
+				"SYNTAX PYTHO\t",
+				"Set Syntax: Python"
+			],
+			[
+				"white",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"empt",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"epty",
+				"Trimmer: Delete empty lines."
+			],
+			[
+				"syntax rcpp",
+				"Set Syntax: Rcpp"
+			],
+			[
+				"syntax R",
+				"Set Syntax: R"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"whit",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"syntax python",
+				"Set Syntax: Python"
+			],
+			[
+				"syntaxpytho",
+				"Set Syntax: Python"
+			],
+			[
+				"brow",
+				"Browse Mode..."
+			],
+			[
+				"browse",
+				"Browse Mode: Left Sidebar"
+			],
+			[
+				"bro",
+				"Browse Mode: Jump List Quick Panel"
+			],
+			[
+				"sideba",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"tri",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"trial",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"syntax cp",
+				"Set Syntax: Rcpp"
+			],
+			[
+				"rcpp",
+				"Set Syntax: Rcpp"
+			],
+			[
+				"syntax ",
+				"Set Syntax: Rcpp"
+			],
+			[
+				"syntax c",
+				"Set Syntax: Rcpp"
+			],
+			[
+				"project:",
+				"Project: Edit"
+			],
+			[
+				"project",
+				"Project: Close"
+			],
+			[
+				"cpp",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pl",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"syntax:C++",
+				"Set Syntax: C++"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"trailin",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"trailing",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"late",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"html pre",
+				"Markdown HTML Preview"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"fortram",
+				"Set Syntax: Fortran (Modern)"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"syntaxfortram",
+				"Set Syntax: Fortran Namelist"
+			],
+			[
+				"syntax",
+				"Set Syntax: Markdown"
+			],
+			[
+				"syntax for",
+				"Set Syntax: Fortran Namelist"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"plaint",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"sy",
+				"Set Syntax: PHP"
+			],
+			[
+				"syn",
+				"Set Syntax: MATLAB"
+			],
+			[
+				"synatx",
+				"Set Syntax: Doxygen"
+			],
+			[
+				"xml",
+				"Set Syntax: Markdown Light"
+			],
+			[
+				"docstring curent",
+				"AutoDocstring: Current"
+			],
+			[
+				"traling",
+				"Trimmer: Trim trailing whitespace."
+			],
+			[
+				"docscurre",
+				"AutoDocstring: Current"
+			],
+			[
+				"docstr",
+				"AutoDocstring: Current"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"python ",
+				"Set Syntax: Python"
+			],
+			[
+				"markdown pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdown prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markup",
+				"MarkdownLivePreview: Edit Custom CSS File"
+			],
+			[
+				"markdown preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"docs",
+				"Python Docstrings: Fold"
+			],
+			[
+				"docstring",
+				"Python Docstrings: Fold"
+			],
+			[
+				"inde",
+				"Indent XML"
+			],
+			[
+				"indent",
+				"Indent XML"
+			],
+			[
+				"syntaxxml",
+				"Set Syntax: XML"
+			],
+			[
+				"inden",
+				"Indent XML"
+			],
+			[
+				"xm",
+				"Indent XML"
+			],
+			[
+				"colla",
+				"Trimmer: Collapse lines."
+			],
+			[
+				"leading and ",
+				"Trimmer: Trim leading AND trailing whitespace."
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"preview",
+				"Markdown HTML Preview"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax javas",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 576.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/src/report.py",
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/src/main.py",
+		"/C/Users/Han/Downloads/1.sgf",
+		"/C/Users/Han/Dropbox (Energy Technologies)/Shared_With_Me/DOE - Load Shape/Reference Models/2~MediumOfficeDetailed/MediumOfficeDetailed_2004_6A.idf",
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/src/weather.py",
+		"/C/Users/Han/Dropbox (Energy Technologies)/Projects/CERC-BEE  Benchmarking Tool/Demonstration/2018-11-05/weather.py",
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/install_dependencies.py",
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/setup.py",
+		"/C/Users/Han/Documents/Projects/CERC-BEE/Code/Weather_sub-hourly/weather_downloader - more.py",
+		"/C/Users/Han/Dropbox (Energy Technologies)/Han/Tech/Weather_Downloader/weather_downloader.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/Calibrating_HM_Occ.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/Calibrating_HM_ACH.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/Calibrating.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/Baseline_HM.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/Calibrating_Solve_people_with_CO2.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/Uncalibrated_Solve_people_with_CO2.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/in.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone_2/EnergyPlus/Build/Products/in.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/Baseline_HM.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/steps.py",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone_2/EnergyPlus/Build/Products/in - Copy.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/2~Calibrating_HM_T.idf",
+		"/C/Users/Han/Dropbox (Energy Technologies)/Shared_With_Me/Sensor Integration/Task FY19 - EnergyPlus New Feature Proposal/examples/1~No_HVAC/Solve_Infiltration_with_HumidityRatio.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/Tweaked.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/Calibrating_Solve_people_with_T.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone_2/EnergyPlus/Build/Products/Humidity.idf",
+		"/C/Users/Han/Dropbox (Energy Technologies)/Shared_With_Me/Sensor Integration/Task FY19 - EnergyPlus New Feature Proposal/examples/1~No_HVAC/Solve_Infiltration_with_Temperature.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/in.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone_2/EnergyPlus/Build/Products/in.epw",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/3~Tweaked_HM.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/in.epw",
+		"/C/Users/Han/Dropbox (Energy Technologies)/Shared_With_Me/Sensor Integration/Task FY19 - EnergyPlus New Feature Proposal/examples/1~No_HVAC/Solve_PeopleCount_with_HumidityRatio.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/Solve_Infiltration_with_Temperature.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/Baseline.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/batch_run/Create DOE Prototype Building/1010/prepare_models.py",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/src/EnergyPlus/ZoneTempPredictorCorrector.cc",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone_2/EnergyPlus/Build/Products/3~Tweaked_HM.idf",
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/src/constants.py",
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/src/building.py",
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/src/portfolio.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/Tweaked.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/2_run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/Energy+.schema.epJSON",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/SlabGHT.idd",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/New_IM_Example/2~With_HVAC/Solve_PeopleCount_with_CO2.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/Solve_people_with_CO2.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/Solve_people_with_T.idf",
+		"/E/Simulations/2~MediumOfficeDetailed/out_MediumOfficeDetailed_2013_8A/MediumOfficeDetailed_2013_8A.rdd",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/2_run_simulation.py",
+		"/E/Simulations/2~MediumOfficeDetailed/MediumOfficeDetailed_2004_1A.idf",
+		"/E/Simulations/2~MediumOfficeDetailed/MediumOfficeDetailed_2007_3B.idf",
+		"/E/Simulations/2~MediumOfficeDetailed/MediumOfficeDetailed_2007_2B.idf",
+		"/E/Simulations/add_variables.py",
+		"/E/Simulations/2_run_simulation.py",
+		"/E/Simulations/MediumOfficeDetailed_2004_2A.idf",
+		"/E/Simulations/MediumOfficeDetailed_2004_1A.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/Baseline_HM.idf",
+		"/C/Users/Han/Documents/Personal/Tech/E+.mdd",
+		"/C/Users/Han/Documents/Personal/Tech/E+.rdd",
+		"/C/Users/Han/Documents/GitHub/SDI/batch_run/Create DOE Prototype Building/1010/add_variables.py",
+		"/E/Simulations/2~MediumOfficeDetailed/MediumOfficeDetailed_2004_3A.idf",
+		"/E/Simulations/2~MediumOfficeDetailed/MediumOfficeDetailed_2004_2B.idf",
+		"/E/Ecobee New Data/New Datasets/ecobee_processing.py",
+		"/C/Users/Han/Documents/GitHub/Miscellaneous/Jing/processing.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/steps.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/3_plot.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/2_run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/Baseline.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/1_tune_model.py",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/eplusout.rdd",
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/Virtual EE Targeting Tool Methodology",
+		"/C/Users/Han/Documents/GitHub/CERC-BEE-Benchmarking-Tool/README.md",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/src/EnergyPlus/HeatBalanceManager.cc",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/src/EnergyPlus/DataHeatBalance.cc",
+		"/C/Users/Han/Documents/Personal/Scripts_for_others/foo.py",
+		"/C/Users/Han/Dropbox (Energy Technologies)/Shared_With_Me/Ecobee New Data/New Datasets/duration_count.py",
+		"/E/Ecobee New Data/New Datasets/duration_count.py",
+		"/C/Users/Han/AppData/Local/Programs/Python/Python36-32/Lib/subprocess.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/2~Hybrid_Calibration/InverseModeling/Solve_Infiltration_with_T.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/tweaked/Tweaked.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/baseline/Baseline.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/New_IM_Example/2~With_HVAC/run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/New_IM_Example/1~No_HVAC/Solve_PeopleCount_with_Temperature.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/Calibrating.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/New_IM_Example/1~No_HVAC/Solve_PeopleCount_with_CO2.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/eplusout.mdd",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/plot.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration/1_Manual_Calibration/model_tuning.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/tuning_steps.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/1_calibrate_model.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/tweak_model.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/plot.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/1~Manual_Calibration/Calibrating_v0.1.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/New_IM_Example/1~No_HVAC/Solve_PeopleCount_with_HumidityRatio.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/tweaked/Tweaked_Infiltration.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.0/baseline/baseline.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/tweaked/run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/baseline/run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/baseline/out_Baseline/Baseline.rdd",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.1/baseline/out_Baseline/Baseline.mdd",
+		"/E\"",
+		"/C/Users/Han/Documents/GitHub/SDI/Test_runs/DCV_5-zone/5ZoneVAV-DCV-tweaked.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Test_runs/HeatPumpSimpleDCV - Copy.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Test_runs/DCV_5-zone/5ZoneVAV-DCV-old.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Test_runs/DCV_5-zone/5ZoneVAV-DCV-original.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Test_runs/DCV_5-zone/people.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Test_runs/run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/SDI/Test_runs/DCV_5-zone/5ZoneVAV-ChilledWaterStorage-Mixed_DCV_MaxZd.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Test_runs/DCV_5-zone/5ZoneVAV-ChilledWaterStorage-Mixed_DCV_MaxZd - Copy.idf",
+		"/C/EnergyPlusV9-0-0/ExampleFiles/5ZoneVAV-ChilledWaterStorage-Mixed_DCV_MaxZd.idf",
+		"/C/EnergyPlusV9-0-0/ExampleFiles/HeatPumpIAQP_DCV.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration/compare/target/simulations/target_original.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration/compare/baseline/Baseline_V890.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.0/target/target_SKY.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/Model_Calibration_2.0/target/out_target_SKY/target_SKY.rdd",
+		"/C/Users/Han/Documents/GitHub/SDI/batch_run/Create DOE Prototype Building/2018-10-23_RetailStandAlone_OS2.6/run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/SDI/batch_run/Create DOE Prototype Building/Outpatient/run_simulation.py",
+		"/C/Users/Han/Documents/GitHub/SDI/batch_run/Create DOE Prototype Building/Outpatient/temp.py",
+		"/C/Users/Han/AppData/Local/Temp/Rar$DIa0.806/RetailStandAlone_2004_5A.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/batch_run/Create DOE Prototype Building/2018-10-23_RetailStandAlone_OS2.6/RetailStandAlone_2013_6A.idf",
+		"/C/Users/Han/Documents/GitHub/SDI/batch_run/Create DOE Prototype Building/measure.rb",
+		"/C/Users/Han/Documents/GitHub/SDI/batch_run/Create DOE Prototype Building/README.md",
+		"/C/Users/Han/Documents/GitHub/SDI/batch_run/Create DOE Prototype Building/LICENSE.md",
+		"/C/Users/Han/Documents/GitHub/SDI/Test_runs/HeatPumpSimpleDCV.idf",
+		"/C/EnergyPlusV9-0-0/ExampleFiles/HeatPumpSimpleDCV.idf",
+		"/C/Users/Han/Documents/GitHub/EP_HL/EnergyPlus_clone/EnergyPlus/Build/Products/New_IM_Example/1~No_HVAC/Solve_Infiltration_with_Temperature.idf"
+	],
+	"find":
+	{
+		"height": 45.0
+	},
+	"find_in_files":
+	{
+		"height": 148.0,
+		"where_history":
+		[
+			"C:\\Users\\Han\\Documents\\GitHub\\EP_HL\\EnergyPlus_clone\\EnergyPlus\\src\\EnergyPlus"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"lights,",
+			"equipment,",
+			"equipments,",
+			"lights,",
+			"OfficeMedium BLDG_EQUIP_SCH_2004",
+			"equipment,",
+			"df_station_list",
+			"df_stationList",
+			"ZN 1_back_ACH",
+			"ZN 1_back_NumOCC",
+			"zoneinfiltration",
+			"zoneinfil",
+			"people,",
+			"schedule:file",
+			"any number",
+			"zoneinfiltration",
+			"\\",
+			"Office Infiltration",
+			"Any Number",
+			"ZN 1_back_NumOCC",
+			"hybridmodel",
+			"Office Infiltation Sch",
+			"zoneinfiltration",
+			"any number",
+			"hybridmodel:zone,",
+			"setpoints",
+			"any number",
+			"ZONE HEATING SETPOINTS",
+			"office thermostat",
+			"ANY NUMBER",
+			"\\",
+			"ZN 5_right_MeasuredTemperature",
+			"hybridmodel:zone,",
+			"People,",
+			"setpoints",
+			"office thermostat",
+			"setpoints",
+			"\\",
+			"ZN 1_back_NumOCC",
+			"anyOf",
+			"Any Number",
+			"ZN 1_back_NumOCC",
+			"activity_level",
+			"office activity year",
+			"people,",
+			"chicago",
+			"hybridmodel",
+			"1_back_MeasuredTemperature",
+			"ActivityLevel",
+			"\\",
+			"schedule:file",
+			"office occupancy week",
+			"office occupancy year",
+			"people,",
+			"saving_target",
+			"get_portfolio_raw_data_by_spaceType_and_utilityType",
+			"currency",
+			"get_portfolio_raw_data_by_spaceType_and_utilityType",
+			"\\",
+			"people",
+			"\\",
+			"People Sensible Heat Fraction Sch",
+			"hybridmodel",
+			"office activity year",
+			"activity",
+			"office activity",
+			"office activity year",
+			"setpoints",
+			"calibrating",
+			"InfilOAAirChangeRateHM",
+			"\\",
+			"window",
+			"idf_name_out_1",
+			"office design_oa",
+			"DesignSpecification:OutdoorAir",
+			" ",
+			"hybridmodel,",
+			"people,",
+			"contamin",
+			"zoneinfiltration",
+			"infiltration",
+			"CO2",
+			"Output:Variable,*,Zone Mean CO2 Concentration",
+			"Output:Variable,*,Zone Mean CO2 Concentration,Timestep;",
+			",",
+			"!-",
+			"\\",
+			"idf_name_out_1",
+			"people sensible hea",
+			"people sensible heat fraction sch,",
+			"people sensible heat",
+			"people sen",
+			"People Sensible Heat Fraction Sch",
+			"hybridmodel",
+			"3,",
+			"ZoneInfiltration:DesignFlowRate,\n  Office Infiltration,                !- Name\n  office space type,                      !- Zone or ZoneList Name\n  Office Infiltation Sch,     !- Schedule Name\n  Flow/Zone,                              !- Design Flow Rate Calculation Method\n  0.129785425,                            !- Design Flow Rate {m3/s}\n  ,                                       !- Flow per Zone Floor Area {m3/s-m2}\n  ,                                       !- Flow per Exterior Surface Area {m3/s-m2}\n  ,                                       !- Air Changes per Hour {1/hr}\n  1,                                      !- Constant Term Coefficient\n  0,                                      !- Temperature Term Coefficient\n  0,                                      !- Velocity Term Coefficient\n  0;                                      !- Velocity Squared Term Coefficient\n\nSchedule:Week:Daily,\n  Office Infiltation Sch Week Rule - Jan1-Dec31, !- Name\n  Office Infiltation Sch Default, !- Sunday Schedule:Day Name\n  Office Infiltation Sch Wkdy Day, !- Monday Schedule:Day Name\n  Office Infiltation Sch Wkdy Day, !- Tuesday Schedule:Day Name\n  Office Infiltation Sch Wkdy Day, !- Wednesday Schedule:Day Name\n  Office Infiltation Sch Wkdy Day, !- Thursday Schedule:Day Name\n  Office Infiltation Sch Wkdy Day, !- Friday Schedule:Day Name\n  Office Infiltation Sch Default, !- Saturday Schedule:Day Name\n  Office Infiltation Sch Default, !- Holiday Schedule:Day Name\n  Office Infiltation Sch Summer Design Day, !- SummerDesignDay Schedule:Day Name\n  Office Infiltation Sch Winter Design Day, !- WinterDesignDay Schedule:Day Name\n  Office Infiltation Sch Default, !- CustomDay1 Schedule:Day Name\n  Office Infiltation Sch Default; !- CustomDay2 Schedule:Day Name\n\nSchedule:Year,\n  Office Infiltation Sch,     !- Name\n  Fractional,                             !- Schedule Type Limits Name\n  Office Infiltation Sch Week Rule - Jan1-Dec31, !- Schedule:Week Name 1\n  1,                                      !- Start Month 1\n  1,                                      !- Start Day 1\n  12,                                     !- End Month 1\n  31;                                     !- End Day 1\n\nSchedule:Day:Interval,\n  Office Infiltation Sch Default, !- Name\n  Fractional,                             !- Schedule Type Limits Name\n  No,                                     !- Interpolate to Timestep\n  24:00,                                  !- Time 1 {hh:mm}\n  0;                                      !- Value Until Time 1\n\nSchedule:Day:Interval,\n  Office Infiltation Sch Summer Design Day, !- Name\n  Fractional,                             !- Schedule Type Limits Name\n  No,                                     !- Interpolate to Timestep\n  07:00,                                  !- Time 1 {hh:mm}\n  1,                                      !- Value Until Time 1\n  19:00,                                  !- Time 2 {hh:mm}\n  0.25,                                   !- Value Until Time 2\n  24:00,                                  !- Time 3 {hh:mm}\n  1;                                      !- Value Until Time 3\n\nSchedule:Day:Interval,\n  Office Infiltation Sch Winter Design Day, !- Name\n  Fractional,                             !- Schedule Type Limits Name\n  No,                                     !- Interpolate to Timestep\n  07:00,                                  !- Time 1 {hh:mm}\n  1,                                      !- Value Until Time 1\n  19:00,                                  !- Time 2 {hh:mm}\n  0.25,                                   !- Value Until Time 2\n  24:00,                                  !- Time 3 {hh:mm}\n  1;                                      !- Value Until Time 3\n\nSchedule:Day:Interval,\n  Office Infiltation Sch Wkdy Day, !- Name\n  Fractional,                             !- Schedule Type Limits Name\n  No,                                     !- Interpolate to Timestep\n  07:00,                                  !- Time 1 {hh:mm}\n  1,                                      !- Value Until Time 1\n  19:00,                                  !- Time 2 {hh:mm}\n  0.25,                                   !- Value Until Time 2\n  24:00,                                  !- Time 3 {hh:mm}\n  1;                                      !- Value Until Time 3",
+			"quarter_on_SCH",
+			"quarter",
+			"OfficeSmall INFIL_Door_Opening_SCH",
+			"OfficeSmall INFIL_Door_Opening_SCH year",
+			"OfficeSmall INFIL_Door_Opening_SCH",
+			"OfficeSmall INFIL_Door_Opening_SCH Wkdy Day",
+			"OfficeSmall INFIL_Door_Opening_SCH",
+			"ZoneInfiltration:DesignFlowRate,",
+			"office infiltration year",
+			"Infiltration"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/E/Simulations/simulate.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								361
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"markdonw_live_preview_last_run": 1541526385.51,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/E/Simulations/post_process.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1729,
+								1729
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"markdonw_live_preview_last_run": 1541526385.52,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/E/Simulations/process_model.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								563,
+								563
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "python"
+							},
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"markdonw_live_preview_last_run": 1541526385.51,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "2~Hybrid_Calibration/1_tune_model.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4868,
+								4868
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"markdonw_live_preview_last_run": 1541526385.51,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2400.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "2~Hybrid_Calibration/2_run_simulation.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1155,
+								1155
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1541526385.51,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 200.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "2~Hybrid_Calibration/3_plot.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3836,
+								3836
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1541526385.51,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1500.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "2~Hybrid_Calibration/Hourly_output/calibration_metrics.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								661,
+								661
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"markdonw_live_preview_last_run": 1541526385.52,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "2~Hybrid_Calibration/Calibrating_HM_Occ.idf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 584293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								584157,
+								584157
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1541526385.81,
+							"syntax": "Packages/Fortran/grammars/FortranNamelist.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 241695.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "2~Hybrid_Calibration/Calibrating_HM_ACH.idf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 555751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479896,
+								479490
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1541526385.81,
+							"syntax": "Packages/Fortran/grammars/FortranNamelist.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 205439.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "2~Hybrid_Calibration/Calibrating_HM_Occ_ACH.idf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 587524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								587423,
+								587423
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1541526385.81,
+							"syntax": "Packages/Fortran/grammars/FortranNamelist.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 243060.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "2~Hybrid_Calibration/Tweaked.idf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 583169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576853,
+								576875
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1541526385.81,
+							"syntax": "Packages/Fortran/grammars/FortranNamelist.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 239519.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "2~Hybrid_Calibration/Baseline.idf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 579747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								494491,
+								494512
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1541526385.87,
+							"syntax": "Packages/Fortran/grammars/FortranNamelist.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 203919.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 292.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "hybrid_calibration.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"buildin",
+				"C:\\Users\\Han\\Documents\\GitHub\\CERC-BEE-Benchmarking-Tool\\src\\building.py"
+			],
+			[
+				"main",
+				"C:\\Users\\Han\\Documents\\GitHub\\CERC-BEE-Benchmarking-Tool\\src\\main.py"
+			],
+			[
+				"zonetem",
+				"src\\EnergyPlus\\ZoneTempPredictorCorrector.cc"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"correct",
+				"CorrectZoneContaminants"
+			],
+			[
+				"correctcon",
+				"CorrectZoneContaminants"
+			],
+			[
+				"mea",
+				"measure"
+			],
+			[
+				"",
+				"AHU_2_Heat"
+			]
+		],
+		"width": 600.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}

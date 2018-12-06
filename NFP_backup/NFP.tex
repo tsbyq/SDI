@@ -1,0 +1,363 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage[margin=0.8 in]{geometry}
+\usepackage{graphicx}
+
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\renewcommand*\descriptionlabel[1]{\hspace\leftmargin$#1$}
+
+\begin{document}
+
+\title{Hybrid Model: Zone Infiltration and People Count}
+\author{Han Li}
+
+\maketitle
+
+% \begin{abstract}
+% The abstract text goes here.
+% \end{abstract}
+
+\section{Justification for Feature Update}
+The proposed new feature improves the current HybridModel object which utilizes inverse modeling algorithms based on the zone heat, moisture, and contaminant balance equations. The current HybridModel feature use easily measurable zone air temperature to solve zone internal thermal mass or air infiltration rate assuming the HVAC system is in free-floating mode. The new HybridModel feature allows additional parameters such as zone air humidity ratio and CO$_2$ concentration as the input of the inverse modeling algorithms to solve highly uncertain parameters like air infiltration and people count. Depending on the availability of zone supply air parameters (i.e., supply air flow rate, supply air temperature, supply air humidity ratio, and supply air CO$_2$ concentration) measurements, the new HybridModel feature can solve air infiltration and people count for both HVAC-off mode and HVAC-on mode. The hybrid approach keeps the virtue of the physics-based model and taking advantage of more measured buildings data which is available nowadays due to the wide use of low-cost sensors and the needs of better controls in existing buildings.
+This new feature proposal provides technical details of the new HybridModel object its implementation in EnergyPlus. The proposed feature will improve simulation usability and accuracy for existing buildings, which supports more accurate analysis of energy retrofits.
+
+\section{Overview}
+\subsection{Air Infiltration}
+
+EnergyPlus uses the object, ZoneInfiltration:DesignFlowRate, to represent the infiltration caused by the opening and closing of exterior doors, cracks around windows, and even in very small amount through building elements. Users define the infiltration design air flow rate, an infiltration schedule, and temperature and wind correction coefficients. The source code module, ZoneEquipmentManager, contains the simplified infiltration algorithm as shown in Equation (1).
+\begin{align*}
+Infiltration = (Idesign)(Fschedule)[A+B(T_{zone}-T_{odb})+C(WindSpeed)+D(WindSpeed)^{2}] \numberthis
+\end{align*}
+\begin{align*}
+\text{Where: }\\
+  A &: \text{Constant term coefficient}, \\
+  B &: \text{Temperature term coefficient},\\
+  C &: \text{Velocity term coefficient},\\
+  D &: \text{Velocity squared coefficient},\\
+\end{align*}
+
+The simple method has an empirical correlation that modifies the infiltration as a function of wind speed and temperature difference across the envelope. The difficulty in using this equation is determining valid coefficients for each building type in each location. The simplified infiltration models consider the wind speed on zone altitude, and the variation in infiltration heat loss based on the wind velocity. These coefficients vary and provide very different results that cause great uncertainty in determining which numbers to use. EnergyPlus allows users to input these coefficients, however it is not easy to identify correct ones for typical modeling practices. 
+The infiltration hybrid model derives the time-step zone infiltration air flow rates, using the inverse zone heat balance equation, moisture balance equation, or contaminant balance equation, which consider all complexities of design flow rate, coefficients and climate conditions. 
+
+ 
+\subsection{People Count}
+In EnergyPlus, people count and people activity level is represented by People and corresponding schedule objects. Users set the number of people calculation method, people activity level, sensible and fraction heat fractions, and CO$_2$ generation rate in the People object. Each People object can be assigned to a zone or a zone list. A set of people related schedule objects are used to define the temporal number of people rules. In typical simulation setting, the People object is usually set to have fixed schedules. In reality, occupancy schedule is highly uncertain. Using the typical settings for the People object can cause loss of model authenticity.
+The new hybrid model algorithm calculates the time-step zone people count by inversely solving the zone sensible heat balance equation, moisture balance equation, or contaminant balance equation. 
+
+\subsection{Zone Balance Equations}
+The hybrid model algorithms are built upon the physics-based zone heat, moisture, and contaminant balance equations reformulated to solve a partially inverse problem. The basis for the zone air system integration is to formulate balance equations for the zone air and solve the resulting ordinary differential equations. It should be noted that the hybrid algorithms to be developed are generic and can be adopted by EnergyPlus and other building energy simulation programs. 
+Equation (2) below indicates zone heat balance relationships. It assumes that the sum of zone loads and air system output equals the change in energy stored in the zone. The infiltration airflow rate, ṁ$_{inf}$ changes for different conditions depending on outdoor temperature, wind speed, and HVAC system operations. The energy provided from systems to the zone is represented as Q$_{sys}$. 
+\begin{align*}
+\rho_{air}V_z C_{p}\frac {dT_z} {dt} &= \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} \\
++ & ṁ_{inf}C_p(T_o - T_z) + ṁ_{sys}C_p(T_{sys} - T_z) \numberthis
+\end{align*}
+\begin{align*}
+\text{Where: }\\
+  \rho_{air} &: \text{Zone air density} ~ [kg/m^{3}], \\
+  V_{z} &: \text{Zone air volume} ~ [m^{3}],\\
+  C_{p} &: \text{zone air specific heat} ~ [kJ/kg \cdot K],\\
+  T_{z} &: \text{zone air temperature at the current time step} ~[K],\\
+  t &: \text{Current time},\\
+  \Sigma{Q_{in}} &: \text{Sum of internal sensible heat gain} ~ ,\\
+  \Sigma{h_i A_i (T_{si}-T_z)} &: \text{Convective heat transfer from the zone surfaces} ~ [kW],\\
+  \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} &: \text{Heat transfer due to interzone air mixing} ~ [kW],\\
+  ṁ_{inf} (T_o - T_z)&: \text{Heat transfer due to infiltration of outside air} ~ [kW],\\
+  ṁ_{sys} (T_{sys} - T_z)&: \text{Heat transfer due to air supplied by HVAC system} ~ [kW],\\
+\end{align*}
+
+The sum of zone loads and the provided air system energy equals the change in energy stored in the zone. Typically, the capacitance $\rho_{air}V_z C_{p}$ would be that of the zone air only. The internal thermal masses, assumed to be in equilibrium with the zone air, are included in this term. EnergyPlus provides algorithms to solve the zone air energy and moisture balance equations defined in the ZoneAirHeatBalanceAlgorithm object. The algorithms use the finite difference approximation or analytical solution to calculate the derivative term with respect to time. 
+
+EnergyPlus provides three different heat balance solution algorithms to solve the zone air energy balance equations. These are defined in the Algorithm field in the ZoneAirHeatBalanceAlgorithm object: 3rdOrderBackwardDifference, EulerMethod and AnalyticalSolution. The first two methods to solve Equation use the finite difference approximation while the third uses an analytical solution. The hybrid modeling approach uses the 3rdOrderBackwardDifference to inversely solve the air infiltration. EnergyPlus Code for these balance algorithms are referenced to the ZoneTempPredictorCorrector module.
+
+Similarly, EnergyPlus solves zone humidity ratio and CO2 concentration with the predictor-corrector approach. Equations (3) is the zone air moisture balance equation.
+
+\begin{align*}
+\rho_{air} V_{z} C_{w}\frac {dW_z} {dt} &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i rho_{air} (W_{si} - W_z)} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_z)} \\
++ & ṁ_{inf} (W_o - W_z) + ṁ_{sys} (W_{sys} - W_z)\numberthis
+\end{align*}
+\begin{align*}
+\text{Where: }\\
+  \rho_{air} &: \text{Zone air density} ~ [kg/m^{3}], \\
+  V_{z} &: \text{Zone air volume} ~ [m^{3}],\\
+  C_{w} &: \text{Zone air humidity capacity multiplier},\\
+  W_{z} &: \text{Zone air humidity ratio} ~ [kg_w/kg_{dry\cdot air}],\\
+  t &: \text{Current time},\\
+  \Sigma{kg_{mass_{sched}}} &: \text{sum of scheduled internal moisture load} ~ [kg],\\
+\end{align*}
+
+Equations (4) is the zone air CO$_2$ balance equation. 
+\begin{align*}
+\rho_{air} V_{z} C_{CO_{2}}\frac {dC_z} {dt} &= \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{ṁ_{zi}(C_{zi}-C_z)} \\
++ & ṁ_{inf} (C_o - C_z) + ṁ_{sys} (C_{sys} - C_z) \numberthis
+\end{align*}
+
+\begin{align*}
+\text{Where: }\\
+  \rho_{air} &: \text{Zone air density} ~ [kg/m^{3}], \\
+  V_{z} &: \text{Zone air volume} ~ [m^{3}],\\
+  C_{CO_{2}} &: \text{Zone carbon dioxide capacity multiplier [dimensionless]},\\
+  C_{z} &: \text{zone air carbon dioxide concentration at the current time step} ~ [ppm],\\
+  t &: \text{Current time},\\
+  \Sigma{kg_{mass_{sched}}} &: \text{Sum of scheduled internal carbon dioxide loads} ~ [kg/s],\\
+  \Sigma{ṁ_{zi}(C_{zi}-C_z)} &: \text{Carbon dioxide transfer due to interzone air mixing} ~ [ppm\cdot kg/s],\\
+  C_{zi} &: \text{Carbon dioxide concentration in the zone air being transferred into this zone} ~ [ppm],\\
+  ṁ_{inf} (C_o - C_z)&: \text{Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [ppm \cdot kg/
+s],\\
+  C_o&: \text{Carbon dioxide concentration in outdoor air} ~ [ppm],\\
+  ṁ_{sys} (C_{sys} - C_z)&: \text{Carbon dioxide transfer due to system supply} ~ [ppm-kg/s],\\
+  C_{sys}&: \text{Carbon dioxide concentration in the system supply airstream}~ [ppm],\\
+\end{align*}
+
+\section{Approach}
+This section provides technical details of solving zone balance equations via third-order backward approximation.
+\subsection{Infiltration Inverse Models}
+This sub-section shows three scenarios to solve zone air infiltration with different zone balance equations. Note that the system supply terms may or may not be included depending on the HVAC system operation status. The system supply terms should be included if the HybridModel is used to solve air infiltration when the HVAC system is on. No system supply term should be included if the HybridModel is used to solve air infiltration when the HVAC system is off.
+\subsubsection{Solving Infiltration with Temperature}
+$Equation~(2)$ can be re-written with the third-order backward approximation:
+\begin{align*}
+C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} = RHS\numberthis
+\end{align*}
+Where: 
+\begin{align*}
+  RHS = \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} + ṁ_{inf}C_p(T_o - T_z) + ṁ_{sys}C_p(T_{sys} - T_z)\numberthis
+\end{align*}
+Then the infiltration mass flow rate can be solved:
+\begin{align*}
+  ṁ_{inf} = \frac{C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t}-[\Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} + ṁ_{sys}C_p(T_{sys} - T_z)]}{C_p(T_o - T_{z}^{t})}\numberthis
+\end{align*}
+
+\subsubsection{Solving Infiltration with Humidity Ratio}
+$Equation~(3)$ can be re-written with the third-order backward approximation:
+\begin{align*}
+C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} = RHS\numberthis
+\end{align*}
+Where: 
+\begin{align*}
+  RHS &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_{z}^{t})} \\
+  &+ ṁ_{inf} (W_o - W_{z}^{t}) + ṁ_{sys} (W_{sys} - W_{z}^{t})\numberthis
+\end{align*}
+Then the infiltration mass flow rate can be solved:
+\begin{align*}
+  ṁ_{inf} = \frac{C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t}-[\Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_{z}^{t})}]}{W_o - W_{z}^{t}}\numberthis
+\end{align*}
+
+\subsubsection{Solving Infiltration with CO$_2$ Concentration}
+$Equation~(4)$ can be re-written with the third-order backward approximation:
+\begin{align*}
+C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} = RHS\numberthis
+\end{align*}
+Where: 
+\begin{align*}
+  RHS = \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{ṁ_{zi}(C_{zi}-C_z)} ṁ_{inf} (C_o - C_z) + ṁ_{sys} (C_{sys} - C_z)\numberthis
+\end{align*}
+Then the infiltration mass flow rate can be solved:
+\begin{align*}
+  ṁ_{inf} = \frac{C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t}-[\Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{ṁ_{zi}(C_{zi}-C_z)} + ṁ_{sys} (C_{sys} - C_z)]}{C_o - C_{z}^{t}}\numberthis
+\end{align*}
+
+\subsection{People Count Inverse Models}
+This sub-section shows three scenarios to solve zone people count with different zone balance equations. Note that the system supply terms may or may not be included depending on the HVAC system operation status. The system supply terms should be included if the HybridModel is used to solve air infiltration when the HVAC system is on. No system supply term should be included if the HybridModel is used to solve air infiltration when the HVAC system is off.
+\subsubsection{Solving People Count with Temperature}
+$Equation~(2)$ can be re-written with the third-order backward approximation:
+\begin{align*}
+C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} = RHS\numberthis
+\end{align*}
+Where: 
+\begin{align*}
+  RHS = \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} + ṁ_{inf}C_p(T_o - T_z) + ṁ_{sys}C_p(T_{sys} - T_z)\numberthis
+\end{align*}
+The sum of internal sensible heat gains is:
+\begin{align*}
+  \Sigma{Q_{in}} &= C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} \\
+  &-  [\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} + ṁ_{inf}C_p(T_o - T_z) + ṁ_{sys}C_p(T_{sys} - T_z)] \numberthis
+\end{align*}
+The sum of internal sensible heat gains from people is:
+\begin{align*}
+  \Sigma{Q_{people}} = \Sigma{Q_{in}} - \Sigma{Q_{others}}\numberthis
+\end{align*}
+Finally, the number of people could be solved:
+\begin{align*}
+  N = \frac {\Sigma{Q_{people}}}{Q_{single}} \numberthis
+\end{align*}
+
+\begin{align*}
+\text{Where: }\\
+  Q_{single} &: \text{Sensible heat rate per person} ~ [W] \\
+\end{align*}
+
+\subsubsection{Solving People Count with Humidity Ratio}
+$Equation~(3)$ can be re-written with the third-order backward approximation:
+\begin{align*}
+C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} = RHS\numberthis
+\end{align*}
+Where: 
+\begin{align*}
+  RHS &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_{z}^{t})} \\
+  &+ ṁ_{inf} (W_o - W_{z}^{t}) + ṁ_{sys} (W_{sys} - W_{z}^{t})\numberthis
+\end{align*}
+The sum of internal moisture gains is:
+\begin{align*}
+  \Sigma{kg_{mass_{sched}}} &= C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} \\
+  &-  [\Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_{z}^{t})}] \numberthis
+\end{align*}
+The sum of internal moisture gains from people is:
+\begin{align*}
+  \Sigma{kg_{mass_{sched-people}}} = \Sigma{kg_{mass_{sched}}} - \Sigma{kg_{mass_{sched-others}}} \numberthis
+\end{align*}
+Finally, the number of people could be solved:
+\begin{align*}
+  N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} \numberthis
+\end{align*}
+\begin{align*}
+\text{Where: }\\
+  kg_{mass_{single}} &: \text{Moisture dissipation rate per person} ~ [W] \\
+\end{align*}
+
+\subsubsection{Solving People Count with CO$_2$ Concentration}
+$Equation~(4)$ can be re-written with the third-order backward approximation:
+\begin{align*}
+C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} = RHS\numberthis
+\end{align*}
+Where: 
+\begin{align*}
+  RHS = \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{ṁ_{zi}(C_{zi}-C_z)} ṁ_{inf} (C_o - C_z) + ṁ_{sys} (C_{sys} - C_z)\numberthis
+\end{align*}
+The sum of internal CO$_2$ gains is:
+\begin{align*}
+  \Sigma{kg_{mass_{sched}}}\times 10^{6} &= C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} \\
+  &-  [\Sigma{ṁ_{zi}(C_{zi}-C_z)} ṁ_{inf} (C_o - C_z) + ṁ_{sys} (C_{sys} - C_z)] \numberthis
+\end{align*}
+The sum of internal CO$_2$ gains from people is:
+\begin{align*}
+  \Sigma{kg_{mass_{sched-people}}} = \Sigma{kg_{mass_{sched}}} - \Sigma{kg_{mass_{sched-others}}} \numberthis
+\end{align*}
+Finally, the number of people could be solved:
+\begin{align*}
+  N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} \numberthis
+\end{align*}
+\begin{align*}
+\text{Where: }\\
+  kg_{mass_{single}} &: \text{CO$_2$ generation rate per person} ~ [W] \\
+\end{align*}
+
+\section{IDD Modifications}
+\subsection{New Object(s)}
+None
+\subsection{Revised Object(s)}
+We propose to revise the current HybridModel:Zone. The revised object defines inputs for the new hybrid modeling algorithms for individual zones. 
+\begin{verbatim}
+HybridModel:Zone,
+       \memo Zones with measured air temperature data and a range of dates.
+       \memo If the range of temperature measurement dates includes a leap day, 
+       the weather data should include a leap day.
+  A1 , \field Name
+       \required-field
+       \type alpha
+  A2 , \field Zone Name
+       \required-field
+       \type object-list
+       \object-list ZoneNames
+  A3 , \field Calculate Zone Internal Thermal Mass
+       \note Use measured temperature to calculate zone temperature capacity multiplier.
+       \type choice
+       \key No
+       \key Yes
+       \default No
+  A4 , \field Calculate Zone Air Infiltration Rate
+       \note Use measured zone air parameters (temperature, humidity ratio, 
+       or CO2 concentration) to calculate zone air infiltration air flow rate.
+       \note At least one measured parameter should be provided.
+       \type choice
+       \key No
+       \key Yes
+       \default No
+  A5 , \field Calculate Zone People Count
+       \note Use measured humidity ratio data (temperature, humidity ratio, 
+       or CO2 concentration) to calculate zone people count.
+       \note At least one measured parameter should be provided..
+       \type choice
+       \key No
+       \key Yes
+       \default No
+  A6 , \field Zone Measured Air Temperature Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the measured zone air temperature.
+  A7 , \field Zone Measured Air Humidity Ratio Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the measured zone air humidity ratio.
+  A8 , \field Zone Measured Air CO2 Concentration Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the measured zone air CO2 concentration.
+  A9 , \field Zone Input People Activity Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the zone people activity level
+  A10 , \field Zone Input People Sensible Heat Fraction Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the people's sensible heat fraction.
+  A11 , \field Zone Input People Radiant Heat Fraction Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the people's radiant heat fraction.
+  A12 , \field Zone Input People CO2 Generation Rate Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the people's CO2 generation rate.
+  A13 , \field Zone Input Supply Air Temperature Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the system supply air temperature of the zone.
+  A14 , \field Zone Input Supply Air Mass Flow Rate Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the system supply air mass flow rate of the zone.
+  A15 , \field Zone Input Supply Air Humidity Ratio Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the system supply air humidity ratio of the zone.
+  A16 , \field Zone Input Supply Air CO2 Concentration Schedule Name
+       \type object-list
+       \object-list ScheduleNames
+       \note Schedule name of the system supply air CO2 concentration of the zone.
+  N1 , \field Begin Month
+       \required-field
+       \minimum 1
+       \maximum 12
+       \type integer
+  N2 , \field Begin Day of Month
+       \required-field
+       \minimum 1
+       \maximum 31
+       \type integer
+  N3 , \field End Month
+       \required-field
+       \minimum 1
+       \maximum 12
+       \type integer
+  N4 ; \field End Day of Month
+       \required-field
+       \minimum 1
+       \maximum 31
+       \type integer
+
+\end{verbatim}
+
+\section{Simulation Process}
+
+\section{IO Ref}
+
+\section{Testing/Validation/Data Source(s)}
+
+\section{EngRef}
+
+\section{Example File}
+
+\section{Reference}
+
+
+\end{document}

@@ -1,0 +1,756 @@
+
+ Meters for 7,S1 OFFICE BACK OFFICE LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE BACK [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:S1 OFFICE BACK [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 80,S1 OFFICE CORE OFFICE LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE CORE [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:S1 OFFICE CORE [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 105,S1 OFFICE FRONT OFFICE LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE FRONT [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:S1 OFFICE FRONT [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 130,S1 OFFICE LEFT OFFICE LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE LEFT [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:S1 OFFICE LEFT [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 155,S1 OFFICE RIGHT OFFICE LIGHTS:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE RIGHT [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:S1 OFFICE RIGHT [J]
+  OnMeter=General:InteriorLights:Electricity [J]
+
+ Meters for 180,S1 OFFICE BACK OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE BACK [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:S1 OFFICE BACK [J]
+  OnMeter=General:InteriorEquipment:Electricity [J]
+
+ Meters for 217,S1 OFFICE CORE OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE CORE [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:S1 OFFICE CORE [J]
+  OnMeter=General:InteriorEquipment:Electricity [J]
+
+ Meters for 230,S1 OFFICE FRONT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE FRONT [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:S1 OFFICE FRONT [J]
+  OnMeter=General:InteriorEquipment:Electricity [J]
+
+ Meters for 243,S1 OFFICE LEFT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE LEFT [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:S1 OFFICE LEFT [J]
+  OnMeter=General:InteriorEquipment:Electricity [J]
+
+ Meters for 256,S1 OFFICE RIGHT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:S1 OFFICE RIGHT [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:S1 OFFICE RIGHT [J]
+  OnMeter=General:InteriorEquipment:Electricity [J]
+
+ Meters for 269,SHW HEATER:Water Heater Source Side Heat Transfer Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:Plant [J]
+  OnMeter=WaterSystems:PlantLoopHeatingDemand [J]
+  OnMeter=Water Heater:WaterSystems:PlantLoopHeatingDemand [J]
+
+ Meters for 318,SHW HEATER:Water Heater Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:Plant [J]
+  OnMeter=WaterSystems:Gas [J]
+  OnMeter=Water Heater:WaterSystems:Gas [J]
+
+ Meters for 367,SHW HEATER:Water Heater Off Cycle Parasitic Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:Plant [J]
+  OnMeter=WaterSystems:Gas [J]
+  OnMeter=Water Heater:WaterSystems:Gas [J]
+
+ Meters for 368,SHW HEATER:Water Heater On Cycle Parasitic Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:Plant [J]
+  OnMeter=WaterSystems:Gas [J]
+  OnMeter=Water Heater:WaterSystems:Gas [J]
+
+ Meters for 369,SHW HEATER:Water Heater Water Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:Plant [m3]
+  OnMeter=WaterSystems:Water [m3]
+  OnMeter=Water Heater:WaterSystems:Water [m3]
+
+ Meters for 418,SHW HEATER:Water Heater Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:Plant [m3]
+  OnMeter=WaterSystems:MainsWater [m3]
+  OnMeter=Water Heater:WaterSystems:MainsWater [m3]
+
+ Meters for 472,S1 ATTIC:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 ATTIC [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:S1 ATTIC [J]
+
+ Meters for 533,S1 ATTIC:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 ATTIC [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:S1 ATTIC [J]
+
+ Meters for 558,S1 OFFICE BACK:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE BACK [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:S1 OFFICE BACK [J]
+
+ Meters for 583,S1 OFFICE BACK:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE BACK [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:S1 OFFICE BACK [J]
+
+ Meters for 596,S1 OFFICE CORE:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE CORE [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:S1 OFFICE CORE [J]
+
+ Meters for 621,S1 OFFICE CORE:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE CORE [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:S1 OFFICE CORE [J]
+
+ Meters for 634,S1 OFFICE FRONT:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE FRONT [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:S1 OFFICE FRONT [J]
+
+ Meters for 659,S1 OFFICE FRONT:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE FRONT [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:S1 OFFICE FRONT [J]
+
+ Meters for 672,S1 OFFICE LEFT:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE LEFT [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:S1 OFFICE LEFT [J]
+
+ Meters for 697,S1 OFFICE LEFT:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE LEFT [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:S1 OFFICE LEFT [J]
+
+ Meters for 710,S1 OFFICE RIGHT:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE RIGHT [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:S1 OFFICE RIGHT [J]
+
+ Meters for 735,S1 OFFICE RIGHT:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:S1 OFFICE RIGHT [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:S1 OFFICE RIGHT [J]
+
+ Meters for 748,WATER USE EQUIPMENT 1:Water Use Equipment Total Volume [m3]
+  OnMeter=Water:Facility [m3]
+  OnMeter=Water:Plant [m3]
+  OnMeter=WaterSystems:Water [m3]
+  OnMeter=General:WaterSystems:Water [m3]
+
+ Meters for 761,WATER USE EQUIPMENT 1:Water Use Equipment Mains Water Volume [m3]
+  OnMeter=MainsWater:Facility [m3]
+  OnMeter=MainsWater:Plant [m3]
+  OnMeter=WaterSystems:MainsWater [m3]
+  OnMeter=General:WaterSystems:MainsWater [m3]
+
+ Meters for 774,WATER USE EQUIPMENT 1:Water Use Equipment Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Plant [J]
+  OnMeter=WaterSystems:EnergyTransfer [J]
+  OnMeter=General:WaterSystems:EnergyTransfer [J]
+
+ Meters for 811,WATER USE CONNECTIONS 1:Water Use Connections Plant Hot Water Energy [J]
+  OnMeter=PlantLoopHeatingDemand:Facility [J]
+  OnMeter=PlantLoopHeatingDemand:Plant [J]
+  OnMeter=WaterSystems:PlantLoopHeatingDemand [J]
+
+ Meters for 812,Whole Building:Facility Total Purchased Electric Energy [J]
+  OnMeter=ElectricityPurchased:Facility [J]
+  OnMeter=ElectricityPurchased:Plant [J]
+  OnMeter=Cogeneration:ElectricityPurchased [J]
+
+ Meters for 849,Whole Building:Facility Total Surplus Electric Energy [J]
+  OnMeter=ElectricitySurplusSold:Facility [J]
+  OnMeter=ElectricitySurplusSold:Plant [J]
+  OnMeter=Cogeneration:ElectricitySurplusSold [J]
+
+ Meters for 886,Whole Building:Facility Net Purchased Electric Energy [J]
+  OnMeter=ElectricityNet:Facility [J]
+  OnMeter=ElectricityNet:Plant [J]
+  OnMeter=Cogeneration:ElectricityNet [J]
+
+ Meters for 923,OFFICE ELEC REHEAT COIL 4:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 948,OFFICE ELEC REHEAT COIL 4:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 973,OFFICE ELEC REHEAT COIL 5:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 974,OFFICE ELEC REHEAT COIL 5:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 975,OFFICE ELEC REHEAT COIL 2:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 976,OFFICE ELEC REHEAT COIL 2:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 977,OFFICE ELEC REHEAT COIL 1:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 978,OFFICE ELEC REHEAT COIL 1:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 979,OFFICE ELEC REHEAT COIL 3:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 980,OFFICE ELEC REHEAT COIL 3:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 981,OFFICE HEATING COIL:Heating Coil Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=HeatingCoils:EnergyTransfer [J]
+
+ Meters for 982,OFFICE HEATING COIL:Heating Coil Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 1007,OFFICE HEATING COIL:Heating Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Heating:Electricity [J]
+
+ Meters for 1008,OFFICE HEATING COIL:Heating Coil Ancillary Gas Energy [J]
+  OnMeter=Gas:Facility [J]
+  OnMeter=Gas:HVAC [J]
+  OnMeter=Heating:Gas [J]
+
+ Meters for 1009,OFFICE FAN:Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=General:Fans:Electricity [J]
+
+ Meters for 1034,EXTERIOR LIGHTS:Exterior Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=ExteriorLights:Electricity [J]
+  OnMeter=exterior lights:ExteriorLights:Electricity [J]
+
+ Meters for 1059,OFFICE COOLING COIL:Cooling Coil Total Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:HVAC [J]
+  OnMeter=CoolingCoils:EnergyTransfer [J]
+
+ Meters for 1072,OFFICE COOLING COIL:Cooling Coil Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:HVAC [J]
+  OnMeter=Cooling:Electricity [J]
+
+ Meters for 1085,SWH PUMP:Pump Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Plant [J]
+  OnMeter=Pumps:Electricity [J]
+
+ Meters for 1110,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 1135,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 1136,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ For Meter=Electricity:Facility [J], ResourceType=Electricity, contents are:
+  S1 OFFICE BACK OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE CORE OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE FRONT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE LEFT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE RIGHT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE BACK OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE CORE OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE FRONT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE LEFT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE RIGHT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  OFFICE ELEC REHEAT COIL 4:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 5:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 2:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 1:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 3:Heating Coil Electric Energy
+  OFFICE HEATING COIL:Heating Coil Electric Energy
+  OFFICE FAN:Fan Electric Energy
+  EXTERIOR LIGHTS:Exterior Lights Electric Energy
+  OFFICE COOLING COIL:Cooling Coil Electric Energy
+  SWH PUMP:Pump Electric Energy
+
+ For Meter=Electricity:Building [J], ResourceType=Electricity, Group=Building, contents are:
+  S1 OFFICE BACK OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE CORE OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE FRONT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE LEFT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE RIGHT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE BACK OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE CORE OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE FRONT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE LEFT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE RIGHT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=Electricity:Zone:S1 OFFICE BACK [J], ResourceType=Electricity, Group=Zone, contents are:
+  S1 OFFICE BACK OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE BACK OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  S1 OFFICE BACK OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE CORE OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE FRONT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE LEFT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE RIGHT OFFICE LIGHTS:Lights Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:S1 OFFICE BACK [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  S1 OFFICE BACK OFFICE LIGHTS:Lights Electric Energy
+
+ For Meter=General:InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  S1 OFFICE BACK OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE CORE OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE FRONT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE LEFT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE RIGHT OFFICE LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:S1 OFFICE CORE [J], ResourceType=Electricity, Group=Zone, contents are:
+  S1 OFFICE CORE OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE CORE OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:S1 OFFICE CORE [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  S1 OFFICE CORE OFFICE LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:S1 OFFICE FRONT [J], ResourceType=Electricity, Group=Zone, contents are:
+  S1 OFFICE FRONT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE FRONT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:S1 OFFICE FRONT [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  S1 OFFICE FRONT OFFICE LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:S1 OFFICE LEFT [J], ResourceType=Electricity, Group=Zone, contents are:
+  S1 OFFICE LEFT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE LEFT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:S1 OFFICE LEFT [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  S1 OFFICE LEFT OFFICE LIGHTS:Lights Electric Energy
+
+ For Meter=Electricity:Zone:S1 OFFICE RIGHT [J], ResourceType=Electricity, Group=Zone, contents are:
+  S1 OFFICE RIGHT OFFICE LIGHTS:Lights Electric Energy
+  S1 OFFICE RIGHT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:S1 OFFICE RIGHT [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  S1 OFFICE RIGHT OFFICE LIGHTS:Lights Electric Energy
+
+ For Meter=InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  S1 OFFICE BACK OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE CORE OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE FRONT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE LEFT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE RIGHT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:S1 OFFICE BACK [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  S1 OFFICE BACK OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=General:InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  S1 OFFICE BACK OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE CORE OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE FRONT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE LEFT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+  S1 OFFICE RIGHT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:S1 OFFICE CORE [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  S1 OFFICE CORE OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:S1 OFFICE FRONT [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  S1 OFFICE FRONT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:S1 OFFICE LEFT [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  S1 OFFICE LEFT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:S1 OFFICE RIGHT [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  S1 OFFICE RIGHT OFFICE ELECTRIC EQUIPMENT:Electric Equipment Electric Energy
+
+ For Meter=PlantLoopHeatingDemand:Facility [J], ResourceType=PlantLoopHeatingDemand, contents are:
+  SHW HEATER:Water Heater Source Side Heat Transfer Energy
+  WATER USE CONNECTIONS 1:Water Use Connections Plant Hot Water Energy
+
+ For Meter=PlantLoopHeatingDemand:Plant [J], ResourceType=PlantLoopHeatingDemand, Group=Plant, contents are:
+  SHW HEATER:Water Heater Source Side Heat Transfer Energy
+  WATER USE CONNECTIONS 1:Water Use Connections Plant Hot Water Energy
+
+ For Meter=WaterSystems:PlantLoopHeatingDemand [J], ResourceType=PlantLoopHeatingDemand, EndUse=WaterSystems, contents are:
+  SHW HEATER:Water Heater Source Side Heat Transfer Energy
+  WATER USE CONNECTIONS 1:Water Use Connections Plant Hot Water Energy
+
+ For Meter=Water Heater:WaterSystems:PlantLoopHeatingDemand [J], ResourceType=PlantLoopHeatingDemand, EndUse=WaterSystems, contents are:
+  SHW HEATER:Water Heater Source Side Heat Transfer Energy
+
+ For Meter=Gas:Facility [J], ResourceType=Gas, contents are:
+  SHW HEATER:Water Heater Gas Energy
+  SHW HEATER:Water Heater Off Cycle Parasitic Gas Energy
+  SHW HEATER:Water Heater On Cycle Parasitic Gas Energy
+  OFFICE HEATING COIL:Heating Coil Gas Energy
+  OFFICE HEATING COIL:Heating Coil Ancillary Gas Energy
+
+ For Meter=Gas:Plant [J], ResourceType=Gas, Group=Plant, contents are:
+  SHW HEATER:Water Heater Gas Energy
+  SHW HEATER:Water Heater Off Cycle Parasitic Gas Energy
+  SHW HEATER:Water Heater On Cycle Parasitic Gas Energy
+
+ For Meter=WaterSystems:Gas [J], ResourceType=Gas, EndUse=WaterSystems, contents are:
+  SHW HEATER:Water Heater Gas Energy
+  SHW HEATER:Water Heater Off Cycle Parasitic Gas Energy
+  SHW HEATER:Water Heater On Cycle Parasitic Gas Energy
+
+ For Meter=Water Heater:WaterSystems:Gas [J], ResourceType=Gas, EndUse=WaterSystems, contents are:
+  SHW HEATER:Water Heater Gas Energy
+  SHW HEATER:Water Heater Off Cycle Parasitic Gas Energy
+  SHW HEATER:Water Heater On Cycle Parasitic Gas Energy
+
+ For Meter=Water:Facility [m3], ResourceType=Water, contents are:
+  SHW HEATER:Water Heater Water Volume
+  WATER USE EQUIPMENT 1:Water Use Equipment Total Volume
+
+ For Meter=Water:Plant [m3], ResourceType=Water, Group=Plant, contents are:
+  SHW HEATER:Water Heater Water Volume
+  WATER USE EQUIPMENT 1:Water Use Equipment Total Volume
+
+ For Meter=WaterSystems:Water [m3], ResourceType=Water, EndUse=WaterSystems, contents are:
+  SHW HEATER:Water Heater Water Volume
+  WATER USE EQUIPMENT 1:Water Use Equipment Total Volume
+
+ For Meter=Water Heater:WaterSystems:Water [m3], ResourceType=Water, EndUse=WaterSystems, contents are:
+  SHW HEATER:Water Heater Water Volume
+
+ For Meter=MainsWater:Facility [m3], ResourceType=MainsWater, contents are:
+  SHW HEATER:Water Heater Mains Water Volume
+  WATER USE EQUIPMENT 1:Water Use Equipment Mains Water Volume
+
+ For Meter=MainsWater:Plant [m3], ResourceType=MainsWater, Group=Plant, contents are:
+  SHW HEATER:Water Heater Mains Water Volume
+  WATER USE EQUIPMENT 1:Water Use Equipment Mains Water Volume
+
+ For Meter=WaterSystems:MainsWater [m3], ResourceType=MainsWater, EndUse=WaterSystems, contents are:
+  SHW HEATER:Water Heater Mains Water Volume
+  WATER USE EQUIPMENT 1:Water Use Equipment Mains Water Volume
+
+ For Meter=Water Heater:WaterSystems:MainsWater [m3], ResourceType=MainsWater, EndUse=WaterSystems, contents are:
+  SHW HEATER:Water Heater Mains Water Volume
+
+ For Meter=EnergyTransfer:Facility [J], ResourceType=EnergyTransfer, contents are:
+  S1 ATTIC:Zone Air System Sensible Heating Energy
+  S1 ATTIC:Zone Air System Sensible Cooling Energy
+  S1 OFFICE BACK:Zone Air System Sensible Heating Energy
+  S1 OFFICE BACK:Zone Air System Sensible Cooling Energy
+  S1 OFFICE CORE:Zone Air System Sensible Heating Energy
+  S1 OFFICE CORE:Zone Air System Sensible Cooling Energy
+  S1 OFFICE FRONT:Zone Air System Sensible Heating Energy
+  S1 OFFICE FRONT:Zone Air System Sensible Cooling Energy
+  S1 OFFICE LEFT:Zone Air System Sensible Heating Energy
+  S1 OFFICE LEFT:Zone Air System Sensible Cooling Energy
+  S1 OFFICE RIGHT:Zone Air System Sensible Heating Energy
+  S1 OFFICE RIGHT:Zone Air System Sensible Cooling Energy
+  WATER USE EQUIPMENT 1:Water Use Equipment Heating Energy
+  OFFICE ELEC REHEAT COIL 4:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 5:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 2:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 1:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 3:Heating Coil Heating Energy
+  OFFICE HEATING COIL:Heating Coil Heating Energy
+  OFFICE COOLING COIL:Cooling Coil Total Cooling Energy
+
+ For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
+  S1 ATTIC:Zone Air System Sensible Heating Energy
+  S1 ATTIC:Zone Air System Sensible Cooling Energy
+  S1 OFFICE BACK:Zone Air System Sensible Heating Energy
+  S1 OFFICE BACK:Zone Air System Sensible Cooling Energy
+  S1 OFFICE CORE:Zone Air System Sensible Heating Energy
+  S1 OFFICE CORE:Zone Air System Sensible Cooling Energy
+  S1 OFFICE FRONT:Zone Air System Sensible Heating Energy
+  S1 OFFICE FRONT:Zone Air System Sensible Cooling Energy
+  S1 OFFICE LEFT:Zone Air System Sensible Heating Energy
+  S1 OFFICE LEFT:Zone Air System Sensible Cooling Energy
+  S1 OFFICE RIGHT:Zone Air System Sensible Heating Energy
+  S1 OFFICE RIGHT:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:S1 ATTIC [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  S1 ATTIC:Zone Air System Sensible Heating Energy
+  S1 ATTIC:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  S1 ATTIC:Zone Air System Sensible Heating Energy
+  S1 OFFICE BACK:Zone Air System Sensible Heating Energy
+  S1 OFFICE CORE:Zone Air System Sensible Heating Energy
+  S1 OFFICE FRONT:Zone Air System Sensible Heating Energy
+  S1 OFFICE LEFT:Zone Air System Sensible Heating Energy
+  S1 OFFICE RIGHT:Zone Air System Sensible Heating Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:S1 ATTIC [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  S1 ATTIC:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  S1 ATTIC:Zone Air System Sensible Cooling Energy
+  S1 OFFICE BACK:Zone Air System Sensible Cooling Energy
+  S1 OFFICE CORE:Zone Air System Sensible Cooling Energy
+  S1 OFFICE FRONT:Zone Air System Sensible Cooling Energy
+  S1 OFFICE LEFT:Zone Air System Sensible Cooling Energy
+  S1 OFFICE RIGHT:Zone Air System Sensible Cooling Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:S1 ATTIC [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  S1 ATTIC:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:S1 OFFICE BACK [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  S1 OFFICE BACK:Zone Air System Sensible Heating Energy
+  S1 OFFICE BACK:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:S1 OFFICE BACK [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  S1 OFFICE BACK:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:S1 OFFICE BACK [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  S1 OFFICE BACK:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:S1 OFFICE CORE [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  S1 OFFICE CORE:Zone Air System Sensible Heating Energy
+  S1 OFFICE CORE:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:S1 OFFICE CORE [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  S1 OFFICE CORE:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:S1 OFFICE CORE [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  S1 OFFICE CORE:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:S1 OFFICE FRONT [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  S1 OFFICE FRONT:Zone Air System Sensible Heating Energy
+  S1 OFFICE FRONT:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:S1 OFFICE FRONT [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  S1 OFFICE FRONT:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:S1 OFFICE FRONT [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  S1 OFFICE FRONT:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:S1 OFFICE LEFT [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  S1 OFFICE LEFT:Zone Air System Sensible Heating Energy
+  S1 OFFICE LEFT:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:S1 OFFICE LEFT [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  S1 OFFICE LEFT:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:S1 OFFICE LEFT [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  S1 OFFICE LEFT:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:S1 OFFICE RIGHT [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  S1 OFFICE RIGHT:Zone Air System Sensible Heating Energy
+  S1 OFFICE RIGHT:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:S1 OFFICE RIGHT [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  S1 OFFICE RIGHT:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:S1 OFFICE RIGHT [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  S1 OFFICE RIGHT:Zone Air System Sensible Cooling Energy
+
+ For Meter=General:WaterSystems:Water [m3], ResourceType=Water, EndUse=WaterSystems, contents are:
+  WATER USE EQUIPMENT 1:Water Use Equipment Total Volume
+
+ For Meter=General:WaterSystems:MainsWater [m3], ResourceType=MainsWater, EndUse=WaterSystems, contents are:
+  WATER USE EQUIPMENT 1:Water Use Equipment Mains Water Volume
+
+ For Meter=EnergyTransfer:Plant [J], ResourceType=EnergyTransfer, Group=Plant, contents are:
+  WATER USE EQUIPMENT 1:Water Use Equipment Heating Energy
+
+ For Meter=WaterSystems:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=WaterSystems, contents are:
+  WATER USE EQUIPMENT 1:Water Use Equipment Heating Energy
+
+ For Meter=General:WaterSystems:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=WaterSystems, contents are:
+  WATER USE EQUIPMENT 1:Water Use Equipment Heating Energy
+
+ For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricityPurchased:Plant [J], ResourceType=ElectricityPurchased, Group=Plant, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricitySurplusSold:Facility [J], ResourceType=ElectricitySurplusSold, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricitySurplusSold:Plant [J], ResourceType=ElectricitySurplusSold, Group=Plant, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricityNet:Facility [J], ResourceType=ElectricityNet, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=ElectricityNet:Plant [J], ResourceType=ElectricityNet, Group=Plant, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=EnergyTransfer:HVAC [J], ResourceType=EnergyTransfer, Group=HVAC, contents are:
+  OFFICE ELEC REHEAT COIL 4:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 5:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 2:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 1:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 3:Heating Coil Heating Energy
+  OFFICE HEATING COIL:Heating Coil Heating Energy
+  OFFICE COOLING COIL:Cooling Coil Total Cooling Energy
+
+ For Meter=HeatingCoils:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=HeatingCoils, contents are:
+  OFFICE ELEC REHEAT COIL 4:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 5:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 2:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 1:Heating Coil Heating Energy
+  OFFICE ELEC REHEAT COIL 3:Heating Coil Heating Energy
+  OFFICE HEATING COIL:Heating Coil Heating Energy
+
+ For Meter=Electricity:HVAC [J], ResourceType=Electricity, Group=HVAC, contents are:
+  OFFICE ELEC REHEAT COIL 4:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 5:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 2:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 1:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 3:Heating Coil Electric Energy
+  OFFICE HEATING COIL:Heating Coil Electric Energy
+  OFFICE FAN:Fan Electric Energy
+  OFFICE COOLING COIL:Cooling Coil Electric Energy
+
+ For Meter=Heating:Electricity [J], ResourceType=Electricity, EndUse=Heating, contents are:
+  OFFICE ELEC REHEAT COIL 4:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 5:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 2:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 1:Heating Coil Electric Energy
+  OFFICE ELEC REHEAT COIL 3:Heating Coil Electric Energy
+  OFFICE HEATING COIL:Heating Coil Electric Energy
+
+ For Meter=Gas:HVAC [J], ResourceType=Gas, Group=HVAC, contents are:
+  OFFICE HEATING COIL:Heating Coil Gas Energy
+  OFFICE HEATING COIL:Heating Coil Ancillary Gas Energy
+
+ For Meter=Heating:Gas [J], ResourceType=Gas, EndUse=Heating, contents are:
+  OFFICE HEATING COIL:Heating Coil Gas Energy
+  OFFICE HEATING COIL:Heating Coil Ancillary Gas Energy
+
+ For Meter=Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  OFFICE FAN:Fan Electric Energy
+
+ For Meter=General:Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  OFFICE FAN:Fan Electric Energy
+
+ For Meter=ExteriorLights:Electricity [J], ResourceType=Electricity, EndUse=ExteriorLights, contents are:
+  EXTERIOR LIGHTS:Exterior Lights Electric Energy
+
+ For Meter=exterior lights:ExteriorLights:Electricity [J], ResourceType=Electricity, EndUse=ExteriorLights, contents are:
+  EXTERIOR LIGHTS:Exterior Lights Electric Energy
+
+ For Meter=CoolingCoils:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=CoolingCoils, contents are:
+  OFFICE COOLING COIL:Cooling Coil Total Cooling Energy
+
+ For Meter=Cooling:Electricity [J], ResourceType=Electricity, EndUse=Cooling, contents are:
+  OFFICE COOLING COIL:Cooling Coil Electric Energy
+
+ For Meter=Electricity:Plant [J], ResourceType=Electricity, Group=Plant, contents are:
+  SWH PUMP:Pump Electric Energy
+
+ For Meter=Pumps:Electricity [J], ResourceType=Electricity, EndUse=Pumps, contents are:
+  SWH PUMP:Pump Electric Energy
+
+ For Meter=Carbon Equivalent:Facility [kg], ResourceType=Carbon Equivalent, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
+
+ For Meter=CarbonEquivalentEmissions:Carbon Equivalent [kg], ResourceType=Carbon Equivalent, EndUse=CarbonEquivalentEmissions, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
