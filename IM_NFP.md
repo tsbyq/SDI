@@ -44,7 +44,10 @@ an infiltration schedule, and temperature and wind correction
 coefficients. The source code module, ZoneEquipmentManager, contains the
 simplified infiltration algorithm as shown in Equation (1).
 $$\begin{aligned}
-Infiltration = (Idesign)(Fschedule)[A+B(T_{zone}-T_{odb})+C(WindSpeed)+D(WindSpeed)^{2}] {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+\begin{equation}
+Infiltration = (Idesign)(Fschedule)[A+B(T_{zone}-T_{odb})+C(WindSpeed)+D(WindSpeed)^{2}]
+\end{equation} 
+\end{aligned}$$
 $$\begin{aligned}
 \text{Where: }\\
   A &: \text{Constant term coefficient}, \\
@@ -96,12 +99,12 @@ hybrid algorithms to be developed are generic and can be adopted by
 EnergyPlus and other building energy simulation programs. Equation (2)
 below indicates zone heat balance relationships. It assumes that the sum
 of zone loads and air system output equals the change in energy stored
-in the zone. The infiltration airflow rate, ṁ$_{inf}$, changes for
+in the zone. The infiltration airflow rate, m$_{inf}$, changes for
 different conditions depending on outdoor temperature, wind speed, and
 HVAC system operations. The energy provided from systems to the zone is
 represented as Q$_{sys}$. $$\begin{aligned}
-\rho_{air}V_z C_{p}\frac {dT_z} {dt} &= \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} \\
-+ & ṁ_{inf}C_p(T_o - T_z) + ṁ_{sys}C_p(T_{sys} - T_z) {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+\rho_{air}V_z C_{p}\frac {dT_z} {dt} &= \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} \\
++ & m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z) \end{aligned}$$
 $$\begin{aligned}
 \text{Where: }\\
   \rho_{air} &: \text{Zone air density} ~ [kg/m^{3}], \\
@@ -115,9 +118,9 @@ $$\begin{aligned}
   t &: \text{Current timestamp},\\
   \Sigma{Q_{in}} &: \text{Sum of internal sensible heat gain} ~ ,\\
   \Sigma{h_i A_i (T_{si}-T_z)} &: \text{Convective heat transfer from the zone surfaces} ~ [kW],\\
-  \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} &: \text{Heat transfer due to interzone air mixing} ~ [kW],\\
-  ṁ_{inf} (T_o - T_z)&: \text{Heat transfer due to infiltration of outside air} ~ [kW],\\
-  ṁ_{sys} (T_{sys} - T_z)&: \text{Heat transfer due to air supplied by HVAC system} ~ [kW],\\\end{aligned}$$
+  \Sigma{m_{zi}C_p(T_{zi}-T_z)} &: \text{Heat transfer due to interzone air mixing} ~ [kW],\\
+  m_{inf} (T_o - T_z)&: \text{Heat transfer due to infiltration of outside air} ~ [kW],\\
+  m_{sys} (T_{sys} - T_z)&: \text{Heat transfer due to air supplied by HVAC system} ~ [kW],\\\end{aligned}$$
 
 The sum of zone loads and the provided air system energy equals the
 change in energy stored in the zone. Typically, the capacitance
@@ -144,8 +147,8 @@ concentration with the predictor-corrector approach. Equations (3) is
 the zone air moisture balance equation.
 
 $$\begin{aligned}
-\rho_{air} V_{z} C_{w}\frac {dW_z} {dt} &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_z)} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_z)} \\
-+ & ṁ_{inf} (W_o - W_z) + ṁ_{sys} (W_{sys} - W_z){\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+\rho_{air} V_{z} C_{w}\frac {dW_z} {dt} &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_z)} + \Sigma{m_{zi} C_p (W_{zi}-W_z)} \\
++ & m_{inf} (W_o - W_z) + m_{sys} (W_{sys} - W_z)\end{aligned}$$
 
 $$\begin{aligned}
 \text{Where: }\\
@@ -160,13 +163,13 @@ $$\begin{aligned}
   t &: \text{Current timestamp},\\
   \Sigma{kg_{mass_{sched}}} &: \text{sum of scheduled internal moisture load} ~ [kg/s],\\
   \Sigma{A_i h_i \rho_{air} (W_{si} - W_z)} &: \text{Convective moisture transfer from the zone surfaces} ~ [kg/s],\\
-  \Sigma{ṁ_{zi} C_p (W_{zi}-W_z)} &: \text{Moisture transfer due to interzone air mixing} ~ [kg/s],\\
-  ṁ_{inf} (W_o - W_z)&: \text{Moisture transfer due to infiltration of outside air} ~ [kg/s],\\
-  ṁ_{sys} (W_{sys} - W_z)&: \text{Moisture transfer due to air supplied by HVAC system} ~ [kg/s],\\\end{aligned}$$
+  \Sigma{m_{zi} C_p (W_{zi}-W_z)} &: \text{Moisture transfer due to interzone air mixing} ~ [kg/s],\\
+  m_{inf} (W_o - W_z)&: \text{Moisture transfer due to infiltration of outside air} ~ [kg/s],\\
+  m_{sys} (W_{sys} - W_z)&: \text{Moisture transfer due to air supplied by HVAC system} ~ [kg/s],\\\end{aligned}$$
 
 Equations (4) is the zone air CO$_2$ balance equation. $$\begin{aligned}
-\rho_{air} V_{z} C_{CO_{2}}\frac {dC_z} {dt} &= \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{ṁ_{zi}(C_{zi}-C_z)} \\
-+ & ṁ_{inf} (C_o - C_z) + ṁ_{sys} (C_{sys} - C_z) {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+\rho_{air} V_{z} C_{CO_{2}}\frac {dC_z} {dt} &= \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} \\
++ & m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z) \end{aligned}$$
 
 $$\begin{aligned}
 \text{Where: }\\
@@ -179,10 +182,10 @@ $$\begin{aligned}
   C_{sys}&: \text{Carbon dioxide concentration in the system supply airstream}~ [ppm],\\
   t &: \text{Current time},\\
   \Sigma{kg_{mass_{sched}}} &: \text{Sum of scheduled internal carbon dioxide loads} ~ [kg/s],\\
-  \Sigma{ṁ_{zi}(C_{zi}-C_z)} &: \text{Carbon dioxide transfer due to interzone air mixing} ~ [kg/s],\\
-  ṁ_{inf} (C_o - C_z)&: \text{Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [kg/
+  \Sigma{m_{zi}(C_{zi}-C_z)} &: \text{Carbon dioxide transfer due to interzone air mixing} ~ [kg/s],\\
+  m_{inf} (C_o - C_z)&: \text{Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [kg/
 s],\\
-  ṁ_{sys} (C_{sys} - C_z)&: \text{Carbon dioxide transfer due to system supply} ~ [kg/s]\\\end{aligned}$$
+  m_{sys} (C_{sys} - C_z)&: \text{Carbon dioxide transfer due to system supply} ~ [kg/s]\\\end{aligned}$$
 
 Technical Approach
 ==================
@@ -216,32 +219,32 @@ infiltration when the HVAC system is off.
 
 $Equation~(2)$ can be re-written with the third-order backward
 approximation: $$\begin{aligned}
-C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} = RHS{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
 Where: $$\begin{aligned}
-  RHS = \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} + ṁ_{inf}C_p(T_o - T_z) + ṁ_{sys}C_p(T_{sys} - T_z){\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  RHS = \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)\end{aligned}$$
 Then the infiltration mass flow rate can be solved: $$\begin{aligned}
-  ṁ_{inf} = \frac{C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t}-[\Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} + ṁ_{sys}C_p(T_{sys} - T_z)]}{C_p(T_o - T_{z}^{t})}{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  m_{inf} = \frac{C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t}-[\Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{sys}C_p(T_{sys} - T_z)]}{C_p(T_o - T_{z}^{t})}\end{aligned}$$
 
 ### Solving Infiltration with Humidity Ratio
 
 $Equation~(3)$ can be re-written with the third-order backward
 approximation: $$\begin{aligned}
-C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} = RHS{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
 Where: $$\begin{aligned}
-  RHS &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_{z}^{t})} \\
-  &+ ṁ_{inf} (W_o - W_{z}^{t}) + ṁ_{sys} (W_{sys} - W_{z}^{t}){\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  RHS &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{m_{zi} C_p (W_{zi}-W_{z}^{t})} \\
+  &+ m_{inf} (W_o - W_{z}^{t}) + m_{sys} (W_{sys} - W_{z}^{t})\end{aligned}$$
 Then the infiltration mass flow rate can be solved: $$\begin{aligned}
-  ṁ_{inf} = \frac{C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t}-[\Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_{z}^{t})}]}{W_o - W_{z}^{t}}{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  m_{inf} = \frac{C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t}-[\Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{m_{zi} C_p (W_{zi}-W_{z}^{t})}]}{W_o - W_{z}^{t}}\end{aligned}$$
 
 ### Solving Infiltration with CO$_2$ Concentration
 
 $Equation~(4)$ can be re-written with the third-order backward
 approximation: $$\begin{aligned}
-C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} = RHS{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
 Where: $$\begin{aligned}
-  RHS = \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{ṁ_{zi}(C_{zi}-C_z)} ṁ_{inf} (C_o - C_z) + ṁ_{sys} (C_{sys} - C_z){\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  RHS = \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z)\end{aligned}$$
 Then the infiltration mass flow rate can be solved: $$\begin{aligned}
-  ṁ_{inf} = \frac{C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t}-[\Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{ṁ_{zi}(C_{zi}-C_z)} + ṁ_{sys} (C_{sys} - C_z)]}{C_o - C_{z}^{t}}{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  m_{inf} = \frac{C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t}-[\Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} + m_{sys} (C_{sys} - C_z)]}{C_o - C_{z}^{t}}\end{aligned}$$
 
 People Count Inverse Models
 ---------------------------
@@ -258,17 +261,17 @@ when the HVAC system is off.
 
 $Equation~(2)$ can be re-written with the third-order backward
 approximation: $$\begin{aligned}
-C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} = RHS{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
 Where: $$\begin{aligned}
-  RHS = \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} + ṁ_{inf}C_p(T_o - T_z) + ṁ_{sys}C_p(T_{sys} - T_z){\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  RHS = \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)\end{aligned}$$
 The sum of internal sensible heat gains is: $$\begin{aligned}
   \Sigma{Q_{in}} &= C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} \\
-  &-  [\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{ṁ_{zi}C_p(T_{zi}-T_z)} + ṁ_{inf}C_p(T_o - T_z) + ṁ_{sys}C_p(T_{sys} - T_z)] {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  &-  [\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)] \end{aligned}$$
 The sum of internal sensible heat gains from people is:
 $$\begin{aligned}
-  \Sigma{Q_{people}} = \Sigma{Q_{in}} - \Sigma{Q_{others}}{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  \Sigma{Q_{people}} = \Sigma{Q_{in}} - \Sigma{Q_{others}}\end{aligned}$$
 Finally, the number of people could be solved: $$\begin{aligned}
-  N = \frac {\Sigma{Q_{people}}}{Q_{single}} {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  N = \frac {\Sigma{Q_{people}}}{Q_{single}} \end{aligned}$$
 
 $$\begin{aligned}
 \text{Where: }\\
@@ -278,17 +281,17 @@ $$\begin{aligned}
 
 $Equation~(3)$ can be re-written with the third-order backward
 approximation: $$\begin{aligned}
-C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} = RHS{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
 Where: $$\begin{aligned}
-  RHS &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_{z}^{t})} \\
-  &+ ṁ_{inf} (W_o - W_{z}^{t}) + ṁ_{sys} (W_{sys} - W_{z}^{t}){\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  RHS &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{m_{zi} C_p (W_{zi}-W_{z}^{t})} \\
+  &+ m_{inf} (W_o - W_{z}^{t}) + m_{sys} (W_{sys} - W_{z}^{t})\end{aligned}$$
 The sum of internal moisture gains is: $$\begin{aligned}
   \Sigma{kg_{mass_{sched}}} &= C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} \\
-  &-  [\Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{ṁ_{zi} C_p (W_{zi}-W_{z}^{t})}] {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  &-  [\Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{m_{zi} C_p (W_{zi}-W_{z}^{t})}] \end{aligned}$$
 The sum of internal moisture gains from people is: $$\begin{aligned}
-  \Sigma{kg_{mass_{sched-people}}} = \Sigma{kg_{mass_{sched}}} - \Sigma{kg_{mass_{sched-others}}} {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  \Sigma{kg_{mass_{sched-people}}} = \Sigma{kg_{mass_{sched}}} - \Sigma{kg_{mass_{sched-others}}} \end{aligned}$$
 Finally, the number of people could be solved: $$\begin{aligned}
-  N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} \end{aligned}$$
 $$\begin{aligned}
 \text{Where: }\\
   kg_{mass_{single}} &: \text{Moisture dissipation rate per person} ~ [kg / s] \\\end{aligned}$$
@@ -297,16 +300,16 @@ $$\begin{aligned}
 
 $Equation~(4)$ can be re-written with the third-order backward
 approximation: $$\begin{aligned}
-C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} = RHS{\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
 Where: $$\begin{aligned}
-  RHS = \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{ṁ_{zi}(C_{zi}-C_z)} ṁ_{inf} (C_o - C_z) + ṁ_{sys} (C_{sys} - C_z){\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  RHS = \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z)\end{aligned}$$
 The sum of internal CO$_2$ gains is: $$\begin{aligned}
   \Sigma{kg_{mass_{sched}}}\times 10^{6} &= C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} \\
-  &-  [\Sigma{ṁ_{zi}(C_{zi}-C_z)} ṁ_{inf} (C_o - C_z) + ṁ_{sys} (C_{sys} - C_z)] {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  &-  [\Sigma{m_{zi}(C_{zi}-C_z)} m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z)] \end{aligned}$$
 The sum of internal CO$_2$ gains from people is: $$\begin{aligned}
-  \Sigma{kg_{mass_{sched-people}}} = \Sigma{kg_{mass_{sched}}} - \Sigma{kg_{mass_{sched-others}}} {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  \Sigma{kg_{mass_{sched-people}}} = \Sigma{kg_{mass_{sched}}} - \Sigma{kg_{mass_{sched-others}}} \end{aligned}$$
 Finally, the number of people could be solved: $$\begin{aligned}
-  N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} {\addtocounter{equation}{1}\tag{\theequation}}\end{aligned}$$
+  N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} \end{aligned}$$
 $$\begin{aligned}
 \text{Where: }\\
   kg_{mass_{single}} &: \text{CO$_2$ generation rate per person} ~ [m^{3}/(s \cdot W)] \\\end{aligned}$$
