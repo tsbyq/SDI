@@ -171,17 +171,17 @@ Equations (4) is the zone air CO<sub>2</sub> balance equation.
 
 Where: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;ρ<sub>air</sub> is Zone air density ~ [kg/m^{3}], <br />
-&nbsp;&nbsp;&nbsp;&nbsp;V<sub>z<sub> is Zone air volume} ~ [m^{3}],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;C<sub>CO<sub>sub>2<sub> is Zone carbon dioxide capacity multiplier [dimensionless],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;C<sub>z<sub> is zone air carbon dioxide concentration at the current time step} ~ [ppm],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;C<sub>zi<sub> is Carbon dioxide concentration in the zone air being transferred into this zone ~ [ppm],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;V<sub>z</sub> is Zone air volume} ~ [m^{3}],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>CO</sub><sub>2</sub> is Zone carbon dioxide capacity multiplier [dimensionless],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>z</sub> is zone air carbon dioxide concentration at the current time step} ~ [ppm],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>zi</sub> is Carbon dioxide concentration in the zone air being transferred into this zone ~ [ppm],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;C<sub>o</sub> is Carbon dioxide concentration in outdoor air} ~ [ppm],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;C<sub>sys<sub>is Carbon dioxide concentration in the system supply airstream}~ [ppm],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>sys</sub>is Carbon dioxide concentration in the system supply airstream}~ [ppm],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;t is Current time},<br />
-&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{kg<sub>mass<sub>sub>sched<sub>}} is Sum of scheduled internal carbon dioxide loads} ~ [kg/s],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m<sub>zi<sub>(C<sub>zi<sub>-C<sub>z</sub>)} is Carbon dioxide transfer due to interzone air mixing} ~ [kg/s],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;m<sub>inf<sub> (C<sub>o</sub> - C<sub>z</sub>)is Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [kg/s],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;m<sub>sys<sub> (C<sub>sys<sub> - C<sub>z</sub>)is Carbon dioxide transfer due to system supply} ~ [kg/s]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{kg<sub>mass</sub>sub>sched</sub>}} is Sum of scheduled internal carbon dioxide loads} ~ [kg/s],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m<sub>zi</sub>(C<sub>zi</sub>-C<sub>z</sub>)} is Carbon dioxide transfer due to interzone air mixing} ~ [kg/s],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>inf</sub> (C<sub>o</sub> - C<sub>z</sub>)is Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [kg/s],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>sys</sub> (C<sub>sys</sub> - C<sub>z</sub>)is Carbon dioxide transfer due to system supply} ~ [kg/s]<br />
 
 Technical Approach
 ==================
