@@ -106,24 +106,21 @@ represented as Q<sub>sys</sub>.
 
 ![Diagram](https://latex.codecogs.com/gif.latex?%5Cdpi%7B200%7D%20%5Ctiny%20%5Crho_%7Bair%7DV_z%20C_%7Bp%7D%5Cfrac%20%7BdT_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%20%282%29)
 
-\rho_{air}V_z C_{p}\frac {dT_z} {dt} &= \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)  &nbsp;&nbsp; Eq. (2),
-
-
 Where: <br />
-&nbsp;&nbsp;&nbsp;&nbsp;\rho_{air} &: \text{Zone air density} ~ [kg/m^{3}], <br />
-&nbsp;&nbsp;&nbsp;&nbsp;V_{z} &: \text{Zone air volume} ~ [m^{3}],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;C_{p} &: \text{zone air specific heat} ~ [kJ/kg \cdot K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T_{z} &: \text{zone air temperature at the current time step} ~[K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T_{si} &: \text{zone surface temperature at the current time step} ~[K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T_{zi} &: \text{air temperature of a neighboring zone at the current time step} ~[K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T_{o} &: \text{outdoor air temperature at the current time step} ~[K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T_{sys} &: \text{HVAC system supply air temperature at the current time step} ~[K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;t &: \text{Current timestamp},<br />
-&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{Q_{in}} &: \text{Sum of internal sensible heat gain} ~ ,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{h_i A_i (T_{si}-T_z)} &: \text{Convective heat transfer from the zone surfaces} ~ [kW],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m_{zi}C_p(T_{zi}-T_z)} &: \text{Heat transfer due to interzone air mixing} ~ [kW],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;m_{inf} (T_o - T_z)&: \text{Heat transfer due to infiltration of outside air} ~ [kW],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;m_{sys} (T_{sys} - T_z)&: \text{Heat transfer due to air supplied by HVAC system} ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\rho<sub>air</sub>} is Zone air density ~ [kg/m^{3}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;V<sub>z</sub>} is Zone air volume ~ [m^{3}],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>p</sub>} is zone air specific heat ~ [kJ/kg \cdot K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>z</sub>} is zone air temperature at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>si</sub>} is zone surface temperature at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>zi</sub>} is air temperature of a neighboring zone at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>o</sub>} is outdoor air temperature at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>sys</sub>} is HVAC system supply air temperature at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;t is Current timestamp,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{Q<sub>in</sub>}} is Sum of internal sensible heat gain ~ ,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{h<sub>i</sub> A<sub>i</sub> (T<sub>si</sub>}-T<sub>z</sub>)} is Convective heat transfer from the zone surfaces ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m<sub>zi</sub>}C<sub>p</sub>(T<sub>zi</sub>}-T<sub>z</sub>)} is Heat transfer due to interzone air mixing ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>inf</sub>} (T<sub>o</sub> - T<sub>z</sub>)is Heat transfer due to infiltration of outside air ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>sys</sub>} (T<sub>sys</sub>} - T<sub>z</sub>)is Heat transfer due to air supplied by HVAC system ~ [kW],<br />
 
 The sum of zone loads and the provided air system energy equals the
 change in energy stored in the zone. Typically, the capacitance
@@ -155,20 +152,20 @@ $$\begin{aligned}
 
 $$\begin{aligned}
 \text{Where: }\\
-  \rho_{air} &: \text{Zone air density} ~ [kg/m^{3}], \\
-  V_{z} &: \text{Zone air volume} ~ [m^{3}],\\
-  C_{w} &: \text{Zone air humidity capacity multiplier},\\
-  W_{z} &: \text{Zone air humidity ratio} ~ [kg_w/kg_{dry\cdot air}],\\
-  W_{si} &: \text{humidity ratio at a zone interior surface at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
-  W_{zi} &: \text{air temperature of a neighboring zone at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
-  W_{o} &: \text{outdoor air humidity ratio at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
-  W_{sys} &: \text{HVAC system supply air humidity ratio at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
-  t &: \text{Current timestamp},\\
-  \Sigma{kg_{mass_{sched}}} &: \text{sum of scheduled internal moisture load} ~ [kg/s],\\
-  \Sigma{A_i h_i \rho_{air} (W_{si} - W_z)} &: \text{Convective moisture transfer from the zone surfaces} ~ [kg/s],\\
-  \Sigma{m_{zi} C_p (W_{zi}-W_z)} &: \text{Moisture transfer due to interzone air mixing} ~ [kg/s],\\
-  m_{inf} (W_o - W_z)&: \text{Moisture transfer due to infiltration of outside air} ~ [kg/s],\\
-  m_{sys} (W_{sys} - W_z)&: \text{Moisture transfer due to air supplied by HVAC system} ~ [kg/s],\\\end{aligned}$$
+  \rho_{air} is Zone air density} ~ [kg/m^{3}], \\
+  V_{z} is Zone air volume} ~ [m^{3}],\\
+  C_{w} is Zone air humidity capacity multiplier},\\
+  W_{z} is Zone air humidity ratio} ~ [kg_w/kg_{dry\cdot air}],\\
+  W_{si} is humidity ratio at a zone interior surface at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
+  W_{zi} is air temperature of a neighboring zone at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
+  W_{o} is outdoor air humidity ratio at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
+  W_{sys} is HVAC system supply air humidity ratio at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
+  t is Current timestamp},\\
+  \Sigma{kg_{mass_{sched}}} is sum of scheduled internal moisture load} ~ [kg/s],\\
+  \Sigma{A_i h_i \rho_{air} (W_{si} - W_z)} is Convective moisture transfer from the zone surfaces} ~ [kg/s],\\
+  \Sigma{m_{zi} C_p (W_{zi}-W_z)} is Moisture transfer due to interzone air mixing} ~ [kg/s],\\
+  m_{inf} (W_o - W_z)is Moisture transfer due to infiltration of outside air} ~ [kg/s],\\
+  m_{sys} (W_{sys} - W_z)is Moisture transfer due to air supplied by HVAC system} ~ [kg/s],\\\end{aligned}$$
 
 Equations (4) is the zone air CO<sub>2</sub> balance equation. $$\begin{aligned}
 \rho_{air} V_{z} C_{CO_{2}}\frac {dC_z} {dt} &= \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} \\
@@ -176,19 +173,19 @@ Equations (4) is the zone air CO<sub>2</sub> balance equation. $$\begin{aligned}
 
 $$\begin{aligned}
 \text{Where: }\\
-  \rho_{air} &: \text{Zone air density} ~ [kg/m^{3}], \\
-  V_{z} &: \text{Zone air volume} ~ [m^{3}],\\
-  C_{CO_{2}} &: \text{Zone carbon dioxide capacity multiplier [dimensionless]},\\
-  C_{z} &: \text{zone air carbon dioxide concentration at the current time step} ~ [ppm],\\
-  C_{zi} &: \text{Carbon dioxide concentration in the zone air being transferred into this zone} ~ [ppm],\\
-  C_o&: \text{Carbon dioxide concentration in outdoor air} ~ [ppm],\\
-  C_{sys}&: \text{Carbon dioxide concentration in the system supply airstream}~ [ppm],\\
-  t &: \text{Current time},\\
-  \Sigma{kg_{mass_{sched}}} &: \text{Sum of scheduled internal carbon dioxide loads} ~ [kg/s],\\
-  \Sigma{m_{zi}(C_{zi}-C_z)} &: \text{Carbon dioxide transfer due to interzone air mixing} ~ [kg/s],\\
-  m_{inf} (C_o - C_z)&: \text{Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [kg/
+  \rho_{air} is Zone air density} ~ [kg/m^{3}], \\
+  V_{z} is Zone air volume} ~ [m^{3}],\\
+  C_{CO_{2}} is Zone carbon dioxide capacity multiplier [dimensionless]},\\
+  C_{z} is zone air carbon dioxide concentration at the current time step} ~ [ppm],\\
+  C_{zi} is Carbon dioxide concentration in the zone air being transferred into this zone} ~ [ppm],\\
+  C_ois Carbon dioxide concentration in outdoor air} ~ [ppm],\\
+  C_{sys}is Carbon dioxide concentration in the system supply airstream}~ [ppm],\\
+  t is Current time},\\
+  \Sigma{kg_{mass_{sched}}} is Sum of scheduled internal carbon dioxide loads} ~ [kg/s],\\
+  \Sigma{m_{zi}(C_{zi}-C_z)} is Carbon dioxide transfer due to interzone air mixing} ~ [kg/s],\\
+  m_{inf} (C_o - C_z)is Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [kg/
 s],\\
-  m_{sys} (C_{sys} - C_z)&: \text{Carbon dioxide transfer due to system supply} ~ [kg/s]\\\end{aligned}$$
+  m_{sys} (C_{sys} - C_z)is Carbon dioxide transfer due to system supply} ~ [kg/s]\\\end{aligned}$$
 
 Technical Approach
 ==================
@@ -278,7 +275,7 @@ Finally, the number of people could be solved: $$\begin{aligned}
 
 $$\begin{aligned}
 \text{Where: }\\
-  Q_{single} &: \text{Sensible heat rate per person} ~ [W] \\\end{aligned}$$
+  Q_{single} is Sensible heat rate per person} ~ [W] \\\end{aligned}$$
 
 ### Solving People Count with Humidity Ratio
 
@@ -297,7 +294,7 @@ Finally, the number of people could be solved: $$\begin{aligned}
   N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} \end{aligned}$$
 $$\begin{aligned}
 \text{Where: }\\
-  kg_{mass_{single}} &: \text{Moisture dissipation rate per person} ~ [kg / s] \\\end{aligned}$$
+  kg_{mass_{single}} is Moisture dissipation rate per person} ~ [kg / s] \\\end{aligned}$$
 
 ### Solving People Count with CO<sub>2</sub> Concentration
 
@@ -315,7 +312,7 @@ Finally, the number of people could be solved: $$\begin{aligned}
   N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} \end{aligned}$$
 $$\begin{aligned}
 \text{Where: }\\
-  kg_{mass_{single}} &: \text{CO<sub>2</sub> generation rate per person} ~ [m^{3}/(s \cdot W)] \\\end{aligned}$$
+  kg_{mass_{single}} is CO<sub>2</sub> generation rate per person} ~ [m^{3}/(s \cdot W)] \\\end{aligned}$$
 
 Convergence
 -----------
