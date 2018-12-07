@@ -47,7 +47,7 @@ an infiltration schedule, and temperature and wind correction
 coefficients. The source code module, ZoneEquipmentManager, contains the
 simplified infiltration algorithm as shown in Equation (1).
 
-Infiltration = (Idesign)(Fschedule)[A+B(T<sub>zone</sub>-T<sub>odb</sub>)+C(WindSpeed)+D(WindSpeed)<sup>2</sup>
+Infiltration = (Idesign)(Fschedule)[A+B(T<sub>zone</sub>-T<sub>odb</sub>)+C(WindSpeed)+D(WindSpeed)<sup>2</sup> &nbsp;&nbsp; Eq. (1),
 
 Where: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;A is the Constant term coefficient <br />
@@ -99,15 +99,18 @@ hybrid algorithms to be developed are generic and can be adopted by
 EnergyPlus and other building energy simulation programs. Equation (2)
 below indicates zone heat balance relationships. It assumes that the sum
 of zone loads and air system output equals the change in energy stored
-in the zone. The infiltration airflow rate, m$_{inf}$, changes for
+in the zone. The infiltration airflow rate, m<sub>inf</sub>, changes for
 different conditions depending on outdoor temperature, wind speed, and
 HVAC system operations. The energy provided from systems to the zone is
 represented as Q<sub>sys</sub>. 
 
-$$\begin{aligned}
-\rho_{air}V_z C_{p}\frac {dT_z} {dt} &= \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} \\
-+ & m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z) 
-+ \end{aligned}$$
+
+        .. math::
+            \sum_{1 \leq i < \infty} \frac{1}{n^2 + an + b}
+
+
+\rho_{air}V_z C_{p}\frac {dT_z} {dt} &= \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)  &nbsp;&nbsp; Eq. (2),
+
 
 $$\begin{aligned}
 \text{Where: }\\
