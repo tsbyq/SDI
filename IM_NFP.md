@@ -47,7 +47,7 @@ an infiltration schedule, and temperature and wind correction
 coefficients. The source code module, ZoneEquipmentManager, contains the
 simplified infiltration algorithm as shown in Equation (1).
 
-Infiltration = (Idesign)(Fschedule)[A+B(T_{zone}-T_{odb})+C(WindSpeed)+D(WindSpeed)<sup>2</sup>
+Infiltration = (Idesign)(Fschedule)[A+B(T<sub>zone</sub>-T<sub>odb</sub>)+C(WindSpeed)+D(WindSpeed)<sup>2</sup>
 
 Where: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;A is the Constant term coefficient <br />
