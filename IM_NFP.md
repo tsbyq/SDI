@@ -104,27 +104,27 @@ different conditions depending on outdoor temperature, wind speed, and
 HVAC system operations. The energy provided from systems to the zone is
 represented as Q<sub>sys</sub>. 
 
-![Diagram](https://latex.codecogs.com/gif.latex?%5Cdpi%7B200%7D%20%5Ctiny%20%5Crho_%7Bair%7DV_z%20C_%7Bp%7D%5Cfrac%20%7BdT_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%20%282%29)
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5Clarge%20%5Crho_%7Bair%7DV_z%20C_%7Bp%7D%5Cfrac%20%7BdT_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29)
 
 Where: <br />
-&nbsp;&nbsp;&nbsp;&nbsp;\rho<sub>air</sub>} is Zone air density ~ [kg/m^{3}], <br />
-&nbsp;&nbsp;&nbsp;&nbsp;V<sub>z</sub>} is Zone air volume ~ [m^{3}],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;C<sub>p</sub>} is zone air specific heat ~ [kJ/kg \cdot K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T<sub>z</sub>} is zone air temperature at the current time step ~[K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T<sub>si</sub>} is zone surface temperature at the current time step ~[K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T<sub>zi</sub>} is air temperature of a neighboring zone at the current time step ~[K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T<sub>o</sub>} is outdoor air temperature at the current time step ~[K],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;T<sub>sys</sub>} is HVAC system supply air temperature at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;ρ<sub>air</sub> is Zone air density ~ [kg/m^{3}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;V<sub>z</sub> is Zone air volume ~ [m^{3}],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>p</sub> is zone air specific heat ~ [kJ/kg \cdot K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>z</sub> is zone air temperature at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>si</sub> is zone surface temperature at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>zi</sub> is air temperature of a neighboring zone at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>o</sub> is outdoor air temperature at the current time step ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T<sub>sys</sub> is HVAC system supply air temperature at the current time step ~[K],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;t is Current timestamp,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{Q<sub>in</sub>}} is Sum of internal sensible heat gain ~ ,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{h<sub>i</sub> A<sub>i</sub> (T<sub>si</sub>}-T<sub>z</sub>)} is Convective heat transfer from the zone surfaces ~ [kW],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m<sub>zi</sub>}C<sub>p</sub>(T<sub>zi</sub>}-T<sub>z</sub>)} is Heat transfer due to interzone air mixing ~ [kW],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;m<sub>inf</sub>} (T<sub>o</sub> - T<sub>z</sub>)is Heat transfer due to infiltration of outside air ~ [kW],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;m<sub>sys</sub>} (T<sub>sys</sub>} - T<sub>z</sub>)is Heat transfer due to air supplied by HVAC system ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{Q<sub>in</sub>} is Sum of internal sensible heat gain ~ ,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{h<sub>i</sub> A<sub>i</sub> (T<sub>si</sub>-T<sub>z</sub>)} is Convective heat transfer from the zone surfaces ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m<sub>zi</sub>C<sub>p</sub>(T<sub>zi</sub>-T<sub>z</sub>)} is Heat transfer due to interzone air mixing ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>inf</sub> (T<sub>o</sub> - T<sub>z</sub>)is Heat transfer due to infiltration of outside air ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>sys</sub> (T<sub>sys</sub> - T<sub>z</sub>)is Heat transfer due to air supplied by HVAC system ~ [kW],<br />
 
 The sum of zone loads and the provided air system energy equals the
 change in energy stored in the zone. Typically, the capacitance
-$\rho_{air}V_z C_{p}$ would be that of the zone air only. The internal
+ρ<sub>air</sub>V<sub>z</sub> C<sub>p</sub> would be that of the zone air only. The internal
 thermal masses, assumed to be in equilibrium with the zone air, are
 included in this term. EnergyPlus provides algorithms to solve the zone
 air energy and moisture balance equations defined in the
@@ -146,26 +146,23 @@ Similarly, EnergyPlus solves zone humidity ratio and CO<sub>2</sub>
 concentration with the predictor-corrector approach. Equations (3) is
 the zone air moisture balance equation.
 
-$$\begin{aligned}
-\rho_{air} V_{z} C_{w}\frac {dW_z} {dt} &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_z)} + \Sigma{m_{zi} C_p (W_{zi}-W_z)} \\
-+ & m_{inf} (W_o - W_z) + m_{sys} (W_{sys} - W_z)\end{aligned}$$
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5Clarge%20%5Crho_%7Bair%7D%20V_%7Bz%7D%20C_%7Bw%7D%5Cfrac%20%7BdW_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%20&plus;%20%5CSigma%7BA_i%20h_i%20%5Crho_%7Bair%7D%20%28W_%7Bsi%7D%20-%20W_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%20C_p%20%28W_%7Bzi%7D-W_z%29%7D%20&plus;%20m_%7Binf%7D%20%28W_o%20-%20W_z%29%20&plus;%20m_%7Bsys%7D%20%28W_%7Bsys%7D%20-%20W_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%283%29)
 
-$$\begin{aligned}
-\text{Where: }\\
-  \rho_{air} is Zone air density} ~ [kg/m^{3}], \\
-  V_{z} is Zone air volume} ~ [m^{3}],\\
-  C_{w} is Zone air humidity capacity multiplier},\\
-  W_{z} is Zone air humidity ratio} ~ [kg_w/kg_{dry\cdot air}],\\
-  W_{si} is humidity ratio at a zone interior surface at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
-  W_{zi} is air temperature of a neighboring zone at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
-  W_{o} is outdoor air humidity ratio at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
-  W_{sys} is HVAC system supply air humidity ratio at the current time step} ~[kg_w/kg_{dry\cdot air}],\\
-  t is Current timestamp},\\
-  \Sigma{kg_{mass_{sched}}} is sum of scheduled internal moisture load} ~ [kg/s],\\
-  \Sigma{A_i h_i \rho_{air} (W_{si} - W_z)} is Convective moisture transfer from the zone surfaces} ~ [kg/s],\\
-  \Sigma{m_{zi} C_p (W_{zi}-W_z)} is Moisture transfer due to interzone air mixing} ~ [kg/s],\\
-  m_{inf} (W_o - W_z)is Moisture transfer due to infiltration of outside air} ~ [kg/s],\\
-  m_{sys} (W_{sys} - W_z)is Moisture transfer due to air supplied by HVAC system} ~ [kg/s],\\\end{aligned}$$
+Where:
+&nbsp;&nbsp;&nbsp;&nbsp;ρ<sub>air</sub> is Zone air density ~ [kg/m^{3}],  <br />
+&nbsp;&nbsp;&nbsp;&nbsp;V<sub>z</sub> is Zone air volume} ~ [m^{3}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>w</sub> is Zone air humidity capacity multiplier}, <br />
+&nbsp;&nbsp;&nbsp;&nbsp;W<sub>z</sub> is Zone air humidity ratio} ~ [kg_w/kg<sub>dry</sub>\cdot air}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;W<sub>si</sub> is humidity ratio at a zone interior surface at the current time step} ~[kg_w/kg<sub>dry</sub>\cdot air}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;W<sub>zi</sub> is air temperature of a neighboring zone at the current time step} ~[kg_w/kg<sub>dry</sub>\cdot air}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;W<sub>o</sub> is outdoor air humidity ratio at the current time step} ~[kg_w/kg<sub>dry</sub>\cdot air}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;W<sub>sys</sub> is HVAC system supply air humidity ratio at the current time step} ~[kg_w/kg<sub>dry</sub>\cdot air}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;t is Current timestamp}, <br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{kg<sub>mass</sub><sub>sched</sub>}} is sum of scheduled internal moisture load} ~ [kg/s], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{A_i h_i ρ<sub>air</sub> (W<sub>si</sub> - W_z)} is Convective moisture transfer from the zone surfaces} ~ [kg/s], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m<sub>zi</sub> C_p (W<sub>zi</sub>-W_z)} is Moisture transfer due to interzone air mixing} ~ [kg/s], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>inf</sub> (W_o - W_z)is Moisture transfer due to infiltration of outside air} ~ [kg/s], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>sys</sub> (W<sub>sys</sub> - W_z)is Moisture transfer due to air supplied by HVAC system} ~ [kg/s], <br />
 
 Equations (4) is the zone air CO<sub>2</sub> balance equation. $$\begin{aligned}
 \rho_{air} V_{z} C_{CO_{2}}\frac {dC_z} {dt} &= \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} \\
