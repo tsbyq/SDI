@@ -46,11 +46,11 @@ simplified infiltration algorithm as shown in Equation (1).
 
 Infiltration = (Idesign)(Fschedule)[A+B(T_{zone}-T_{odb})+C(WindSpeed)+D(WindSpeed)^2
 
-Where:
-  A is the Constant term coefficient
-  B is the Temperature term coefficient
-  C is the Velocity term coefficient
-  D is the Velocity squared coefficient
+Where: <br />
+  A is the Constant term coefficient <br />
+  B is the Temperature term coefficient <br />
+  C is the Velocity term coefficient <br />
+  D is the Velocity squared coefficient <br />
 
 The simple method has an empirical correlation that modifies the
 infiltration as a function of wind speed and temperature difference
