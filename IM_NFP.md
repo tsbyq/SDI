@@ -104,27 +104,26 @@ different conditions depending on outdoor temperature, wind speed, and
 HVAC system operations. The energy provided from systems to the zone is
 represented as Q<sub>sys</sub>. 
 
-![Diagram](https://latex.codecogs.com/gif.latex?%5Csmall%20%5Crho_%7Bair%7DV_z%20C_%7Bp%7D%5Cfrac%20%7BdT_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%20%282%29)
+![Diagram](https://latex.codecogs.com/gif.latex?%5Cdpi%7B200%7D%20%5Ctiny%20%5Crho_%7Bair%7DV_z%20C_%7Bp%7D%5Cfrac%20%7BdT_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%20%282%29)
 
 \rho_{air}V_z C_{p}\frac {dT_z} {dt} &= \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)  &nbsp;&nbsp; Eq. (2),
 
 
-$$\begin{aligned}
-\text{Where: }\\
-  \rho_{air} &: \text{Zone air density} ~ [kg/m^{3}], \\
-  V_{z} &: \text{Zone air volume} ~ [m^{3}],\\
-  C_{p} &: \text{zone air specific heat} ~ [kJ/kg \cdot K],\\
-  T_{z} &: \text{zone air temperature at the current time step} ~[K],\\
-  T_{si} &: \text{zone surface temperature at the current time step} ~[K],\\
-  T_{zi} &: \text{air temperature of a neighboring zone at the current time step} ~[K],\\
-  T_{o} &: \text{outdoor air temperature at the current time step} ~[K],\\
-  T_{sys} &: \text{HVAC system supply air temperature at the current time step} ~[K],\\
-  t &: \text{Current timestamp},\\
-  \Sigma{Q_{in}} &: \text{Sum of internal sensible heat gain} ~ ,\\
-  \Sigma{h_i A_i (T_{si}-T_z)} &: \text{Convective heat transfer from the zone surfaces} ~ [kW],\\
-  \Sigma{m_{zi}C_p(T_{zi}-T_z)} &: \text{Heat transfer due to interzone air mixing} ~ [kW],\\
-  m_{inf} (T_o - T_z)&: \text{Heat transfer due to infiltration of outside air} ~ [kW],\\
-  m_{sys} (T_{sys} - T_z)&: \text{Heat transfer due to air supplied by HVAC system} ~ [kW],\\\end{aligned}$$
+Where: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;\rho_{air} &: \text{Zone air density} ~ [kg/m^{3}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;V_{z} &: \text{Zone air volume} ~ [m^{3}],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C_{p} &: \text{zone air specific heat} ~ [kJ/kg \cdot K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T_{z} &: \text{zone air temperature at the current time step} ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T_{si} &: \text{zone surface temperature at the current time step} ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T_{zi} &: \text{air temperature of a neighboring zone at the current time step} ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T_{o} &: \text{outdoor air temperature at the current time step} ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;T_{sys} &: \text{HVAC system supply air temperature at the current time step} ~[K],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;t &: \text{Current timestamp},<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{Q_{in}} &: \text{Sum of internal sensible heat gain} ~ ,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{h_i A_i (T_{si}-T_z)} &: \text{Convective heat transfer from the zone surfaces} ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m_{zi}C_p(T_{zi}-T_z)} &: \text{Heat transfer due to interzone air mixing} ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m_{inf} (T_o - T_z)&: \text{Heat transfer due to infiltration of outside air} ~ [kW],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m_{sys} (T_{sys} - T_z)&: \text{Heat transfer due to air supplied by HVAC system} ~ [kW],<br />
 
 The sum of zone loads and the provided air system energy equals the
 change in energy stored in the zone. Typically, the capacitance
