@@ -148,7 +148,7 @@ the zone air moisture balance equation.
 
 ![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5Crho_%7Bair%7D%20V_%7Bz%7D%20C_%7Bw%7D%5Cfrac%20%7BdW_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%20&plus;%20%5CSigma%7BA_i%20h_i%20%5Crho_%7Bair%7D%20%28W_%7Bsi%7D%20-%20W_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%20C_p%20%28W_%7Bzi%7D-W_z%29%7D%20&plus;%20m_%7Binf%7D%20%28W_o%20-%20W_z%29%20&plus;%20m_%7Bsys%7D%20%28W_%7Bsys%7D%20-%20W_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%283%29)
 
-Where:
+Where: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;ρ<sub>air</sub> is Zone air density ~ [kg/m^{3}],  <br />
 &nbsp;&nbsp;&nbsp;&nbsp;V<sub>z</sub> is Zone air volume} ~ [m^{3}], <br />
 &nbsp;&nbsp;&nbsp;&nbsp;C<sub>w</sub> is Zone air humidity capacity multiplier}, <br />
@@ -172,9 +172,9 @@ Equations (4) is the zone air CO<sub>2</sub> balance equation.
 Where: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;ρ<sub>air</sub> is Zone air density ~ [kg/m^{3}], <br />
 &nbsp;&nbsp;&nbsp;&nbsp;V<sub>z<sub> is Zone air volume} ~ [m^{3}],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;C<sub>CO<sub>sub>2<sub>} is Zone carbon dioxide capacity multiplier [dimensionless],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>CO<sub>sub>2<sub> is Zone carbon dioxide capacity multiplier [dimensionless],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;C<sub>z<sub> is zone air carbon dioxide concentration at the current time step} ~ [ppm],<br />
-&nbsp;&nbsp;&nbsp;&nbsp;C<sub>zi<sub> is Carbon dioxide concentration in the zone air being transferred into this zone} ~ [ppm],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>zi<sub> is Carbon dioxide concentration in the zone air being transferred into this zone ~ [ppm],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;C<sub>o</sub> is Carbon dioxide concentration in outdoor air} ~ [ppm],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;C<sub>sys<sub>is Carbon dioxide concentration in the system supply airstream}~ [ppm],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;t is Current time},<br />
