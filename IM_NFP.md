@@ -104,7 +104,7 @@ different conditions depending on outdoor temperature, wind speed, and
 HVAC system operations. The energy provided from systems to the zone is
 represented as Q<sub>sys</sub>. 
 
-![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5Clarge%20%5Crho_%7Bair%7DV_z%20C_%7Bp%7D%5Cfrac%20%7BdT_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29)
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5Crho_%7Bair%7DV_z%20C_%7Bp%7D%5Cfrac%20%7BdT_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%282%29)
 
 Where: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;ρ<sub>air</sub> is Zone air density ~ [kg/m^{3}], <br />
@@ -146,7 +146,7 @@ Similarly, EnergyPlus solves zone humidity ratio and CO<sub>2</sub>
 concentration with the predictor-corrector approach. Equations (3) is
 the zone air moisture balance equation.
 
-![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5Clarge%20%5Crho_%7Bair%7D%20V_%7Bz%7D%20C_%7Bw%7D%5Cfrac%20%7BdW_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%20&plus;%20%5CSigma%7BA_i%20h_i%20%5Crho_%7Bair%7D%20%28W_%7Bsi%7D%20-%20W_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%20C_p%20%28W_%7Bzi%7D-W_z%29%7D%20&plus;%20m_%7Binf%7D%20%28W_o%20-%20W_z%29%20&plus;%20m_%7Bsys%7D%20%28W_%7Bsys%7D%20-%20W_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%283%29)
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5Crho_%7Bair%7D%20V_%7Bz%7D%20C_%7Bw%7D%5Cfrac%20%7BdW_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%20&plus;%20%5CSigma%7BA_i%20h_i%20%5Crho_%7Bair%7D%20%28W_%7Bsi%7D%20-%20W_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%20C_p%20%28W_%7Bzi%7D-W_z%29%7D%20&plus;%20m_%7Binf%7D%20%28W_o%20-%20W_z%29%20&plus;%20m_%7Bsys%7D%20%28W_%7Bsys%7D%20-%20W_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%283%29)
 
 Where:
 &nbsp;&nbsp;&nbsp;&nbsp;ρ<sub>air</sub> is Zone air density ~ [kg/m^{3}],  <br />
@@ -164,25 +164,24 @@ Where:
 &nbsp;&nbsp;&nbsp;&nbsp;m<sub>inf</sub> (W_o - W_z)is Moisture transfer due to infiltration of outside air} ~ [kg/s], <br />
 &nbsp;&nbsp;&nbsp;&nbsp;m<sub>sys</sub> (W<sub>sys</sub> - W_z)is Moisture transfer due to air supplied by HVAC system} ~ [kg/s], <br />
 
-Equations (4) is the zone air CO<sub>2</sub> balance equation. $$\begin{aligned}
-\rho_{air} V_{z} C_{CO_{2}}\frac {dC_z} {dt} &= \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} \\
-+ & m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z) \end{aligned}$$
+Equations (4) is the zone air CO<sub>2</sub> balance equation.
 
-$$\begin{aligned}
-\text{Where: }\\
-  \rho_{air} is Zone air density} ~ [kg/m^{3}], \\
-  V_{z} is Zone air volume} ~ [m^{3}],\\
-  C_{CO_{2}} is Zone carbon dioxide capacity multiplier [dimensionless]},\\
-  C_{z} is zone air carbon dioxide concentration at the current time step} ~ [ppm],\\
-  C_{zi} is Carbon dioxide concentration in the zone air being transferred into this zone} ~ [ppm],\\
-  C_ois Carbon dioxide concentration in outdoor air} ~ [ppm],\\
-  C_{sys}is Carbon dioxide concentration in the system supply airstream}~ [ppm],\\
-  t is Current time},\\
-  \Sigma{kg_{mass_{sched}}} is Sum of scheduled internal carbon dioxide loads} ~ [kg/s],\\
-  \Sigma{m_{zi}(C_{zi}-C_z)} is Carbon dioxide transfer due to interzone air mixing} ~ [kg/s],\\
-  m_{inf} (C_o - C_z)is Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [kg/
-s],\\
-  m_{sys} (C_{sys} - C_z)is Carbon dioxide transfer due to system supply} ~ [kg/s]\\\end{aligned}$$
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5Crho_%7Bair%7D%20V_%7Bz%7D%20C_%7BCO_%7B2%7D%7D%5Cfrac%20%7BdC_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%5Ctimes%2010%5E%7B6%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%28C_%7Bzi%7D-C_z%29%7D%20&plus;%20m_%7Binf%7D%20%28C_o%20-%20C_z%29%20&plus;%20m_%7Bsys%7D%20%28C_%7Bsys%7D%20-%20C_z%29%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%284%29)
+
+
+Where: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;ρ<sub>air</sub> is Zone air density ~ [kg/m^{3}], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;V<sub>z<sub> is Zone air volume} ~ [m^{3}],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>CO<sub>sub>2<sub>} is Zone carbon dioxide capacity multiplier [dimensionless],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>z<sub> is zone air carbon dioxide concentration at the current time step} ~ [ppm],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>zi<sub> is Carbon dioxide concentration in the zone air being transferred into this zone} ~ [ppm],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>o</sub> is Carbon dioxide concentration in outdoor air} ~ [ppm],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;C<sub>sys<sub>is Carbon dioxide concentration in the system supply airstream}~ [ppm],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;t is Current time},<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{kg<sub>mass<sub>sub>sched<sub>}} is Sum of scheduled internal carbon dioxide loads} ~ [kg/s],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m<sub>zi<sub>(C<sub>zi<sub>-C<sub>z</sub>)} is Carbon dioxide transfer due to interzone air mixing} ~ [kg/s],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>inf<sub> (C<sub>o</sub> - C<sub>z</sub>)is Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [kg/s],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;m<sub>sys<sub> (C<sub>sys<sub> - C<sub>z</sub>)is Carbon dioxide transfer due to system supply} ~ [kg/s]<br />
 
 Technical Approach
 ==================
