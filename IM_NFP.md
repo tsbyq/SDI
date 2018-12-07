@@ -1,8 +1,11 @@
----
-author:
-- 'Han Li, Tianzhen Hong, Xuan Luo'
-title: 'Hybrid Model: Zone Infiltration and People Count'
----
+# Hybrid Model: Zone Infiltration and People Count
+
+Han Li, Tianzhen Hong, Xuan Luo
+
+Lawrence Berkeley National Laboratory
+
+December 6, 2018 
+
 
 Justification for Feature Update
 ================================
@@ -46,7 +49,7 @@ simplified infiltration algorithm as shown in Equation (1).
 
 Infiltration = (Idesign)(Fschedule)[A+B(T_{zone}-T_{odb})+C(WindSpeed)+D(WindSpeed)^2
 
-Where:
+Where: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;A is the Constant term coefficient <br />
 &nbsp;&nbsp;&nbsp;&nbsp;B is the Temperature term coefficient <br />
 &nbsp;&nbsp;&nbsp;&nbsp;C is the Velocity term coefficient <br />
