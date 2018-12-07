@@ -104,11 +104,7 @@ different conditions depending on outdoor temperature, wind speed, and
 HVAC system operations. The energy provided from systems to the zone is
 represented as Q<sub>sys</sub>. 
 
-
-        .. math::
-            \sum_{1 \leq i < \infty} \frac{1}{n^2 + an + b}
-
-
+![Diagram](https://latex.codecogs.com/svg.latex?%5Crho_%7Bair%7DV_z%20C_%7Bp%7D%5Cfrac%20%7BdT_z%7D%20%7Bdt%7D%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%282%29)
 \rho_{air}V_z C_{p}\frac {dT_z} {dt} &= \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)  &nbsp;&nbsp; Eq. (2),
 
 
