@@ -43,12 +43,14 @@ building elements. Users define the infiltration design air flow rate,
 an infiltration schedule, and temperature and wind correction
 coefficients. The source code module, ZoneEquipmentManager, contains the
 simplified infiltration algorithm as shown in Equation (1).
+
 $$\begin{aligned}
 \begin{equation}
 Infiltration = (Idesign)(Fschedule)[A+B(T_{zone}-T_{odb})+C(WindSpeed)+D(WindSpeed)^{2}]
 \end{equation} 
 \end{aligned}$$
 $$\begin{aligned}
+
 \text{Where: }\\
   A &: \text{Constant term coefficient}, \\
   B &: \text{Temperature term coefficient},\\
