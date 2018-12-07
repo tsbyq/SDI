@@ -244,13 +244,18 @@ Then the infiltration mass flow rate can be solved:
 
 ### Solving Infiltration with CO<sub>2</sub> Concentration
 
-$Equation~(4)$ can be re-written with the third-order backward
-approximation: $$\begin{aligned}
-C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
-Where: $$\begin{aligned}
-  RHS = \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z)\end{aligned}$$
+Equation(4) can be re-written with the third-order backward
+approximation: 
+
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20C_%7BCO_%7B2%7Dz%7D%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DC_%7Bz%7D%5E%7Bt%7D-3C_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DC_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DC_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D%20%3D%20RHS%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2811%29)
+
+Where: 
+
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20RHS%20%3D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%5Ctimes%2010%5E%7B6%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%28C_%7Bzi%7D-C_z%29%7D%20m_%7Binf%7D%20%28C_o%20-%20C_z%29%20&plus;%20%5C%5Cm_%7Bsys%7D%20%28C_%7Bsys%7D%20-%20C_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2812%29)
+
 Then the infiltration mass flow rate can be solved: $$\begin{aligned}
-  m_{inf} = \frac{C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t}-[\Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} + m_{sys} (C_{sys} - C_z)]}{C_o - C_{z}^{t}}\end{aligned}$$
+
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20m_%7Binf%7D%20%3D%20%5Cfrac%7BC_%7BCO_%7B2%7Dz%7D%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DC_%7Bz%7D%5E%7Bt%7D-3C_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DC_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DC_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D-%5B%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%5Ctimes%2010%5E%7B6%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%28C_%7Bzi%7D-C_z%29%7D%20&plus;%20m_%7Bsys%7D%20%28C_%7Bsys%7D%20-%20C_z%29%5D%7D%7BC_o%20-%20C_%7Bz%7D%5E%7Bt%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2813%29)
 
 People Count Inverse Models
 ---------------------------
