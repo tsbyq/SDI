@@ -178,7 +178,7 @@ Where: <br />
 &nbsp;&nbsp;&nbsp;&nbsp;C<sub>o</sub> is Carbon dioxide concentration in outdoor air} ~ [ppm],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;C<sub>sys</sub>is Carbon dioxide concentration in the system supply airstream}~ [ppm],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;t is Current time},<br />
-&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{kg<sub>mass</sub>sub>sched</sub>}} is Sum of scheduled internal carbon dioxide loads} ~ [kg/s],<br />
+&nbsp;&nbsp;&nbsp;&nbsp;\Sigma{kg<sub>mass</sub><sub>sched</sub>}} is Sum of scheduled internal carbon dioxide loads} ~ [kg/s],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;\Sigma{m<sub>zi</sub>(C<sub>zi</sub>-C<sub>z</sub>)} is Carbon dioxide transfer due to interzone air mixing} ~ [kg/s],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;m<sub>inf</sub> (C<sub>o</sub> - C<sub>z</sub>)is Carbon dioxide transfer due to infiltration and ventilation of outdoor air} ~ [kg/s],<br />
 &nbsp;&nbsp;&nbsp;&nbsp;m<sub>sys</sub> (C<sub>sys</sub> - C<sub>z</sub>)is Carbon dioxide transfer due to system supply} ~ [kg/s]<br />
@@ -214,12 +214,14 @@ infiltration when the HVAC system is off.
 ### Solving Infiltration with Temperature
 
 $Equation~(2)$ can be re-written with the third-order backward
-approximation: $$\begin{aligned}
-C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
-Where: $$\begin{aligned}
-  RHS = \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)\end{aligned}$$
-Then the infiltration mass flow rate can be solved: $$\begin{aligned}
-  m_{inf} = \frac{C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t}-[\Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{sys}C_p(T_{sys} - T_z)]}{C_p(T_o - T_{z}^{t})}\end{aligned}$$
+approximation: 
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20C_z%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DT_%7Bz%7D%5E%7Bt%7D-3T_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DT_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DT_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D%20%3D%20RHS%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%285%29)
+
+Where: <br />
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20RHS%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%286%29)
+
+Then the infiltration mass flow rate can be solved: <br />
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20m_%7Binf%7D%20%3D%20%5Cfrac%7BC_z%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DT_%7Bz%7D%5E%7Bt%7D-3T_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DT_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DT_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D-%5B%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%5D%7D%7BC_p%28T_o%20-%20T_%7Bz%7D%5E%7Bt%7D%29%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%287%29)
 
 ### Solving Infiltration with Humidity Ratio
 
