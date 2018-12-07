@@ -213,26 +213,34 @@ infiltration when the HVAC system is off.
 
 ### Solving Infiltration with Temperature
 
-$Equation~(2)$ can be re-written with the third-order backward
+Equation(2) can be re-written with the third-order backward
 approximation: 
+
 ![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20C_z%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DT_%7Bz%7D%5E%7Bt%7D-3T_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DT_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DT_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D%20%3D%20RHS%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%285%29)
 
-Where: <br />
+Where:
+
 ![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20RHS%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%286%29)
 
-Then the infiltration mass flow rate can be solved: <br />
+Then the infiltration mass flow rate can be solved:
+
 ![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20m_%7Binf%7D%20%3D%20%5Cfrac%7BC_z%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DT_%7Bz%7D%5E%7Bt%7D-3T_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DT_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DT_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D-%5B%5CSigma%7BQ_%7Bin%7D%7D&plus;%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%5D%7D%7BC_p%28T_o%20-%20T_%7Bz%7D%5E%7Bt%7D%29%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%287%29)
 
 ### Solving Infiltration with Humidity Ratio
 
-$Equation~(3)$ can be re-written with the third-order backward
-approximation: $$\begin{aligned}
-C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
-Where: $$\begin{aligned}
-  RHS &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{m_{zi} C_p (W_{zi}-W_{z}^{t})} \\
-  &+ m_{inf} (W_o - W_{z}^{t}) + m_{sys} (W_{sys} - W_{z}^{t})\end{aligned}$$
-Then the infiltration mass flow rate can be solved: $$\begin{aligned}
-  m_{inf} = \frac{C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t}-[\Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{m_{zi} C_p (W_{zi}-W_{z}^{t})}]}{W_o - W_{z}^{t}}\end{aligned}$$
+Equation(3) can be re-written with the third-order backward
+approximation: 
+
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20C_%7Bwz%7D%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DW_%7Bz%7D%5E%7Bt%7D-3W_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DW_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DW_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D%20%3D%20RHS%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%288%29)
+
+
+Where:
+
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20RHS%20%26%3D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%20&plus;%20%5CSigma%7BA_i%20h_i%20%5Crho_%7Bair%7D%20%28W_%7Bsi%7D%20-%20W_%7Bz%7D%5E%7Bt%7D%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%20C_p%20%28W_%7Bzi%7D-W_%7Bz%7D%5E%7Bt%7D%29%7D%20%5C%5C%20%26&plus;%20m_%7Binf%7D%20%28W_o%20-%20W_%7Bz%7D%5E%7Bt%7D%29%20&plus;%20m_%7Bsys%7D%20%28W_%7Bsys%7D%20-%20W_%7Bz%7D%5E%7Bt%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%289%29)
+
+Then the infiltration mass flow rate can be solved:
+
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20m_%7Binf%7D%20%3D%20%5Cfrac%7BC_%7Bwz%7D%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DW_%7Bz%7D%5E%7Bt%7D-3W_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DW_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DW_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D-%5B%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%20&plus;%20%5CSigma%7BA_i%20h_i%20%5Crho_%7Bair%7D%20%28W_%7Bsi%7D%20-%20W_%7Bz%7D%5E%7Bt%7D%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%20C_p%20%28W_%7Bzi%7D-W_%7Bz%7D%5E%7Bt%7D%29%7D%5D%7D%7BW_o%20-%20W_%7Bz%7D%5E%7Bt%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2810%29)
 
 ### Solving Infiltration with CO<sub>2</sub> Concentration
 
