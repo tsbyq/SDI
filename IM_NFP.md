@@ -14,12 +14,12 @@ current HybridModel feature uses measured zone air temperature to
 inversely solve the zone internal thermal mass or air infiltration rate
 assuming the HVAC system is off and zone is in free-floating mode. The
 new HybridModel feature allows additional parameters such as the
-measured zone air humidity ratio and CO$_2$ concentration as the input
+measured zone air humidity ratio and CO<sub>2</sub> concentration as the input
 to the inverse modeling algorithms to solve the highly uncertain
 parameters such as air infiltration and people count. Depending on the
 availability of the measured zone supply air parameters (i.e., supply
 air flow rate, supply air temperature, supply air humidity ratio, and
-supply air CO$_2$ concentration), the new HybridModel feature can solve
+supply air CO<sub>2</sub> concentration), the new HybridModel feature can solve
 air infiltration and people count for both HVAC-off mode and HVAC-on
 mode. The hybrid approach keeps the virtue of the physics-based model
 and takes advantage of more measured buildings data which become
@@ -46,11 +46,11 @@ simplified infiltration algorithm as shown in Equation (1).
 
 Infiltration = (Idesign)(Fschedule)[A+B(T_{zone}-T_{odb})+C(WindSpeed)+D(WindSpeed)^2
 
-Where: <br />
-  A is the Constant term coefficient <br />
-  B is the Temperature term coefficient <br />
-  C is the Velocity term coefficient <br />
-  D is the Velocity squared coefficient <br />
+Where:
+&nbsp;&nbsp;&nbsp;&nbsp;A is the Constant term coefficient <br />
+&nbsp;&nbsp;&nbsp;&nbsp;B is the Temperature term coefficient <br />
+&nbsp;&nbsp;&nbsp;&nbsp;C is the Velocity term coefficient <br />
+&nbsp;&nbsp;&nbsp;&nbsp;D is the Velocity squared coefficient <br />
 
 The simple method has an empirical correlation that modifies the
 infiltration as a function of wind speed and temperature difference
@@ -73,7 +73,7 @@ People Count
 In EnergyPlus, people count and people activity level is represented by
 the People and corresponding Schedule objects. Users set the number of
 people calculation method, people activity level, sensible and fraction
-heat fractions, and CO$_2$ generation rate in the People object. Each
+heat fractions, and CO<sub>2</sub> generation rate in the People object. Each
 People object can be assigned to a zone or a zone list. A set of people
 related schedule objects are used to define the temporal variation of
 people count . In typical simulation setting, the People object is
@@ -139,7 +139,7 @@ modeling approach uses the 3rdOrderBackwardDifference to inversely solve
 the air infiltration. EnergyPlus Code for these balance algorithms are
 referenced to the ZoneTempPredictorCorrector module.
 
-Similarly, EnergyPlus solves zone humidity ratio and CO$_2$
+Similarly, EnergyPlus solves zone humidity ratio and CO<sub>2</sub>
 concentration with the predictor-corrector approach. Equations (3) is
 the zone air moisture balance equation.
 
@@ -164,7 +164,7 @@ $$\begin{aligned}
   m_{inf} (W_o - W_z)&: \text{Moisture transfer due to infiltration of outside air} ~ [kg/s],\\
   m_{sys} (W_{sys} - W_z)&: \text{Moisture transfer due to air supplied by HVAC system} ~ [kg/s],\\\end{aligned}$$
 
-Equations (4) is the zone air CO$_2$ balance equation. $$\begin{aligned}
+Equations (4) is the zone air CO<sub>2</sub> balance equation. $$\begin{aligned}
 \rho_{air} V_{z} C_{CO_{2}}\frac {dC_z} {dt} &= \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} \\
 + & m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z) \end{aligned}$$
 
@@ -190,12 +190,12 @@ Technical Approach
 This section provides technical details of solving zone balance
 equations via third-order backward approximation. Depending on the
 available number of zone air parameters (i.e., temperature, humidity
-ratio, and CO$_2$ concentration), there are different inverse solution
+ratio, and CO<sub>2</sub> concentration), there are different inverse solution
 scenarios. The figure below shows the different inverse solution
 scenarios. Theoritically, more than one un-known parameters (i.e., zone
 thermal mass, air infiltration, and people count) could be solved at the
 same time if the measurements of zone air temperature, humidity ratio,
-and CO$_2$ concentration are all available. In this new feature, we only
+and CO<sub>2</sub> concentration are all available. In this new feature, we only
 propose the new algorithms to solve one unknown parameter at a time. The
 solution scenario details are described in the following sub-sections.
 
@@ -233,7 +233,7 @@ Where: $$\begin{aligned}
 Then the infiltration mass flow rate can be solved: $$\begin{aligned}
   m_{inf} = \frac{C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t}-[\Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{m_{zi} C_p (W_{zi}-W_{z}^{t})}]}{W_o - W_{z}^{t}}\end{aligned}$$
 
-### Solving Infiltration with CO$_2$ Concentration
+### Solving Infiltration with CO<sub>2</sub> Concentration
 
 $Equation~(4)$ can be re-written with the third-order backward
 approximation: $$\begin{aligned}
@@ -293,23 +293,23 @@ $$\begin{aligned}
 \text{Where: }\\
   kg_{mass_{single}} &: \text{Moisture dissipation rate per person} ~ [kg / s] \\\end{aligned}$$
 
-### Solving People Count with CO$_2$ Concentration
+### Solving People Count with CO<sub>2</sub> Concentration
 
 $Equation~(4)$ can be re-written with the third-order backward
 approximation: $$\begin{aligned}
 C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
 Where: $$\begin{aligned}
   RHS = \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z)\end{aligned}$$
-The sum of internal CO$_2$ gains is: $$\begin{aligned}
+The sum of internal CO<sub>2</sub> gains is: $$\begin{aligned}
   \Sigma{kg_{mass_{sched}}}\times 10^{6} &= C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} \\
   &-  [\Sigma{m_{zi}(C_{zi}-C_z)} m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z)] \end{aligned}$$
-The sum of internal CO$_2$ gains from people is: $$\begin{aligned}
+The sum of internal CO<sub>2</sub> gains from people is: $$\begin{aligned}
   \Sigma{kg_{mass_{sched-people}}} = \Sigma{kg_{mass_{sched}}} - \Sigma{kg_{mass_{sched-others}}} \end{aligned}$$
 Finally, the number of people could be solved: $$\begin{aligned}
   N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} \end{aligned}$$
 $$\begin{aligned}
 \text{Where: }\\
-  kg_{mass_{single}} &: \text{CO$_2$ generation rate per person} ~ [m^{3}/(s \cdot W)] \\\end{aligned}$$
+  kg_{mass_{single}} &: \text{CO<sub>2</sub> generation rate per person} ~ [m^{3}/(s \cdot W)] \\\end{aligned}$$
 
 Convergence
 -----------
@@ -325,7 +325,7 @@ Therefore, conditions checks are needed when implementing the algorithm
 in the code. In this case, a threshold of 0.05°C or greater temperature
 difference must be met to calculate the infiltration rate at one
 timestamp. Similarly, thresholds are added for the algorithms using
-humidity ratio and CO$_2$ concentration. In addition, EnergyPlus uses a
+humidity ratio and CO<sub>2</sub> concentration. In addition, EnergyPlus uses a
 zone predictor-corrector mechanism to calculate the heating or cooling
 needs of a zone on HVAC system, and update the zone air parameters based
 on the calculated amount of heating or cooling the HVAC system provides
@@ -335,8 +335,8 @@ modeling routine. Therefore, thresholds for infiltration and people
 count calculation are applied to the code. For infiltration, a valid
 value must be within the range of 0 to 10 air change per hour. For
 people count, the lower bound is zero, and the upper-bound is the total
-possible internal heat/moisture/CO$_2$ gain divided by the
-heat/moisture/CO$_2$ generation rate.
+possible internal heat/moisture/CO<sub>2</sub> gain divided by the
+heat/moisture/CO<sub>2</sub> generation rate.
 
 IDD Modifications
 =================
@@ -503,12 +503,12 @@ the “Calculate Zone People Count” flag is set to NO:
     Schedule, and Zone Supply Air Mass Flow Rate Schedule are not
     provided.
 
-5.  If Zone Measured Air CO$_2$ concentration Schedule, Zone Supply Air
-    CO$_2$ Schedule, and Zone Supply Air Mass Flow Rate Schedule are all
+5.  If Zone Measured Air CO<sub>2</sub> concentration Schedule, Zone Supply Air
+    CO<sub>2</sub> Schedule, and Zone Supply Air Mass Flow Rate Schedule are all
     provided, the hybrid model simulation will solve the zone air
     infiltration with the system supply terms included in the zone
-    CO$_2$ balance equation. Otherwise, the hybrid simulation will treat
-    the system as free-floating if Zone Supply Air CO$_2$ Schedule, and
+    CO<sub>2</sub> balance equation. Otherwise, the hybrid simulation will treat
+    the system as free-floating if Zone Supply Air CO<sub>2</sub> Schedule, and
     Zone Supply Air Mass Flow Rate Schedule are not provided.
 
 When the above conditions are met, the hybrid model simulation will
@@ -565,12 +565,12 @@ the “Calculate Zone People Count” flag is set to YES:
     Schedule, and Zone Supply Air Mass Flow Rate Schedule are not
     provided.
 
-6.  If Zone Measured Air CO$_2$ concentration Schedule, Zone Supply Air
-    CO$_2$ Schedule, and Zone Supply Air Mass Flow Rate Schedule are all
+6.  If Zone Measured Air CO<sub>2</sub> concentration Schedule, Zone Supply Air
+    CO<sub>2</sub> Schedule, and Zone Supply Air Mass Flow Rate Schedule are all
     provided, the hybrid model simulation will solve the zone people
-    count with the system supply terms included in the zone CO$_2$
+    count with the system supply terms included in the zone CO<sub>2</sub>
     balance equation. Otherwise, the hybrid simulation will treat the
-    system as free-floating if Zone Supply Air CO$_2$ Schedule, and Zone
+    system as free-floating if Zone Supply Air CO<sub>2</sub> Schedule, and Zone
     Supply Air Mass Flow Rate Schedule are not provided.
 
 When the above conditions are met, the hybrid model simulation will
@@ -598,10 +598,10 @@ Testing/Validation/Data Source(s)
 
 A two-story building model in Chicago climate will be used. The model
 will first be run in normal simulation model to produce hourly schedules
-of zone air temperature, humidity, CO$_2$ concentration, and people
+of zone air temperature, humidity, CO<sub>2</sub> concentration, and people
 count in the zone. Then the office model will be modified to run in the
 inverse mode taking the simulated results of zone air temperature,
-humidity, CO$_2$ concentration as input to compute the zone air
+humidity, CO<sub>2</sub> concentration as input to compute the zone air
 infiltration rate and people count, which can be verified against the
 original input (ground truth) of the zone air infiltration rate and
 people count.
