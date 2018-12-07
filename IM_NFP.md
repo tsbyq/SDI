@@ -270,60 +270,55 @@ when the HVAC system is off.
 
 ### Solving People Count with Temperature
 
-$Equation~(2)$ can be re-written with the third-order backward
-approximation: $$\begin{aligned}
-C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
-Where: $$\begin{aligned}
-  RHS = \Sigma{Q_{in}}+\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)\end{aligned}$$
-The sum of internal sensible heat gains is: $$\begin{aligned}
-  \Sigma{Q_{in}} &= C_z\frac {\frac{11}{6}T_{z}^{t}-3T_{z}^{t-\delta t}+\frac{3}{2}T_{z}^{t-2\delta t}-\frac{1}{3}T_{z}^{t-3\delta t}} {\delta t} \\
-  &-  [\Sigma{h_i A_i (T_{si}-T_z)} + \Sigma{m_{zi}C_p(T_{zi}-T_z)} + m_{inf}C_p(T_o - T_z) + m_{sys}C_p(T_{sys} - T_z)] \end{aligned}$$
-The sum of internal sensible heat gains from people is:
-$$\begin{aligned}
-  \Sigma{Q_{people}} = \Sigma{Q_{in}} - \Sigma{Q_{others}}\end{aligned}$$
-Finally, the number of people could be solved: $$\begin{aligned}
-  N = \frac {\Sigma{Q_{people}}}{Q_{single}} \end{aligned}$$
+According to Equation(5) and Equation(6), the sum of internal sensible heat gains is:
 
-$$\begin{aligned}
-\text{Where: }\\
-  Q_{single} is Sensible heat rate per person} ~ [W] \\\end{aligned}$$
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5CSigma%7BQ_%7Bin%7D%7D%20%3D%20C_z%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DT_%7Bz%7D%5E%7Bt%7D-3T_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DT_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DT_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D%20-%20%5B%5CSigma%7Bh_i%20A_i%20%28T_%7Bsi%7D-T_z%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7DC_p%28T_%7Bzi%7D-T_z%29%7D%20&plus;%20m_%7Binf%7DC_p%28T_o%20-%20T_z%29%20&plus;%20m_%7Bsys%7DC_p%28T_%7Bsys%7D%20-%20T_z%29%5D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2814%29)
+
+The sum of internal sensible heat gains from people is:
+
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5CSigma%7BQ_%7Bpeople%7D%7D%20%3D%20%5CSigma%7BQ_%7Bin%7D%7D%20-%20%5CSigma%7BQ_%7Bothers%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2815%29)
+
+Finally, the number of people could be solved:
+  
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20N%20%3D%20%5Cfrac%20%7B%5CSigma%7BQ_%7Bpeople%7D%7D%7D%7BQ_%7Bsingle%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2816%29)
+
+
+Where: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;Q<sub>single</sub> is Sensible heat rate per person ~ [W] <br />
 
 ### Solving People Count with Humidity Ratio
 
-$Equation~(3)$ can be re-written with the third-order backward
-approximation: $$\begin{aligned}
-C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
-Where: $$\begin{aligned}
-  RHS &= \Sigma{kg_{mass_{sched}}} + \Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{m_{zi} C_p (W_{zi}-W_{z}^{t})} \\
-  &+ m_{inf} (W_o - W_{z}^{t}) + m_{sys} (W_{sys} - W_{z}^{t})\end{aligned}$$
-The sum of internal moisture gains is: $$\begin{aligned}
-  \Sigma{kg_{mass_{sched}}} &= C_{wz}\frac {\frac{11}{6}W_{z}^{t}-3W_{z}^{t-\delta t}+\frac{3}{2}W_{z}^{t-2\delta t}-\frac{1}{3}W_{z}^{t-3\delta t}} {\delta t} \\
-  &-  [\Sigma{A_i h_i \rho_{air} (W_{si} - W_{z}^{t})} + \Sigma{m_{zi} C_p (W_{zi}-W_{z}^{t})}] \end{aligned}$$
-The sum of internal moisture gains from people is: $$\begin{aligned}
-  \Sigma{kg_{mass_{sched-people}}} = \Sigma{kg_{mass_{sched}}} - \Sigma{kg_{mass_{sched-others}}} \end{aligned}$$
-Finally, the number of people could be solved: $$\begin{aligned}
-  N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} \end{aligned}$$
-$$\begin{aligned}
-\text{Where: }\\
-  kg_{mass_{single}} is Moisture dissipation rate per person} ~ [kg / s] \\\end{aligned}$$
+According to Equation(8) and Equation(9), the sum of internal moisture gains is:
+
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%20%3D%20C_%7Bwz%7D%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DW_%7Bz%7D%5E%7Bt%7D-3W_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DW_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DW_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D%20-%20%5B%5CSigma%7BA_i%20h_i%20%5Crho_%7Bair%7D%20%28W_%7Bsi%7D%20-%20W_%7Bz%7D%5E%7Bt%7D%29%7D%20&plus;%20%5CSigma%7Bm_%7Bzi%7D%20C_p%20%28W_%7Bzi%7D-W_%7Bz%7D%5E%7Bt%7D%29%7D%5D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2817%29)
+
+The sum of internal moisture gains from people is:
+
+![Diagram](https://latex.codecogs.com/svg.latex?%5Cdpi%7B150%7D%20%5CSigma%7Bkg_%7Bmass_%7Bsched-people%7D%7D%7D%20%3D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%20-%20%5CSigma%7Bkg_%7Bmass_%7Bsched-others%7D%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2818%29)
+
+Finally, the number of people could be solved:
+  
+![Diagram](https://latex.codecogs.com/gif.latex?N%20%3D%20%5Cfrac%20%7B%5CSigma%7Bkg_%7Bmass_%7Bsched-people%7D%7D%7D%7D%7Bkg_%7Bmass_%7Bsingle%7D%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2819%29)
+
+Where: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;kg<sub>mass</sub><sub>single</sub> is Moisture dissipation rate per person} ~ [kg / s]
 
 ### Solving People Count with CO<sub>2</sub> Concentration
 
-$Equation~(4)$ can be re-written with the third-order backward
-approximation: $$\begin{aligned}
-C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} = RHS\end{aligned}$$
-Where: $$\begin{aligned}
-  RHS = \Sigma{kg_{mass_{sched}}}\times 10^{6} + \Sigma{m_{zi}(C_{zi}-C_z)} m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z)\end{aligned}$$
-The sum of internal CO<sub>2</sub> gains is: $$\begin{aligned}
-  \Sigma{kg_{mass_{sched}}}\times 10^{6} &= C_{CO_{2}z}\frac {\frac{11}{6}C_{z}^{t}-3C_{z}^{t-\delta t}+\frac{3}{2}C_{z}^{t-2\delta t}-\frac{1}{3}C_{z}^{t-3\delta t}} {\delta t} \\
-  &-  [\Sigma{m_{zi}(C_{zi}-C_z)} m_{inf} (C_o - C_z) + m_{sys} (C_{sys} - C_z)] \end{aligned}$$
-The sum of internal CO<sub>2</sub> gains from people is: $$\begin{aligned}
-  \Sigma{kg_{mass_{sched-people}}} = \Sigma{kg_{mass_{sched}}} - \Sigma{kg_{mass_{sched-others}}} \end{aligned}$$
-Finally, the number of people could be solved: $$\begin{aligned}
-  N = \frac {\Sigma{kg_{mass_{sched-people}}}}{kg_{mass_{single}}} \end{aligned}$$
-$$\begin{aligned}
-\text{Where: }\\
-  kg_{mass_{single}} is CO<sub>2</sub> generation rate per person} ~ [m^{3}/(s \cdot W)] \\\end{aligned}$$
+According to Equation(11) and Equation(12), the sum of internal CO<sub>2</sub> gains is:
+
+![Diagram](https://latex.codecogs.com/gif.latex?%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%5Ctimes%2010%5E%7B6%7D%20%3D%20C_%7BCO_%7B2%7Dz%7D%5Cfrac%20%7B%5Cfrac%7B11%7D%7B6%7DC_%7Bz%7D%5E%7Bt%7D-3C_%7Bz%7D%5E%7Bt-%5Cdelta%20t%7D&plus;%5Cfrac%7B3%7D%7B2%7DC_%7Bz%7D%5E%7Bt-2%5Cdelta%20t%7D-%5Cfrac%7B1%7D%7B3%7DC_%7Bz%7D%5E%7Bt-3%5Cdelta%20t%7D%7D%20%7B%5Cdelta%20t%7D%20-%20%5B%5CSigma%7Bm_%7Bzi%7D%28C_%7Bzi%7D-C_z%29%7D%20m_%7Binf%7D%20%28C_o%20-%20C_z%29%20&plus;%20m_%7Bsys%7D%20%28C_%7Bsys%7D%20-%20C_z%29%5D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2820%29)
+
+The sum of internal CO<sub>2</sub> gains from people is:
+
+![Diagram](https://latex.codecogs.com/gif.latex?%5CSigma%7Bkg_%7Bmass_%7Bsched-people%7D%7D%7D%20%3D%20%5CSigma%7Bkg_%7Bmass_%7Bsched%7D%7D%7D%20-%20%5CSigma%7Bkg_%7Bmass_%7Bsched-others%7D%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2821%29)
+
+Finally, the number of people could be solved:
+  
+![Diagram](https://latex.codecogs.com/gif.latex?N%20%3D%20%5Cfrac%20%7B%5CSigma%7Bkg_%7Bmass_%7Bsched-people%7D%7D%7D%7D%7Bkg_%7Bmass_%7Bsingle%7D%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20Eq.%2822%29)
+
+Where: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;kg<sub>mass</sub><sub>single</sub> is CO<sub>2</sub> generation rate per person} ~ [m^{3}/(s \cdot W)]
 
 Convergence
 -----------
@@ -331,10 +326,10 @@ Convergence
 There can be many factors affecting the convergence when trying to solve
 the differential equation numerically with the third-order backward
 approximation. The most common issue is the overflow. For instance, the
-indoor-outdoor air temperature difference term $(T_o - T_z)$ can be a
+indoor-outdoor air temperature difference term (T<sub>o</sub> - T<sub>z</sub>) can be a
 very small number when the two temperatures are very close. Overflow
 will happen if the program tries to calculate the air infiltration rate
-by dividing the denominator of Equation (6) by $C_p(T_o - T_z)$.
+by dividing the denominator of Equation (6) by C<sub>p</sub>(T<sub>o</sub> - T<sub>z</sub>).
 Therefore, conditions checks are needed when implementing the algorithm
 in the code. In this case, a threshold of 0.05°C or greater temperature
 difference must be met to calculate the infiltration rate at one
